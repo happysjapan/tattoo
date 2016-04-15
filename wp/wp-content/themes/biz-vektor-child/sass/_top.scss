@@ -1,0 +1,379 @@
+
+/* ===================================================
+	トップページ ▼
+===================================================  */
+.frontpage {
+	//右サイドカラム
+	.sideTower .sideWidget .textwidget {
+		padding-top: 0;
+		.banner {
+			display: block;
+			margin-bottom: 15px;
+		}
+		 .SideListWrap {
+			margin-bottom: 15px;
+			h3 {
+				padding: 4px 10px;
+				background-color: #0e6c3d;
+				color: #fff;
+				font-size: 90%;
+			}
+			> div {
+				border: 1px solid #ccc;
+				ul {
+					li {
+						border-bottom: 1px dotted #ccc;
+						a {
+							display: block;
+							padding: 6px 10px;
+							color: $color-blue;
+							font-size: 80%;
+							background-image: none;
+							p {
+
+							}
+						}
+					}
+				}
+				.more {
+					a {
+						display: block;
+						padding: 4px 10px;
+						text-align: right;
+						text-decoration: none;
+						color: $color-blue;
+						font-size: 80%;
+						&:hover {
+							background-color: #efefef;
+						}
+					}
+				}
+			}
+		}
+		.ThumbnailList {
+			> div ul li a {
+				display: table;
+				img,p {
+					display: table-cell;
+					vertical-align: top;
+				}
+				img {
+					width: 36px;
+					height: 36px;
+				}
+				p {
+					padding-left: 5px;
+				}
+			}
+		}
+
+	}
+
+	/* コンテンツ ▼
+	-------------------------------------------- */
+	.sectionBox p {
+		@include font-size(1.3);
+	}
+
+
+	
+	/* 検索ボックス ▼
+	-------------------------------------------- */
+
+	.areaSearch {
+		margin-bottom: 40px;
+
+		> h2:first-child {
+			@extend %greenTitle;
+			padding: 8px 10px;
+		}
+		.searchTitle {
+			text-align: center;
+		}
+		.searchInner {
+			padding: 20px;
+			border: 1px solid $color-grey;
+			border-top: none;
+			ul {margin: 0;}
+			.listP {
+				> li{
+					display: inline-block;
+					margin-bottom: 20px;
+					vertical-align: top;
+					width: 48%;
+					&:nth-child(2n+1) {margin-right: 3%;}
+					&:last-child,&:nth-child(7) {margin-bottom: 0;}
+					h3 {
+						@include font-size(1.4);
+						margin: 0 0 10px;
+						padding: 0;
+						border: none;
+					}
+					@include SP {
+						width: 100%;
+					}
+				}
+				.listC li {
+					display: inline-block;
+					margin-right: 8px;
+					margin-bottom: 2px;
+					a {
+						color: $color-blue;
+						text-decoration: none;
+						@include font-size(1.3);
+						&:hover {text-decoration: underline;}
+					}
+				}
+				.cSelect {
+					dt {
+						display: inline-block;
+						margin-right: 5px;
+						font-weight: bold;
+						@include font-size(1.2);
+						color: #333;
+					}
+					dd {
+						display: inline-block;
+						margin-bottom: 0;
+					}
+					@include SP {
+						width: 100%;
+						margin-top: 20px;
+					}
+				}
+
+			}
+			.searchText {
+				margin: 5px 0;
+				input.topSearch { width: 60%;}
+			}
+
+
+		}
+		.innerSearchList {
+			padding: 50px 76px 40px 44px;
+			@include SP {
+				padding: 25px 38px 20px 22px;
+			}
+			.searchListContent {
+				width: 100%;
+				display: table;
+				@include SP {
+					display: block;
+				}
+				> * {
+					display: table-cell;
+					vertical-align: middle;
+					padding-bottom: 32px;
+					@include SP {
+						margin: 0 auto;
+						text-align: center;
+						display: block;
+						padding-bottom: 16px;
+					}
+				}
+				.selectLabel {
+					@include font-size(1.5);
+					font-weight: bold;
+					width: 70%;
+					@include SP {
+						@include font-size(1.2);
+						width: 100%;
+					}
+				}
+				.selectList {
+					width: 30%;
+					select {
+						width: 100%;
+					}
+					@include SP {
+						width: 80%;
+					}
+				}
+			}
+			.searchText2 {
+				width: 100%;
+				form {
+					text-align:center;
+					.searchWord {
+						width: 100%;
+						margin-bottom: 34px;
+						text-align: left;
+						@include SP {
+							margin-bottom: 17px;
+						}
+					}
+					.searchBtn {
+						max-width: 248px;
+						padding: 14px 20px;
+						margin: 0 auto;
+						@include font-size(1.8);
+						background-color: #3366cc;
+						width: 100%;
+						@include SP {
+							padding: 8px 10px;
+							@include font-size(1.5);
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	/* 新着事業所一覧 ▼
+	-------------------------------------------- */
+
+	.postInFrontPage {
+		margin-bottom: 40px;
+		h2 {
+			@extend %greenTitle;
+			padding: 6px 10px;
+		}
+		.inner {
+			padding: 20px;
+			border-left: 1px solid $color-grey;
+			border-right: 1px solid $color-grey;
+			border-bottom: 1px solid $color-grey;
+		}
+		ul {
+			@include clearfix;
+			margin: 0;
+			li {
+				margin-right: 30px;
+				margin-bottom: 20px;
+				float: left;
+				list-style: none;
+				&:nth-child(3n)  {margin-right: 0;}
+				@include calc(width,'100%/3 - 20px');
+				div {
+					display: block;
+					text-align: center;
+					p {
+						margin-bottom: 3px;
+						text-align: left;
+						color: $color-blue;
+					}
+					.ttl {
+						font-weight: bold;
+					}
+					.desc {
+						@include font-size(1.2);
+						@include line-height(1.6);
+						color: #333;
+					}
+					.reward {
+						@include font-size(1.2);
+						@include line-height(1.6);
+					}
+					img {
+						display: inline-block;
+						width: 180px;
+						height: auto;
+						margin-top: 10px;
+					}
+					a.btn {
+						display: block;
+						width: 90px;
+						margin: 10px auto 0;
+						padding: 6px;
+						background-color: #48b420;
+						color: #fff;
+						@include font-size(1.5);
+						text-align: center;
+						&:hover {
+							@include opacity(.9);
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+
+		.more {
+			text-align: right;
+		}
+
+		a {
+			color: $color-blue;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		@include SP {
+			ul li {
+				margin-right: 20px;
+				float: left;
+				&:nth-child(3n)  {margin-right: 20px;}
+				&:nth-child(2n)  {margin-right: 0;}
+				@include calc(width,'100%/2 - 10px');
+			}
+		}
+	}
+
+	/* Public Relations ▼
+	-------------------------------------------- */
+	.pr_wrapper {
+		.inner {
+			padding: 0;
+			border: none;
+			div {text-align: left;}
+			ul {
+				margin: 0;
+				@include clearfix;
+				li {
+					@include calc(width,'100%/3 - 17px');
+					margin-right: 25px;
+					margin-bottom: 30px;
+					float: left;
+					list-style: none;
+					&:nth-child(3n)  {
+						margin-right: 0;
+					}
+					h3 {
+						margin: 0 0 10px;
+						padding-left: 10px;
+						@include font-size(1.6);
+					}
+					.prDescription {
+						margin-top: 10px;
+						p {
+							margin: 0;
+							padding: 0;
+							color: #666;
+							@include font-size(1.2);
+							@include line-height(1.6);
+						}
+					}
+					.moreLink {
+						text-align: right;
+					}
+
+				}
+			}
+			@include SP {
+				ul li {
+					width: 100%;
+					margin-right: 0;
+					float: none;
+					&:nth-child(3n)  {margin-right: 0;}
+					.prImage {
+						vertical-align: top;
+						img {
+							display: block;
+							width: 150px;
+							height: auto;
+						}
+					}
+					.prDescription {
+					}
+					.moreLink {
+						a {margin-top: 0;}
+					}
+				}
+			}
+			
+		}
+	}
+}

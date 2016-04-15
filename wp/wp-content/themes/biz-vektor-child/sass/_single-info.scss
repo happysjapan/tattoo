@@ -1,0 +1,32 @@
+/* ===================================================
+	 セミナー・説明会 個別ページ ▼
+===================================================  */
+
+.info {
+	.mainImage {
+		width: 100%;
+		height: auto;
+		background-color: #f2f2f2;
+	}
+	h1.entryPostTitle {
+		border: none;
+		@include font-size(2.2);
+	}
+	.entry-content {
+		padding: 25px;
+		border: 1px solid $color-grey;
+		h2.title {
+			margin-bottom: 0;
+			border: none;
+			font-weight: normal;
+			@include font-size(1.8);
+		}
+	}
+	@extend %btnList;
+	.btnWrap {
+		a.btnBlue {
+			background-color: #2180ac;
+
+		}
+	}
+}

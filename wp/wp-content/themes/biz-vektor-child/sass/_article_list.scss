@@ -1,0 +1,96 @@
+// セミナー・説明会一覧
+// 全国の就労移行支援事業所 一覧
+
+.content .article {
+	margin-bottom: 15px;
+	border: 1px solid $color-darkGrey;
+	p {
+		margin-bottom: 0;
+		padding: 0;
+	}
+	.inner {
+		padding: 20px;
+		h3 {
+			padding: 0;
+			margin: 0;
+			border: none;
+			a {
+				color: $color-blue;
+				text-decoration: none;
+				&:hover {text-decoration: underline;}
+			}
+		}
+		.textWrap {
+			@include clearfix;
+			.text {
+				float: left;
+				@include font-size(1.3);
+				@include line-height(1.8);
+				@include calc(width,"100% - 200px");
+				word-break: break-all;
+			}
+			.fee {
+				float: right;
+				width: 150px;
+				@extend  %reward;
+			}
+		}
+		.profileWrap {
+			display: table;
+			width: 100%;
+			margin: 15px 0;
+			.leftWrap {
+				display: table-cell;
+				width: 160px;
+				padding-right: 10px;
+				vertical-align: top;
+				img {
+					width: 100%;
+					height: auto;
+				}
+				@extend %termsWrap;
+			}
+			.detailWrap {
+				display: table-cell;
+				table {margin: 0 0 12px;}
+			}
+		}
+		@extend %btnList;
+		@include SP {
+			.textWrap {
+				@include clearfix;
+				.text, .fee {float: none;}
+				.text {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+				.fee {padding: 8px;}
+			}
+			.profileWrap {
+				.leftWrap,.detailWrap {
+					display: block;
+					width: 100%;
+				}
+			}
+
+		}
+	}
+	.linkToDetail {
+		display: block;
+		padding: 12px;
+		@include font-size(1.6);
+		@include line-height(2);
+		text-align: center;
+		color: #fff;
+		background-color: $color-green;
+		text-decoration: none;
+		&:hover {@include opacity(.9);}
+	}
+	.officeWrap { // 事業所一覧のみ
+		.profileWrap .leftWrap {
+			div:first-of-type {
+				margin-top: 15px;
+			}
+		}
+	}
+}

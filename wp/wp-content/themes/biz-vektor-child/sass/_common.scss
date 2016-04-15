@@ -1,0 +1,459 @@
+/* ===================================================
+	 共通パーツ ▼
+===================================================  */
+
+
+#pageTitBnr #pageTitInner #pageTit {
+	margin: 20px 0 0;
+	font-weight: bold;
+}
+#main #container {
+	padding-top: 10px;
+	.content {
+		width: 680px;
+		@include SP {width: 100%;}
+		table {
+			td,th {border: 1px solid $color-grey;}
+			th {background-color: #e8e8e8}
+		}
+	}
+}
+
+body > #wrap {
+	padding-top: 50px;
+}
+.page--title,.category--title {
+	display: inline-block;
+	margin: 0 .5% 10px;
+	@include font-size(2.2);
+	@include line-height(3);
+	font-weight: bold;
+	border: none;
+}
+.pageDescription {
+	margin: 0 .5% 15px;
+}
+.category-description {
+	margin: 0 .5% 15px;
+	@include font-size(1.4);
+	@include SP {
+		@include font-size(1.2);
+	}
+
+}
+.bv_works_item h3, .content .bv_works_item h3, #content .bv_works_item h3 {
+	height: auto;
+}
+// header
+#header {
+	#site-title {
+		margin-right: 38px;
+		a:hover {
+			@include opacity(.8);
+		}
+	}
+	#headContact {
+		max-width: 700px;
+		width: 100%;
+		margin: 10px 0 20px;
+		text-align: left;
+		float: left;
+		#headContactInner {
+			display: table;
+			> div {
+				display: table-cell;
+				padding-left: 15px;
+				vertical-align: top;
+				&:first-child {padding-left: 0;}
+				&#headContactTxt { //　無料相談お問合せ
+					font-weight: bold;
+					@include font-size(1.5);
+					@include line-height(2.2);
+					span {
+						color: $color-green;
+					}
+				}
+				&.telNumTime {
+					#headContactTel {
+						padding-left: 45px;
+						color: $color-red;
+						font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+						@include font-size(2.4);
+						@include line-height(2.4);
+						background: url("images/icon_free_voice.gif") no-repeat scroll left center;
+						background-size: 40px auto;
+					}
+					#headContactTime {
+						@include font-size(1.1);
+					}
+				}
+				&.btnWrap {
+					a {
+						display: inline-block;
+						margin-right: 4px;
+						padding: 6px 12px;
+						color: #fff;
+						text-decoration: none;
+						@include font-size(1.1);
+						@include line-height(1.5);
+						@include border-radius(6px);
+						text-align: center;
+						&.contact {
+							background-color: $color-lightGreen;
+						}
+						&.apply {
+							background-color: #2180ac;
+						}
+						&:hover {
+							@include opacity(.9);
+						}
+					}
+				}
+				&.rightBox {
+					padding-left: 32px;
+					.snsBtn {
+						margin-bottom: 6px;
+						li {
+							display: inline-block;
+							vertical-align: top;
+						}
+					}
+					.total {
+						width: 190px;
+						margin: 0 0 4px;
+						@include font-size(1.1);
+						@include line-height(1.5);
+						@include clearfix;
+						&:last-child {margin-bottom: 0;}
+						dt {
+							float: left;
+						}
+						dd {
+							float: right;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include SP {
+		width: 100%;
+		padding: 5px;
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+		overflow: visible;
+		.innerBox {
+			margin: 0;
+		}
+		#site-title {
+			display: inline-block;
+			width: 74px;
+			margin-right: 0;
+			padding-bottom: 0;
+			@include line-height(1);
+			vertical-align: middle;
+			a {display: inline-block;}
+			a img {
+				width: 74px;
+				margin-top: 0;
+				height: auto;
+			}
+		}
+		#headContact {
+			display: inline-block;
+			width: auto;
+			margin: 0;
+			padding: 0;
+			float: none;
+			vertical-align: middle;
+			#headContactInner {
+				width: 100%;
+				margin: 0;
+				> div {
+					display: block;
+					padding: 0;
+					&#headContactTxt {
+						display: none;
+					}
+					&.telNumTime {
+						border: 2px solid $color-lightGreen;
+						@include border-radius(6px);
+						#headContactTel {
+							margin: 2px 4px 0;
+							padding-left: 34px;
+							@include font-size(1.4);
+							background-size: 30px auto;
+							font-weight: bold;
+							a {
+								color: $color-red;
+								text-decoration: none;
+							}
+						}
+						#headContactTime {
+							padding: 2px 4px 0;
+							@include font-size(1);
+							@include line-height(1);
+							@include letter-spacing(-.04);
+							font-family: helvetica,arial;
+							background-color: $color-lightGreen;
+							color: #fff;
+						}
+					}
+					&.btnWrap {
+						display: table;
+						width: 100%;
+						position: fixed;
+						left: 0;
+						bottom: 0;
+						z-index: 102;
+						a {
+							display: table-cell;
+							margin-right: 0;
+							padding: 12px 6px;
+							@include font-size(1.3);
+							@include line-height(2);
+							@include border-radius(0);
+							text-align: center;
+							br {display: none;}
+							&.contact {
+								background-color: $color-lightGreen;
+							}
+							&.apply {
+								background-color: #2180ac;
+							}
+							&:hover {
+								@include opacity(.9);
+							}
+						}
+					}
+					&.rightBox {
+						display: none;
+						width: 100%;
+						margin: 0 10px;
+						padding-left: 0;
+						.totalWrap {
+							margin-top: 10px;
+							padding: 8px;
+							background-color: #f2f2f2;
+							.total {
+								width: auto;
+								dd {
+									float: left;
+									margin-left: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#gMenu {
+	@include SP {
+		border: none;
+		width: auto;
+		position: fixed;
+		top: 5px;
+		right: 5px;
+		z-index: 1001;
+		#gMenuInner.innerBox {
+			.assistive-text {
+				width: 40px;
+				margin-bottom: 5px;
+				padding: 7px 0 5px;
+				background-color: $color-green;
+				color: #fff;
+				@include border-radius(5px);
+				text-align: center;
+				float: right;
+				p { // メニューアイコン
+					width: 24px;
+					height: 3px;
+					margin: 0 auto 4px;
+					padding: 0;
+					@include border-radius(2px);
+					background-color: #fff;
+				}
+				span.text { // MENU テキスト
+					padding: 0;
+					@include font-size(1);
+					@include line-height(1);
+				}
+			}
+			> div {clear: both;}
+			.menu {
+				background-color: #fff;
+				border: 1px solid $color-green;
+				@include box-shadow(0 3px 3px 0 rgba(0,0,0,.4));
+				li {
+					.sub-menu li {
+						background-color: #f2f2f2;
+						@include font-size(1.2);
+					}
+				}
+			}
+		}
+	}
+}
+// Side Tower
+#sideTower {
+	.sideWidget {
+		.textwidget {
+			text-align: center;
+			padding: 0;
+			a {
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+		}
+		h3 {
+			@extend %greenTitle;
+		    padding: 6px 10px;
+		   	@include font-size(1.4);
+		}
+		> .ttBoxSection {
+			padding-bottom: 0;
+			border: 1px solid $color-darkGrey;
+			.ttBox {
+				padding: 0;
+				border: none;
+				border-bottom: 1px dotted $color-darkGrey;
+				&:last-child{border-bottom: none;}
+				div {
+					a {
+						display: block;
+						padding: 6px 10px;
+						color: $color-blue;
+						background-image: none;
+						&:hover {
+							background-color: #f2f2f2;
+							text-decoration: none;
+						}
+						p {
+							margin-top: 5px;
+							&:first-child {margin-top: 0;}
+						}
+					}
+				}
+				&.study div {
+					img {
+						width: 60px;
+						height: auto;
+					}
+					p {
+						display: inline-block;
+						margin: 0;
+					}
+				}
+			}
+			.more {
+				a {
+					display: block;
+					padding: 4px 10px;
+					text-align: right;
+					text-decoration: none;
+					color: $color-blue;
+					font-size: 80%;
+					&:hover {
+						background-color: #efefef;
+					}
+				}
+			}
+		}
+	}
+	.localHead a {
+		color: #fff;
+	}
+}
+
+// social buttons
+.social--holder {
+	text-align: right;
+	.social--list {
+		margin: 0 0 20px;
+		li {
+			display: inline-block;
+			margin-bottom: 0;
+			list-style: none;
+			vertical-align: top;
+			.lineButtonPc {
+				@include SP {display: none;}
+			}
+		}
+	}
+	@include SP {
+		text-align: left;
+	}
+}
+.fb-comments, .fb-comments span, .fb-comments iframe {
+    width: 600px !important;
+}
+// contact form common style
+.content {
+	.contact_form {
+		label {
+			margin-right: 10px;
+		}
+		.btn_wrap {
+			text-align: center;
+			input[type="submit"] {
+				width: 120px;
+				margin: 0 20px 0 0;
+				padding: 10px 15px;
+				background: $color-lightGreen;
+				color: #fff;
+				@include font-size(1.5);
+				@include line-height(2);
+				@include border-radius(6px);
+			}
+		}
+	}
+}
+
+/* 検索ボックス ▼
+-------------------------------------------- */
+.areaSearch, .searchArea {
+	select,input {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+
+	}
+	/* selectboxカスタム */
+	.select-box select {
+		@include border-radius(5px);
+		border: 0;
+		margin: 0;
+		width:140px;
+		padding: 3px 30px 3px 6px;
+		vertical-align: middle;
+		font-size: inherit;
+		color: #666666;
+		background: url(images/select_arrow.png) right 50% no-repeat #eeeeee;
+		background-size: 26px, 100%;
+		@include font-size(1.1);
+	}
+
+
+	/* inputカスタム */
+
+	.topSearch { // フリーワード検索ボックス
+		background: #eeeeee;
+		@include border-radius(5px);
+		padding: 5px;
+		border: none;
+		color: #333;
+		width: 60%;
+	}
+	input[type="submit"] {
+		@include border-radius(5px);
+		padding: 3px 20px;
+		border: none;
+		color: #fff;
+		background: $color-lightGreen;
+		&:hover {@include opacity(.9);}
+	}
+}

@@ -1,0 +1,199 @@
+
+/* =================================================== 
+	全国の就労移行支援事業所を探す 
+	セミナー・説明会検索  ▼
+===================================================  */
+
+.searchArea {
+	display: block;
+	@include clearfix;
+	width: 100%;
+	margin-bottom: 40px;
+	.searchDescription {
+		padding: 0;
+		@include font-size(1.4);
+		@include SP {
+			@include font-size(1.2);
+		}
+	}
+	.searchBox {
+		width: 580px;
+		float: left;
+		h2 {
+			@extend %greenTitle;
+			padding: 8px 10px;
+		}
+		.inner {
+			padding: 30px;
+			border: 1px solid $color-grey;
+			border-top: none;
+			@include clearfix;
+			form#searchform {
+				label {
+					display: block;
+					margin-bottom: 20px;
+				}
+				.select-box {
+					@include clearfix;
+					.search--form--select {
+						float: right;
+						margin-left: 20px;
+					}
+				}
+				input#s {
+					width: 100%;
+					margin-left: 0;
+					float: none;
+				}
+				input#searchsubmit {
+					display: block;
+					width: 160px;
+					margin: 20px auto 0;
+					padding: 12px;
+					background-color: $color-green;
+					float: none;
+					@include font-size(1.5);
+				}
+			}
+		}
+
+		&.for_lawyer .inner { //全国の就労移行支援事業所検索用スタイル
+			form#searchform {
+				display: block;
+				width: 90%;
+				margin: 0 auto;
+				.select-box {
+					.search--form--select {
+						margin-left: 0;
+						margin-top: 10px;
+					}
+				}
+				input#s {margin-top: 20px;}
+			}
+
+			@include SP { 
+				padding: 20px;
+				form#searchform {
+					width: 100%;
+					.select-box {
+						.search--form--select {
+							float: none;
+							margin-left: 0;
+							margin-top: 10px;
+						}
+					}
+					input#s {margin-top: 0;}
+					label {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+		&.for_seminar {
+			width: 100%;
+			.inner { //セミナー検索用スタイル
+				padding: 20px 60px 10px;
+				form#searchform {
+					display: inline-block;
+					max-width: 468px;
+					margin-top: 40px;
+					input#s {margin-top: 10px;}
+					input#searchsubmit {margin-top: 30px;}
+				}
+				.calenderWrap {
+					display: inline-block;
+					vertical-align: top;
+					margin-left: 100px;
+					h3 {
+						margin: 0 0 10px 0;
+						padding: 0;
+						border: none;
+						@include font-size(1.5);
+						text-align: center;
+					}
+					.wp_calendar {
+						/* written in wp_calendar.css*/
+					}
+				}
+			}
+			@include SP {
+				.inner {
+					padding: 20px 20px 90px;
+					overflow: visible;
+					&:after {
+						content: "";
+						display: block;
+						clear: both;
+					}
+					form#searchform {
+						margin-top: 0;
+						float: none;
+						.select-box {
+							.search--form--select {
+								float: none;
+								margin-left: 0;
+								margin-top: 10px;
+							}
+						}
+						label {
+							margin-bottom: 20px;
+						}
+					}
+					.calenderWrap {
+						display: block;
+						margin: 40px auto 0;
+						float: none;
+						.widget_calendar_medium_size {width: auto;}
+						#calendar_wrap .wp-cal-datepicker-calendar {
+							position: relative;
+							tr td .wp-cal-tooltip {
+								left: 0;
+								top: 176px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.consultBox {
+		width: 330px;
+		height: 286px;
+		padding: 15px;
+		border: 1px solid $color-grey;
+		float: right;
+		text-align: center;
+		.btn {
+			margin-top: 10px;
+			padding: 10px;
+			background-color: $color-lightGreen;
+		}
+	}
+	.btn {
+		display: block;
+		width: 120px;
+		margin: 0 auto;
+		text-align: center;
+		@include font-size(1.6);
+		@include line-height(2);
+	}
+
+	@include SP {
+		> div {float: none;}
+		.searchBox {
+			width: 100%;
+			margin-bottom: 20px;
+			padding-right: 0;
+		}
+		.consultBox {
+			width: 100%;
+		}
+	}
+
+}
+
+
+form#searchform {
+	background-color: transparent;
+	padding: 0;
+}
