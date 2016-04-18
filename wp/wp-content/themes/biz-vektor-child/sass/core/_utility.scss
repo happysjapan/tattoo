@@ -111,9 +111,16 @@ $SPPoint:    768px;
 /* ---------------------------------
   placeholder
 --------------------------------- */
-%greenTitle {
-  margin: 0;
+%greenTitle { // for yotsubanoha
+    margin: 0;
     background-color: #0e6c3d;
+    color: #fff;
+    border: none;
+    @include font-size(1.8);
+}
+%lightBlueTitle {
+    margin: 0;
+    background-color: $color-lightBlue;
     color: #fff;
     border: none;
     @include font-size(1.8);

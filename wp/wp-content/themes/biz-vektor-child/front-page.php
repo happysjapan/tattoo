@@ -9,7 +9,7 @@
 
 	<form name="searchform1" id="searchform1" method="get" action="<?php bloginfo( 'url' ); ?>/clinic">
 	<div class="areaSearch">
-		<h2>全国の就労移行支援事業所を検索</h2>
+		<h2>地域と条件から病院を探す</h2>
 		<div class="searchInner">
 		<ul class="listP">
 
