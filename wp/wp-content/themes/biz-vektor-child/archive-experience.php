@@ -30,7 +30,7 @@
       $custom_query = new WP_Query( $custom_args );
 
       ?>
-
+      
       <!-- the loop -->
       <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
         <?php get_template_part( 'includes/category', 'experience-panel' ); ?>
@@ -49,7 +49,6 @@
 
   </section>
   <!-- [ /#content ] -->
-
 
 </div>
 <!-- [ /#container ] -->

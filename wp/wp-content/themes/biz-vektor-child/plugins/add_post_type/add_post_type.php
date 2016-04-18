@@ -436,7 +436,7 @@ add_action( 'init', 'create_my_taxonomies', 0 );
 function create_my_taxonomies() {
 	register_taxonomy(
 		'primary-tags',
-		array( 'post', 'experience', 'question' ),
+		'post',
 		array(
 			'hierarchical' => true,
 			'update_count_callback' => '_update_post_term_count',
@@ -451,7 +451,7 @@ function create_my_taxonomies() {
 
 	register_taxonomy(
 		'secondary-tags',
-		array( 'post', 'experience', 'question' ),
+		'post',
 		array(
 			'hierarchical' => true,
 			'update_count_callback' => '_update_post_term_count',
