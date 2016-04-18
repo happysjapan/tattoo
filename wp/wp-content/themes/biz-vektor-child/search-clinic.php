@@ -1,4 +1,5 @@
 <?php
+
 $post_search = $_GET['s'];
 $post_category_slug = $_GET['category_name'];
 $post_tag_slug = $_GET['tag'];

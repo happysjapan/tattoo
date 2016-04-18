@@ -63,13 +63,20 @@
         </label>
       </div>
 
+      <?php
+        $object = get_queried_object();
+        if( !isset($_GET['subtag']) && $object->taxonomy == 'secondary-tags' ){
+          $post_tag_slug_2 = $object->slug;
+        }
+        else {
+          $post_tag_slug_2 = $_GET['subtag'];
+        }
+      ?>
       <div class="select-box">
         <label for ="searchSecondTag" class="search--form--label">条件でお選びください
         <select id="searchSecondTag" name="subtag" class="search--form--select">
           <option value="">条件 2</option>
           <?php
-            $post_tag_slug_2 = $_GET['subtag'];
-
             foreach ($secondary_tags as $tag_elem) {
               if( $post_tag_slug_2 == $tag_elem->slug ) {
                 echo '<option value="'.$tag_elem->slug.'" selected>'.$tag_elem->name.'</option>';

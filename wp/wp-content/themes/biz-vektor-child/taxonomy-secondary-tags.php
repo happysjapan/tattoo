@@ -1,15 +1,4 @@
-<?php get_header();
-
-if ( is_tax() ) {
-  $taxonomy   = 'secondary-tags';
-  $term_slug  = $wp_query->query_vars['term'];
-  $taxonomies = get_the_taxonomies();
-
-  if ( isset( $taxonomy ) && isset( $term_slug ) ):
-    $term = get_term_by( 'slug', $term_slug, $taxonomy );
-  endif;
-}
-?>
+<?php get_header(); ?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
@@ -22,6 +11,11 @@ if ( is_tax() ) {
 
   <!-- [ #content ] -->
   <section id="content" class="content wide">
+    <!-- [ #search ] -->
+    <section class="searchArea">
+      <?php get_template_part( 'includes/category', 'clinic-search' ); ?>
+    </section>
+    <!-- [ /#search ] -->
 
     <?php
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
