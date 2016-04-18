@@ -27,22 +27,28 @@ function biz_vektor_posttype_beacon($flag){
 /*	Custom post type _ add Questions
 /*-------------------------------------------*/
 
+function myprefix_unregister_tags() {
+    unregister_taxonomy_for_object_type('post_tag', 'post');
+}
+add_action('init', 'myprefix_unregister_tags');
+
+
 add_post_type_support( 'experience', 'front-end-editor' );
 
 add_action( 'init', 'biz_vektor_experience_create_post_type', 0 );
 function biz_vektor_experience_create_post_type() {
 	$experienceLabelName = esc_html( bizVektorOptions('experienceLabelName'));
 	register_post_type( 'experience', /* post-type */
-	array(
-		'labels' => array(
-		'name' => $experienceLabelName,
-		'singular_name' => $experienceLabelName
-	),
-	'public' => true,
-	'menu_position' =>5,
-	'has_archive' => true,
-	'supports' => array('title','editor','excerpt','thumbnail','author')
-	)
+		array(
+			'labels' => array(
+				'name' => $experienceLabelName,
+				'singular_name' => $experienceLabelName
+			),
+			'public' => true,
+			'menu_position' => 5,
+			'has_archive' => true,
+			'supports' => array('title','editor','excerpt','thumbnail','author'),
+		)
 	);
 	// Add information category
 	register_taxonomy(
@@ -54,10 +60,11 @@ function biz_vektor_experience_create_post_type() {
 			'label' => $experienceLabelName._x(' category','admin menu', 'biz-vektor'),
 			'singular_label' => $experienceLabelName._x(' category','admin menu', 'biz-vektor'),
 			'public' => true,
-			'show_ui' => true,
+			'show_ui' => true
 		)
 	);
 }
+
 
 add_action( 'generate_rewrite_rules', 'biz_vektor_experience_set_rewrite' );
 function biz_vektor_experience_set_rewrite( $wp_rewrite ){
@@ -420,6 +427,40 @@ function biz_vektor_question_create_post_type() {
 			'singular_label' => $questionLabelName._x(' category','admin menu', 'biz-vektor'),
 			'public' => true,
 			'show_ui' => true,
+		)
+	);
+}
+
+
+add_action( 'init', 'create_my_taxonomies', 0 );
+function create_my_taxonomies() {
+	register_taxonomy(
+		'primary-tags',
+		array( 'post', 'experience', 'question' ),
+		array(
+			'hierarchical' => true,
+			'update_count_callback' => '_update_post_term_count',
+			'label' => 'Primary tags',
+			'public' => true,
+			'show_ui' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'primary-tags' ),
+			'singular_label' => 'Primary tag'
+		)
+	);
+
+	register_taxonomy(
+		'secondary-tags',
+		array( 'post', 'experience', 'question' ),
+		array(
+			'hierarchical' => true,
+			'update_count_callback' => '_update_post_term_count',
+			'label' => 'Secondary tags',
+			'public' => true,
+			'show_ui' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'secondary-tags' ),
+			'singular_label' => 'Secondary tag'
 		)
 	);
 }

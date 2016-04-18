@@ -130,8 +130,22 @@ $clinic_by_category = get_posts( $args );
 		            <div class="tagTermsWrap">
 		              <ul>
 		                <?php
-		                $tags = wp_get_post_tags( get_the_id() );
-		                foreach ($tags as $tag) { ?>
+										$primary_tags = wp_get_post_terms( get_the_id() , 'primary-tags');
+		                foreach ($primary_tags as $tag) { ?>
+		                  <li>
+		                    <a class="card--tag-link" href="<?php echo get_term_link( $tag->term_id ); ?> ">
+		                      <?php echo $tag->name; ?>
+		                    </a>
+		                  </li>
+		                <?php } ?>
+		              </ul>
+		            </div>
+
+								<div class="tagTermsWrap">
+		              <ul>
+		                <?php
+										$secondary_tags = wp_get_post_terms( get_the_id() , 'secondary-tags');
+		                foreach ($secondary_tags as $tag) { ?>
 		                  <li>
 		                    <a class="card--tag-link" href="<?php echo get_term_link( $tag->term_id ); ?> ">
 		                      <?php echo $tag->name; ?>
