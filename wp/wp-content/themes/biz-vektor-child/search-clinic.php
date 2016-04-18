@@ -94,7 +94,7 @@ $custom_query = new WP_Query( $merged_args );
     }
 
     if( isset($post_search) && $post_search != '') {
-      if( (isset($post_category_slug) && $post_category_slug != '') || (isset($post_tag_slug) && $post_tag_slug != '')) {
+      if( (isset($post_category_slug) && $post_category_slug != '') || (isset($post_tag_slug) && $post_tag_slug != '')|| (isset($post_tag_slug_2) && $post_tag_slug_2 != '') ){
         $page_title .= ' × '. $post_search;
       }
       else {
