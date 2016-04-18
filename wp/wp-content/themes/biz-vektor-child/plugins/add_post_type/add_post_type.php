@@ -27,11 +27,6 @@ function biz_vektor_posttype_beacon($flag){
 /*	Custom post type _ add Questions
 /*-------------------------------------------*/
 
-function myprefix_unregister_tags() {
-    unregister_taxonomy_for_object_type('post_tag', 'post');
-}
-add_action('init', 'myprefix_unregister_tags');
-
 
 add_post_type_support( 'experience', 'front-end-editor' );
 
@@ -434,20 +429,20 @@ function biz_vektor_question_create_post_type() {
 
 add_action( 'init', 'create_my_taxonomies', 0 );
 function create_my_taxonomies() {
-	register_taxonomy(
-		'primary-tags',
-		'post',
-		array(
-			'hierarchical' => true,
-			'update_count_callback' => '_update_post_term_count',
-			'label' => 'Primary tags',
-			'public' => true,
-			'show_ui' => true,
-			'query_var' => true,
-			'rewrite' => array( 'slug' => 'primary-tags' ),
-			'singular_label' => 'Primary tag'
-		)
-	);
+	// register_taxonomy(
+	// 	'primary-tags',
+	// 	'post',
+	// 	array(
+	// 		'hierarchical' => true,
+	// 		'update_count_callback' => '_update_post_term_count',
+	// 		'label' => 'Primary tags',
+	// 		'public' => true,
+	// 		'show_ui' => true,
+	// 		'query_var' => true,
+	// 		'rewrite' => array( 'slug' => 'primary-tags' ),
+	// 		'singular_label' => 'Primary tag'
+	// 	)
+	// );
 
 	register_taxonomy(
 		'secondary-tags',

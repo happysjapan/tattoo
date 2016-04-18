@@ -8,68 +8,36 @@ global $biz_vektor_options;
 global $query_string;
 parse_str($query_string, $query_array);
 
-$taxonomy = 'primary-tags';
-$post_term = get_terms( $taxonomy, 'slug='.$post_tag_slug);
-$post_term_id = $post_term[0]->term_id;
-
 $taxonomy_2 = 'secondary-tags';
 $post_term_2 = get_terms( $taxonomy_2, 'slug='.$post_tag_slug_2);
 $post_term_id_2 = $post_term_2[0]->term_id;
 
 if( isset($post_search)) {
-  if( (isset($post_tag_slug) && $post_tag_slug != '') && (isset($post_tag_slug_2) && $post_tag_slug_2 != '') ) {
+  if( isset($post_tag_slug_2) && $post_tag_slug_2 != '' ) {
     $post_args = array(
       's'             => $post_search,
       'post_type'     => 'post',
       'category_name' => $post_category_slug,
+      'tag'              => $post_tag_slug,
       'posts_per_page'   => 5,
       'paged' => $paged,
       'tax_query' => array(
-        'relation' => 'AND',
-        array(
-          'taxonomy' => $taxonomy,
-          'field' => 'term_id',
-          'terms' => $post_term_id
-        ),
         array(
           'taxonomy' => $taxonomy_2,
           'field' => 'term_id',
           'terms' => $post_term_id_2
         )
-      ),
+      )
     );
   }
-  else if( isset($post_tag_slug) && $post_tag_slug != '' ){
+  else {
     $post_args = array(
       's'             => $post_search,
       'post_type'     => 'post',
       'category_name' => $post_category_slug,
+      'tag'              => $post_tag_slug,
       'posts_per_page'   => 5,
       'paged' => $paged,
-      'tax_query' => array(
-        array(
-          'taxonomy' => $taxonomy,
-          'field' => 'term_id',
-          'terms' => $post_term_id
-        )
-      ),
-    );
-  }
-  else if( isset($post_tag_slug_2) && $post_tag_slug_2 != '' ){
-    $post_args = array(
-      's'             => $post_search,
-      'post_type'     => 'post',
-      'category_name' => $post_category_slug,
-      'posts_per_page'   => 5,
-      'paged' => $paged,
-      'tax_query' => array(
-        'relation' => 'AND',
-        array(
-          'taxonomy' => $taxonomy_2,
-          'field' => 'term_id',
-          'terms' => $post_term_id_2
-        )
-      ),
     );
   }
 }
@@ -83,6 +51,10 @@ else {
 
 $merged_args = array_merge($query_array, $post_args);
 $custom_query = new WP_Query( $merged_args );
+
+// echo "<pre>";
+// var_dump($custom_query);
+
 ?>
 <?php get_header(); ?>
 

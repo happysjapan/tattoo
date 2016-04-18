@@ -11,7 +11,7 @@
             <div class="tagTermsWrap">
               <ul>
                 <?php
-                $primary_tags = wp_get_post_terms( get_the_id() , 'primary-tags');
+                $primary_tags = wp_get_post_tags( get_the_id());
                 foreach ($primary_tags as $tag) { ?>
                   <li>
                     <a class="card--tag-link" href="<?php echo get_term_link( $tag->term_id ); ?> ">

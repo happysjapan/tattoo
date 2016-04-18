@@ -19,7 +19,7 @@
     );
     $categories = get_categories($args);
 
-    $primary_tags = get_terms('primary-tags');
+    $primary_tags = get_tags();
     $secondary_tags = get_terms('secondary-tags');
     ?>
 
@@ -69,7 +69,7 @@
           <option value="">条件 2</option>
           <?php
             $post_tag_slug_2 = $_GET['subtag'];
-            
+
             foreach ($secondary_tags as $tag_elem) {
               if( $post_tag_slug_2 == $tag_elem->slug ) {
                 echo '<option value="'.$tag_elem->slug.'" selected>'.$tag_elem->name.'</option>';
