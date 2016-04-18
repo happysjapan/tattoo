@@ -1,0 +1,8 @@
+wp/wp-content/plugins/
+wp/wp-admin/
+wp/wp-includes/
+wp/wp-content/languages/
+wp/*.php
+wp/readme.html
+wp/.htaccess
+wp/license.txt
