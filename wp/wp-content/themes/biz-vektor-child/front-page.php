@@ -5,6 +5,7 @@
 	<div id="content" class="content frontpage">
 	<?php biz_vektor_contentMain_before();?>
 	<div id="content-main">
+	<?php echo do_shortcode('[contentblock id=list-pricesample]'); ?>
 
 	<form name="searchform1" id="searchform1" method="get" action="<?php bloginfo( 'url' ); ?>/clinic">
 	<div class="areaSearch">
@@ -151,6 +152,8 @@
 
 	</div><!-- /areaSearch -->
 	</form>
+
+	<?php echo do_shortcode('[contentblock id=about_keshipedia]'); ?>
 <?php
 if ( biz_vektor_is_plugin_enable('widgets') && is_active_sidebar( 'top-main-widget-area' ) ) :
 
