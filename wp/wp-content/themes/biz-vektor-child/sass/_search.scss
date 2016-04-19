@@ -1,6 +1,6 @@
 
-/* =================================================== 
-	全国の就労移行支援事業所を探す 
+/* ===================================================
+	全国の就労移行支援事業所を探す
 	セミナー・説明会検索  ▼
 ===================================================  */
 
@@ -22,6 +22,7 @@
 		h2 {
 			@extend %greenTitle;
 			padding: 8px 10px;
+			text-align: center;
 		}
 		.inner {
 			padding: 30px;
@@ -50,14 +51,14 @@
 					width: 160px;
 					margin: 20px auto 0;
 					padding: 12px;
-					background-color: $color-green;
+					background-color: $color-darkBlue;
 					float: none;
 					@include font-size(1.5);
 				}
 			}
 		}
 
-		&.for_lawyer .inner { //全国の就労移行支援事業所検索用スタイル
+		&.for_clinic .inner { //全国の就労移行支援事業所検索用スタイル
 			form#searchform {
 				display: block;
 				width: 90%;
@@ -71,7 +72,7 @@
 				input#s {margin-top: 20px;}
 			}
 
-			@include SP { 
+			@include SP {
 				padding: 20px;
 				form#searchform {
 					width: 100%;
