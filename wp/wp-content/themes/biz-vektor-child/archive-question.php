@@ -24,8 +24,17 @@
 
       ?>
 
-      <div class="row">
+      <?php
+      $i=0;
+      ?>
         <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
+          <?php if( $i == 0 ){ ?>
+            <div class="row">
+          <?php }
+          else if( $i%3 == 0 ){ ?>
+            </div>
+            <div class="row">
+          <?php } ?>
           <?php get_template_part( 'includes/category', 'question-panel' ); $i++; ?>
         <?php endwhile; ?>
       </div>
