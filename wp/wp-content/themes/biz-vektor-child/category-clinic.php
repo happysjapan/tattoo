@@ -27,6 +27,8 @@
     <section class="searchArea">
       <p class="searchDescription"><?php echo do_shortcode('[contentblock id=office_description]'); ?></p>
       <?php get_template_part( 'includes/category', 'clinic-search' ); ?>
+
+      <?php echo do_shortcode('[contentblock id=panel_consult]'); ?>
     </section>
     <!-- [ /#search ] -->
 

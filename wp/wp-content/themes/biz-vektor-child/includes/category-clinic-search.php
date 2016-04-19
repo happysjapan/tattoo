@@ -99,5 +99,3 @@
     <!-- [ /#search form ] -->
   </div>
 </div>
-
-<?php echo do_shortcode('[contentblock id=panel_consult]'); ?>
