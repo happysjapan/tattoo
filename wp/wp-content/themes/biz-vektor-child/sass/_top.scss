@@ -10,46 +10,6 @@
 			display: block;
 			margin-bottom: 15px;
 		}
-		 .SideListWrap {
-			margin-bottom: 15px;
-			h3 {
-				padding: 4px 10px;
-				background-color: #0e6c3d;
-				color: #fff;
-				font-size: 90%;
-			}
-			> div {
-				border: 1px solid #ccc;
-				ul {
-					li {
-						border-bottom: 1px dotted #ccc;
-						a {
-							display: block;
-							padding: 6px 10px;
-							color: $color-blue;
-							font-size: 80%;
-							background-image: none;
-							p {
-
-							}
-						}
-					}
-				}
-				.more {
-					a {
-						display: block;
-						padding: 4px 10px;
-						text-align: right;
-						text-decoration: none;
-						color: $color-blue;
-						font-size: 80%;
-						&:hover {
-							background-color: #efefef;
-						}
-					}
-				}
-			}
-		}
 		.ThumbnailList {
 			> div ul li a {
 				display: table;
@@ -263,97 +223,139 @@
 		}
 	}
 
-
-	/* 新着事業所一覧 ▼
+	/* 体験談・疑問 ▼ experience & question lists
 	-------------------------------------------- */
-
-	.postInFrontPage {
-		margin-bottom: 40px;
-		h2 {
-			@extend %greenTitle;
-			padding: 6px 10px;
+	 .postList {
+		margin-bottom: 15px;
+		h3 {
+			padding: 4px 10px;
+			background-color: $color-lightBlue;
+			color: #fff;
+			font-size: 90%;
 		}
-		.inner {
-			padding: 20px;
-			border-left: 1px solid $color-grey;
-			border-right: 1px solid $color-grey;
-			border-bottom: 1px solid $color-grey;
-		}
-		ul {
-			@include clearfix;
-			margin: 0;
-			li {
-				margin-right: 30px;
-				margin-bottom: 20px;
-				float: left;
-				list-style: none;
-				&:nth-child(3n)  {margin-right: 0;}
-				@include calc(width,'100%/3 - 20px');
-				div {
-					display: block;
-					text-align: center;
-					p {
-						margin-bottom: 3px;
-						text-align: left;
-						color: $color-blue;
-					}
-					.ttl {
-						font-weight: bold;
-					}
-					.desc {
-						@include font-size(1.2);
-						@include line-height(1.6);
-						color: #333;
-					}
-					.reward {
-						@include font-size(1.2);
-						@include line-height(1.6);
-					}
-					img {
-						display: inline-block;
-						width: 180px;
-						height: auto;
-						margin-top: 10px;
-					}
-					a.btn {
+		> div {
+			border: 1px solid #ccc;
+			ul {
+				li {
+					border-bottom: 1px dotted #ccc;
+					a {
 						display: block;
-						width: 90px;
-						margin: 10px auto 0;
-						padding: 6px;
-						background-color: #48b420;
-						color: #fff;
-						@include font-size(1.5);
-						text-align: center;
-						&:hover {
-							@include opacity(.9);
-							text-decoration: none;
+						padding: 6px 10px;
+						color: $color-blue;
+						font-size: 80%;
+						background-image: none;
+						p {
+
 						}
 					}
 				}
 			}
-		}
-
-		.more {
-			text-align: right;
-		}
-
-		a {
-			color: $color-blue;
-			text-decoration: none;
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-		@include SP {
-			ul li {
-				margin-right: 20px;
-				float: left;
-				&:nth-child(3n)  {margin-right: 20px;}
-				&:nth-child(2n)  {margin-right: 0;}
-				@include calc(width,'100%/2 - 10px');
+			.more {
+				a {
+					display: block;
+					padding: 4px 10px;
+					text-align: right;
+					text-decoration: none;
+					color: $color-blue;
+					font-size: 80%;
+					&:hover {
+						background-color: #efefef;
+					}
+				}
 			}
 		}
 	}
+
+	/* 新着事業所一覧 ▼
+	-------------------------------------------- */
+
+	// .postInFrontPage {
+	// 	margin-bottom: 40px;
+	// 	h2 {
+	// 		@extend %greenTitle;
+	// 		padding: 6px 10px;
+	// 	}
+	// 	.inner {
+	// 		padding: 20px;
+	// 		border-left: 1px solid $color-grey;
+	// 		border-right: 1px solid $color-grey;
+	// 		border-bottom: 1px solid $color-grey;
+	// 	}
+	// 	ul {
+	// 		@include clearfix;
+	// 		margin: 0;
+	// 		li {
+	// 			margin-right: 30px;
+	// 			margin-bottom: 20px;
+	// 			float: left;
+	// 			list-style: none;
+	// 			&:nth-child(3n)  {margin-right: 0;}
+	// 			@include calc(width,'100%/3 - 20px');
+	// 			div {
+	// 				display: block;
+	// 				text-align: center;
+	// 				p {
+	// 					margin-bottom: 3px;
+	// 					text-align: left;
+	// 					color: $color-blue;
+	// 				}
+	// 				.ttl {
+	// 					font-weight: bold;
+	// 				}
+	// 				.desc {
+	// 					@include font-size(1.2);
+	// 					@include line-height(1.6);
+	// 					color: #333;
+	// 				}
+	// 				.reward {
+	// 					@include font-size(1.2);
+	// 					@include line-height(1.6);
+	// 				}
+	// 				img {
+	// 					display: inline-block;
+	// 					width: 180px;
+	// 					height: auto;
+	// 					margin-top: 10px;
+	// 				}
+	// 				a.btn {
+	// 					display: block;
+	// 					width: 90px;
+	// 					margin: 10px auto 0;
+	// 					padding: 6px;
+	// 					background-color: #48b420;
+	// 					color: #fff;
+	// 					@include font-size(1.5);
+	// 					text-align: center;
+	// 					&:hover {
+	// 						@include opacity(.9);
+	// 						text-decoration: none;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.more {
+	// 		text-align: right;
+	// 	}
+
+	// 	a {
+	// 		color: $color-blue;
+	// 		text-decoration: none;
+	// 		&:hover {
+	// 			text-decoration: underline;
+	// 		}
+	// 	}
+	// 	@include SP {
+	// 		ul li {
+	// 			margin-right: 20px;
+	// 			float: left;
+	// 			&:nth-child(3n)  {margin-right: 20px;}
+	// 			&:nth-child(2n)  {margin-right: 0;}
+	// 			@include calc(width,'100%/2 - 10px');
+	// 		}
+	// 	}
+	// }
 
 	/* Public Relations ▼
 	-------------------------------------------- */

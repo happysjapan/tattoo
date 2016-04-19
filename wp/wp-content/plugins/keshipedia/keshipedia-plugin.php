@@ -313,9 +313,8 @@ class keshipedia_experience_widget extends WP_Widget {
 
               <li class="ttBox" id="post-<?php echo get_the_id(); ?>">
                 <div>
-                    <h3 class="ptTitle"><?php echo the_title(); ?></h3>
+                    <h4 class="ptTitle"><?php echo the_title(); ?></h4>
                     <div class="prImage"><img src="<?php echo get_field('pr_image'); ?>" alt="<?php echo the_title(); ?>" /></div>
-                    <div class="prDescription"><?php echo the_content(); ?></div>
                    <div class="moreLink"><a href="<?php echo get_field('pr_link'); ?>">詳しくはこちら</a></div>
                 </div>
               </li>
@@ -400,7 +399,7 @@ class keshipedia_question_widget extends WP_Widget {
 
               <li class="ttBox" id="post-<?php echo get_the_id(); ?>">
                 <div>
-                    <h3 class="ptTitle"><?php echo the_title(); ?></h3>
+                    <h4 class="ptTitle"><?php echo the_title(); ?></h4>
                     <div class="prImage"><img src="<?php echo get_field('pr_image'); ?>" alt="<?php echo the_title(); ?>" /></div>
                     <div class="prDescription"><?php echo the_content(); ?></div>
                    <div class="moreLink"><a href="<?php echo get_field('pr_link'); ?>">詳しくはこちら</a></div>
