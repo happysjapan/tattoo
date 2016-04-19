@@ -428,7 +428,7 @@ class WP_Widget_taxonomy_list extends WP_Widget {
 			'_builtin'		=> false,
 		);
 		$instance = wp_parse_args((array) $instance, $defaults);
-		$taxs = get_taxonomies( array('public'=> true),'objects'); 
+		$taxs = get_taxonomies( array('public'=> true),'objects');
 		?>
 		<p>
 		<label for="<?php echo $this->get_field_id('label'); ?>"><?php _e( 'Label to display', 'biz-vektor' ); ?></label>
@@ -629,9 +629,9 @@ class WP_Widget_bizvektor_post_list extends WP_Widget {
 		<?php // Terms ?>
 		<label for="<?php echo $this->get_field_id('terms'); ?>"><?php _e('taxonomy ID', 'biz-vektor') ?>:</label><br />
 		<input type="text" id="<?php echo $this->get_field_id('terms'); ?>" name="<?php echo $this->get_field_name('terms'); ?>" value="<?php echo esc_attr($instance['terms']) ?>" /><br />
-		<?php _e('if you need filtering by term, add the term ID separate by ",".', 'biz-vektor'); 
+		<?php _e('if you need filtering by term, add the term ID separate by ",".', 'biz-vektor');
 		echo "<br/>";
-		_e('if empty this area, I will do not filtering.', 'biz-vektor'); 
+		_e('if empty this area, I will do not filtering.', 'biz-vektor');
 		echo "<br/><br/>";
 
 	}
