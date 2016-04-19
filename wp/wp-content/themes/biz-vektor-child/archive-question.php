@@ -35,7 +35,9 @@
             </div>
             <div class="row">
           <?php } ?>
-          <?php get_template_part( 'includes/category', 'question-panel' ); $i++; ?>
+          <div class="medium-4 columns end">
+            <?php get_template_part( 'includes/category', 'question-panel' ); $i++; ?>
+          </div>
         <?php endwhile; ?>
       </div>
       <!-- pagination -->
