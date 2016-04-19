@@ -118,14 +118,14 @@ $SPPoint:    768px;
     border: none;
     @include font-size(1.8);
 }
-%lightBlueTitle {
+%boxTitle {
     margin: 0;
     background-color: $color-lightBlue;
     color: #fff;
     border: none;
     @include font-size(1.8);
 }
-.btn {
+a.btn {
   display: inline-block;
   padding: 10px;
   color: #fff;
@@ -137,6 +137,9 @@ $SPPoint:    768px;
   @include box-sizing(border-box);
   border: none;
   text-decoration: none;
+  &:hover {
+      color: #fff;
+  }
 }
 %btnList {
     .btnWrap {
