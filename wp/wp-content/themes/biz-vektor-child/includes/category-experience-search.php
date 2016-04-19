@@ -30,13 +30,5 @@
     </form>
     <!-- [ /#search form ] -->
 
-    <!-- [ #search calendar ] -->
-    <div class="calenderWrap">
-      <?php
-        if ( is_active_sidebar( 'experience-search-right-widget-area' ) ) dynamic_sidebar( 'experience-search-right-widget-area' );
-      ?>
-    </div>
-    <!-- [ /#search calendar ] -->
-
   </div>
 </div>
