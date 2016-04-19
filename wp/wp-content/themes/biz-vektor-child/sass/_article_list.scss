@@ -114,3 +114,36 @@
 		}
 	}
 }
+
+
+/*
+** Question card
+*/
+
+.content .question-card {
+	position: relative;
+	padding-bottom: 2.6rem;
+
+	&--image {
+		display: block;
+		width: 100%;
+		max-width: 360px;
+		margin: 0 auto 14px;
+	}
+
+	&--title {
+		margin: 14px 0;
+	}
+
+	&.article .inner .profileWrap,
+	&.article .inner .detailWrap {
+		display: block;
+	}
+
+	&--linkToDetail {
+		position: absolute;
+		display: block;
+		width: 100%;
+		bottom: 0;
+	}
+}
