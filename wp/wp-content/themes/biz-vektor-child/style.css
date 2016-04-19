@@ -1409,6 +1409,41 @@ body > #wrap {
   margin: 0;
 }
 
+/*
+** Question card
+*/
+/* line 123, sass/_article_list.scss */
+.content .question-card {
+  position: relative;
+  padding-bottom: 2.6rem;
+}
+/* line 127, sass/_article_list.scss */
+.content .question-card--image {
+  width: 100%;
+}
+/* line 130, sass/_article_list.scss */
+.content .question-card--image-holder {
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 18px;
+}
+/* line 138, sass/_article_list.scss */
+.content .question-card--title {
+  margin: 14px 0;
+}
+/* line 142, sass/_article_list.scss */
+.content .question-card.article .inner .profileWrap, .content .question-card.article .inner .detailWrap {
+  display: block;
+}
+/* line 147, sass/_article_list.scss */
+.content .question-card--linkToDetail {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+}
+
 /* ===================================================
 	全国の就労移行支援事業所を探す
 	セミナー・説明会検索  ▼
@@ -2159,4 +2194,108 @@ form#searchform {
 /* line 27, sass/_single-info.scss */
 .info .btnWrap a.btnBlue {
   background-color: #2180ac;
+}
+
+/*
+** Table display
+*/
+/*
+ * Table display
+ */
+/* line 10, sass/_table-display.scss */
+.table, .table__onecells, .table__twocells, .table__threecells, .table__fourcells {
+  display: block;
+  table-layout: fixed;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 840px) {
+  /* line 10, sass/_table-display.scss */
+  .table, .table__onecells, .table__twocells, .table__threecells, .table__fourcells {
+    display: table;
+  }
+}
+/* line 22, sass/_table-display.scss */
+.force-table.table, .force-table.table__onecells, .force-table.table__twocells, .force-table.table__threecells, .force-table.table__fourcells {
+  display: table;
+}
+/* line 23, sass/_table-display.scss */
+.table .columns, .table__onecells .columns, .table__twocells .columns, .table__threecells .columns, .table__fourcells .columns {
+  float: none;
+}
+/* line 24, sass/_table-display.scss */
+.uncollapse.table, .uncollapse.table__onecells, .uncollapse.table__twocells, .uncollapse.table__threecells, .uncollapse.table__fourcells {
+  border-collapse: separate;
+  border-spacing: 2rem 1rem;
+}
+
+/* line 31, sass/_table-display.scss */
+.table--cell {
+  display: block;
+  margin: 40px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 840px) {
+  /* line 31, sass/_table-display.scss */
+  .table--cell {
+    display: table-cell;
+    margin: 0;
+  }
+}
+/* line 44, sass/_table-display.scss */
+.force-table .table--cell {
+  display: table-cell;
+}
+
+/* line 47, sass/_table-display.scss */
+.table-row {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 840px) {
+  /* line 47, sass/_table-display.scss */
+  .table-row {
+    display: table-row;
+  }
+}
+/* line 57, sass/_table-display.scss */
+.force-table .table-row {
+  display: table-row;
+}
+
+/*
+ * Table layout
+ */
+@media only screen and (min-width: 840px) {
+  /* line 71, sass/_table-display.scss */
+  .table__onecells .table--cell {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  /* line 81, sass/_table-display.scss */
+  .table__twocells .table--cell {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  /* line 91, sass/_table-display.scss */
+  .table__threecells .table--cell {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  /* line 101, sass/_table-display.scss */
+  .table__fourcells .table--cell {
+    width: 25%;
+  }
 }
