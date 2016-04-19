@@ -43,8 +43,7 @@ function do_head_contact_custom($headContact){
         $headContact .= '
         </div>
         <div class="btnWrap">
-			<a href="/contact-form/" title="お問合せ資料請求" class="contact">お問合せ<br />資料請求</a>
-			<a href="/tour-form/" title="見学の申し込み" class="apply">見学の<br />申し込み</a>
+			<a href="/contact-form/" title="メールで相談" class="contact">メールで相談</a>
         </div>
         <div class="rightBox">
         	<ul class="snsBtn">
@@ -67,13 +66,9 @@ function do_head_contact_custom($headContact){
         	</ul>
             <div class="totalWrap">
             	<dl class="total">
-    				<dt>掲載相談所数</dt>
+    				<dt>掲載病院/クリニック数</dt>
     				<dd>'.$count_clinics->publish.'件</dd>
     			</dl>
-    			<dl class="total">
-    				<dt>お祝い金総支給額</dt>
-    				<dd>'.$total_cash.'円</dd>
-            	</dl>
             </div>
         </div>
         </div></div>

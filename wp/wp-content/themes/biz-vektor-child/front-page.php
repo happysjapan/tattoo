@@ -5,10 +5,11 @@
 	<div id="content" class="content frontpage">
 	<?php biz_vektor_contentMain_before();?>
 	<div id="content-main">
+	<?php echo do_shortcode('[contentblock id=list-pricesample]'); ?>
 
 	<form name="searchform1" id="searchform1" method="get" action="<?php bloginfo( 'url' ); ?>/clinic">
 	<div class="areaSearch">
-		<h2>全国の就労移行支援事業所を検索</h2>
+		<h2>地域と条件から病院を探す</h2>
 		<div class="searchInner">
 		<ul class="listP">
 
@@ -144,13 +145,15 @@
 		</ul>
 		<div class="searchText">
 			<input type="hidden" name="post_type" value="clinic" />
-			<input name="s" id="s" value="<?php echo wp_specialchars($s, 1); ?>" type="text" placeholder="ヨツバノハ就労移行支援事業所" class="topSearch"/>
+			<input name="s" id="s" value="<?php echo wp_specialchars($s, 1); ?>" type="text" placeholder="消しペディア病院／クリニック" class="topSearch"/>
 			<input type="submit" value="検索" id="submit" class="btnGreen" />
 		</div>
 	</div><!-- /searchInner -->
 
 	</div><!-- /areaSearch -->
 	</form>
+
+	<?php echo do_shortcode('[contentblock id=about_keshipedia]'); ?>
 <?php
 if ( biz_vektor_is_plugin_enable('widgets') && is_active_sidebar( 'top-main-widget-area' ) ) :
 

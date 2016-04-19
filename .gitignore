@@ -6,3 +6,4 @@ wp/*.php
 wp/readme.html
 wp/.htaccess
 wp/license.txt
+*.scssc

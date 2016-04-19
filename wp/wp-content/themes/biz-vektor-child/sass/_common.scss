@@ -70,7 +70,7 @@ body > #wrap {
 					@include font-size(1.5);
 					@include line-height(2.2);
 					span {
-						color: $color-green;
+						color: $color-blue;
 					}
 				}
 				&.telNumTime {
@@ -91,15 +91,15 @@ body > #wrap {
 					a {
 						display: inline-block;
 						margin-right: 4px;
-						padding: 6px 12px;
+						padding: 10px 12px;
 						color: #fff;
 						text-decoration: none;
-						@include font-size(1.1);
-						@include line-height(1.5);
-						@include border-radius(6px);
+						@include font-size(1.4);
+						@include line-height(2);
+						@include border-radius(5px);
 						text-align: center;
 						&.contact {
-							background-color: $color-lightGreen;
+							background-color: $color-blue;
 						}
 						&.apply {
 							background-color: #2180ac;
@@ -453,7 +453,7 @@ body > #wrap {
 		padding: 3px 20px;
 		border: none;
 		color: #fff;
-		background: $color-lightGreen;
+		background: $color-blue;
 		&:hover {@include opacity(.9);}
 	}
 }
