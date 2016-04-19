@@ -1,5 +1,5 @@
-<div class="searchBox for_seminar">
-  <h2>Experience</h2>
+<div class="searchBox for_experience">
+  <h2>地域・条件から病院／クリニックを探す</h2>
   <div class="inner">
 
     <!-- [ #search form ] -->

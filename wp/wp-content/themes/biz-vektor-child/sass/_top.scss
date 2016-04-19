@@ -126,7 +126,7 @@
 		margin-bottom: 40px;
 
 		> h2:first-child {
-			@extend %lightBlueTitle;
+			@extend %boxTitle;
 			padding: 8px 10px;
 		}
 		.searchTitle {

@@ -20,7 +20,7 @@
 		width: 580px;
 		float: left;
 		h2 {
-			@extend %greenTitle;
+			@extend %boxTitle;
 			padding: 8px 10px;
 		}
 		.inner {
@@ -50,9 +50,12 @@
 					width: 160px;
 					margin: 20px auto 0;
 					padding: 12px;
-					background-color: $color-green;
+					background-color: $color-blue;
 					float: none;
 					@include font-size(1.5);
+					&:hover {
+			     	 	background-color: darken($color-blue,10%);
+					}
 				}
 			}
 		}
@@ -89,8 +92,7 @@
 				}
 			}
 		}
-		&.for_seminar {
-			width: 100%;
+		&.for_experience {
 			.inner { //セミナー検索用スタイル
 				padding: 20px 60px 10px;
 				form#searchform {
@@ -99,21 +101,6 @@
 					margin-top: 40px;
 					input#s {margin-top: 10px;}
 					input#searchsubmit {margin-top: 30px;}
-				}
-				.calenderWrap {
-					display: inline-block;
-					vertical-align: top;
-					margin-left: 100px;
-					h3 {
-						margin: 0 0 10px 0;
-						padding: 0;
-						border: none;
-						@include font-size(1.5);
-						text-align: center;
-					}
-					.wp_calendar {
-						/* written in wp_calendar.css*/
-					}
 				}
 			}
 			@include SP {
@@ -139,19 +126,6 @@
 							margin-bottom: 20px;
 						}
 					}
-					.calenderWrap {
-						display: block;
-						margin: 40px auto 0;
-						float: none;
-						.widget_calendar_medium_size {width: auto;}
-						#calendar_wrap .wp-cal-datepicker-calendar {
-							position: relative;
-							tr td .wp-cal-tooltip {
-								left: 0;
-								top: 176px;
-							}
-						}
-					}
 				}
 			}
 		}
@@ -166,7 +140,11 @@
 		.btn {
 			margin-top: 10px;
 			padding: 10px;
-			background-color: $color-lightGreen;
+			background-color: $color-lightBlue;
+			  &:hover {
+			      color: #fff;
+			      background-color: darken($color-lightBlue,10%);
+			  }
 		}
 	}
 	.btn {
