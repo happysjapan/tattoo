@@ -2,7 +2,6 @@
     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . 'Pages:', 'after' => '</div>' ) ); ?>
     <div class="officeWrap">
       <div class="inner">
-        <h3 class="title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
         <div class="profileWrap">
           <div class="leftWrap">
             <img src="<?php echo get_field('office_image'); ?>" alt="<?php the_title(); ?>" />
@@ -38,25 +37,25 @@
 
           </div>
           <div class="detailWrap">
-            <div class="textWrap">
-              <p class="text"><?php echo get_field('office_introduction'); ?></p>
-              <p class="fee">お祝い金：<?php echo get_field('reward'); ?>円</p>
+            <h3 class="title clinic--title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+            <div class="clinic--intro">
+              <?php echo get_field('clinic_introduction'); ?>
             </div>
             <table>
               <tr>
                 <th>住所</th>
-                <td><?php echo get_field('office_address'); ?></td>
+                <th><?php echo get_field('office_address'); ?></th>
               </tr>
               <tr>
-                <th>アクセス</th>
+                <td>アクセス</td>
                 <td><?php echo get_field('office_access'); ?></td>
               </tr>
               <tr>
-                <th>定員</th>
+                <td>定員</td>
                 <td><?php echo get_field('office_capacity'); ?>人</td>
               </tr>
               <tr>
-                <th>プログラム<br />提供時間</th>
+                <td>プログラム<br />提供時間</td>
                 <td><?php echo get_field('office_time'); ?></td>
               </tr>
             </table>
@@ -64,7 +63,7 @@
         </div>
         <div class="btnWrap">
           <a href="tel:0120-697-182" title="無料電話相談" class="btnLightGreen" onclick="ga('send', 'event', '電話リンク', 'タップ', '一覧ボタン');">無料電話相談</a>
-          <a href="/contact-form/?office=<?php the_title(); ?>" title="資料請求" class="btnLightBlue">資料請求</a>
+          <!-- <a href="/contact-form/?office=<?php the_title(); ?>" title="資料請求" class="btnLightBlue">資料請求</a> -->
           <a href="/tour-form/?office=<?php the_title(); ?>" title="見学会へ参加" class="btnBlue">見学会へ参加</a>
         </div>
       </div>

@@ -52,7 +52,7 @@
 			}
 			.detailWrap {
 				display: table-cell;
-				table {margin: 0 0 12px;}
+				table {margin: 18px 0 12px;}
 			}
 		}
 		@extend %btnList;
@@ -82,7 +82,7 @@
 		@include line-height(2);
 		text-align: center;
 		color: #fff;
-		background-color: $color-green;
+		background-color: $color-lightBlue;
 		text-decoration: none;
 		&:hover {@include opacity(.9);}
 	}
@@ -91,6 +91,26 @@
 			div:first-of-type {
 				margin-top: 15px;
 			}
+		}
+	}
+}
+
+
+/*
+** Clinic panel
+*/
+.clinic {
+
+	.content .article .inner &--title {
+		margin-bottom: 14px;
+	}
+
+	&--intro {
+		font-size: 14px;
+		line-height: 14px;
+
+		& p {
+			margin: 0;
 		}
 	}
 }
