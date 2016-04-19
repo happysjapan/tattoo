@@ -829,6 +829,1475 @@ body > #wrap {
   opacity: 0.9;
 }
 
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.0
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS and IE text size adjust after device orientation change,
+   *    without disabling user zoom.
+   */
+/* line 15, sass/_foundation.scss */
+.is-visible {
+  display: block !important;
+}
+
+/* line 18, sass/_foundation.scss */
+.is-hidden {
+  display: none !important;
+}
+
+/* line 21, sass/_foundation.scss */
+.row {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 25, sass/_foundation.scss */
+.row::before, .row::after {
+  content: ' ';
+  display: table;
+  flex-basis: 0;
+  order: 1;
+}
+
+/* line 30, sass/_foundation.scss */
+.row::after {
+  clear: both;
+}
+
+/* line 32, sass/_foundation.scss */
+.row.collapse > .column, .row.collapse > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 35, sass/_foundation.scss */
+.row .row {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+}
+
+/* line 38, sass/_foundation.scss */
+.row .row.collapse {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 41, sass/_foundation.scss */
+.row.expanded {
+  max-width: none;
+}
+
+/* line 43, sass/_foundation.scss */
+.row.expanded .row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 47, sass/_foundation.scss */
+.column, .columns {
+  width: 100%;
+  float: left;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+/* line 52, sass/_foundation.scss */
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+  float: right;
+}
+
+/* line 54, sass/_foundation.scss */
+.column.end:last-child:last-child, .end.columns:last-child:last-child {
+  float: left;
+}
+
+/* line 57, sass/_foundation.scss */
+.column.row.row, .row.row.columns {
+  float: none;
+}
+
+/* line 59, sass/_foundation.scss */
+.row .column.row.row, .row .row.row.columns {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 65, sass/_foundation.scss */
+.small-1 {
+  width: 8.33333%;
+}
+
+/* line 68, sass/_foundation.scss */
+.small-push-1 {
+  position: relative;
+  left: 8.33333%;
+}
+
+/* line 72, sass/_foundation.scss */
+.small-pull-1 {
+  position: relative;
+  left: -8.33333%;
+}
+
+/* line 76, sass/_foundation.scss */
+.small-offset-0 {
+  margin-left: 0%;
+}
+
+/* line 79, sass/_foundation.scss */
+.small-2 {
+  width: 16.66667%;
+}
+
+/* line 82, sass/_foundation.scss */
+.small-push-2 {
+  position: relative;
+  left: 16.66667%;
+}
+
+/* line 86, sass/_foundation.scss */
+.small-pull-2 {
+  position: relative;
+  left: -16.66667%;
+}
+
+/* line 90, sass/_foundation.scss */
+.small-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 93, sass/_foundation.scss */
+.small-3 {
+  width: 25%;
+}
+
+/* line 96, sass/_foundation.scss */
+.small-push-3 {
+  position: relative;
+  left: 25%;
+}
+
+/* line 100, sass/_foundation.scss */
+.small-pull-3 {
+  position: relative;
+  left: -25%;
+}
+
+/* line 104, sass/_foundation.scss */
+.small-offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 107, sass/_foundation.scss */
+.small-4 {
+  width: 33.33333%;
+}
+
+/* line 110, sass/_foundation.scss */
+.small-push-4 {
+  position: relative;
+  left: 33.33333%;
+}
+
+/* line 114, sass/_foundation.scss */
+.small-pull-4 {
+  position: relative;
+  left: -33.33333%;
+}
+
+/* line 118, sass/_foundation.scss */
+.small-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 121, sass/_foundation.scss */
+.small-5 {
+  width: 41.66667%;
+}
+
+/* line 124, sass/_foundation.scss */
+.small-push-5 {
+  position: relative;
+  left: 41.66667%;
+}
+
+/* line 128, sass/_foundation.scss */
+.small-pull-5 {
+  position: relative;
+  left: -41.66667%;
+}
+
+/* line 132, sass/_foundation.scss */
+.small-offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 135, sass/_foundation.scss */
+.small-6 {
+  width: 50%;
+}
+
+/* line 138, sass/_foundation.scss */
+.small-push-6 {
+  position: relative;
+  left: 50%;
+}
+
+/* line 142, sass/_foundation.scss */
+.small-pull-6 {
+  position: relative;
+  left: -50%;
+}
+
+/* line 146, sass/_foundation.scss */
+.small-offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 149, sass/_foundation.scss */
+.small-7 {
+  width: 58.33333%;
+}
+
+/* line 152, sass/_foundation.scss */
+.small-push-7 {
+  position: relative;
+  left: 58.33333%;
+}
+
+/* line 156, sass/_foundation.scss */
+.small-pull-7 {
+  position: relative;
+  left: -58.33333%;
+}
+
+/* line 160, sass/_foundation.scss */
+.small-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 163, sass/_foundation.scss */
+.small-8 {
+  width: 66.66667%;
+}
+
+/* line 166, sass/_foundation.scss */
+.small-push-8 {
+  position: relative;
+  left: 66.66667%;
+}
+
+/* line 170, sass/_foundation.scss */
+.small-pull-8 {
+  position: relative;
+  left: -66.66667%;
+}
+
+/* line 174, sass/_foundation.scss */
+.small-offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 177, sass/_foundation.scss */
+.small-9 {
+  width: 75%;
+}
+
+/* line 180, sass/_foundation.scss */
+.small-push-9 {
+  position: relative;
+  left: 75%;
+}
+
+/* line 184, sass/_foundation.scss */
+.small-pull-9 {
+  position: relative;
+  left: -75%;
+}
+
+/* line 188, sass/_foundation.scss */
+.small-offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 191, sass/_foundation.scss */
+.small-10 {
+  width: 83.33333%;
+}
+
+/* line 194, sass/_foundation.scss */
+.small-push-10 {
+  position: relative;
+  left: 83.33333%;
+}
+
+/* line 198, sass/_foundation.scss */
+.small-pull-10 {
+  position: relative;
+  left: -83.33333%;
+}
+
+/* line 202, sass/_foundation.scss */
+.small-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 205, sass/_foundation.scss */
+.small-11 {
+  width: 91.66667%;
+}
+
+/* line 208, sass/_foundation.scss */
+.small-push-11 {
+  position: relative;
+  left: 91.66667%;
+}
+
+/* line 212, sass/_foundation.scss */
+.small-pull-11 {
+  position: relative;
+  left: -91.66667%;
+}
+
+/* line 216, sass/_foundation.scss */
+.small-offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 219, sass/_foundation.scss */
+.small-12 {
+  width: 100%;
+}
+
+/* line 222, sass/_foundation.scss */
+.small-offset-11 {
+  margin-left: 91.66667%;
+}
+
+/* line 225, sass/_foundation.scss */
+.small-up-1 > .column, .small-up-1 > .columns {
+  width: 100%;
+  float: left;
+}
+
+/* line 228, sass/_foundation.scss */
+.small-up-1 > .column:nth-of-type(1n), .small-up-1 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 230, sass/_foundation.scss */
+.small-up-1 > .column:nth-of-type(1n+1), .small-up-1 > .columns:nth-of-type(1n+1) {
+  clear: both;
+}
+
+/* line 232, sass/_foundation.scss */
+.small-up-1 > .column:last-child, .small-up-1 > .columns:last-child {
+  float: left;
+}
+
+/* line 235, sass/_foundation.scss */
+.small-up-2 > .column, .small-up-2 > .columns {
+  width: 50%;
+  float: left;
+}
+
+/* line 238, sass/_foundation.scss */
+.small-up-2 > .column:nth-of-type(1n), .small-up-2 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 240, sass/_foundation.scss */
+.small-up-2 > .column:nth-of-type(2n+1), .small-up-2 > .columns:nth-of-type(2n+1) {
+  clear: both;
+}
+
+/* line 242, sass/_foundation.scss */
+.small-up-2 > .column:last-child, .small-up-2 > .columns:last-child {
+  float: left;
+}
+
+/* line 245, sass/_foundation.scss */
+.small-up-3 > .column, .small-up-3 > .columns {
+  width: 33.33333%;
+  float: left;
+}
+
+/* line 248, sass/_foundation.scss */
+.small-up-3 > .column:nth-of-type(1n), .small-up-3 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 250, sass/_foundation.scss */
+.small-up-3 > .column:nth-of-type(3n+1), .small-up-3 > .columns:nth-of-type(3n+1) {
+  clear: both;
+}
+
+/* line 252, sass/_foundation.scss */
+.small-up-3 > .column:last-child, .small-up-3 > .columns:last-child {
+  float: left;
+}
+
+/* line 255, sass/_foundation.scss */
+.small-up-4 > .column, .small-up-4 > .columns {
+  width: 25%;
+  float: left;
+}
+
+/* line 258, sass/_foundation.scss */
+.small-up-4 > .column:nth-of-type(1n), .small-up-4 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 260, sass/_foundation.scss */
+.small-up-4 > .column:nth-of-type(4n+1), .small-up-4 > .columns:nth-of-type(4n+1) {
+  clear: both;
+}
+
+/* line 262, sass/_foundation.scss */
+.small-up-4 > .column:last-child, .small-up-4 > .columns:last-child {
+  float: left;
+}
+
+/* line 265, sass/_foundation.scss */
+.small-up-5 > .column, .small-up-5 > .columns {
+  width: 20%;
+  float: left;
+}
+
+/* line 268, sass/_foundation.scss */
+.small-up-5 > .column:nth-of-type(1n), .small-up-5 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 270, sass/_foundation.scss */
+.small-up-5 > .column:nth-of-type(5n+1), .small-up-5 > .columns:nth-of-type(5n+1) {
+  clear: both;
+}
+
+/* line 272, sass/_foundation.scss */
+.small-up-5 > .column:last-child, .small-up-5 > .columns:last-child {
+  float: left;
+}
+
+/* line 275, sass/_foundation.scss */
+.small-up-6 > .column, .small-up-6 > .columns {
+  width: 16.66667%;
+  float: left;
+}
+
+/* line 278, sass/_foundation.scss */
+.small-up-6 > .column:nth-of-type(1n), .small-up-6 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 280, sass/_foundation.scss */
+.small-up-6 > .column:nth-of-type(6n+1), .small-up-6 > .columns:nth-of-type(6n+1) {
+  clear: both;
+}
+
+/* line 282, sass/_foundation.scss */
+.small-up-6 > .column:last-child, .small-up-6 > .columns:last-child {
+  float: left;
+}
+
+/* line 285, sass/_foundation.scss */
+.small-up-7 > .column, .small-up-7 > .columns {
+  width: 14.28571%;
+  float: left;
+}
+
+/* line 288, sass/_foundation.scss */
+.small-up-7 > .column:nth-of-type(1n), .small-up-7 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 290, sass/_foundation.scss */
+.small-up-7 > .column:nth-of-type(7n+1), .small-up-7 > .columns:nth-of-type(7n+1) {
+  clear: both;
+}
+
+/* line 292, sass/_foundation.scss */
+.small-up-7 > .column:last-child, .small-up-7 > .columns:last-child {
+  float: left;
+}
+
+/* line 295, sass/_foundation.scss */
+.small-up-8 > .column, .small-up-8 > .columns {
+  width: 12.5%;
+  float: left;
+}
+
+/* line 298, sass/_foundation.scss */
+.small-up-8 > .column:nth-of-type(1n), .small-up-8 > .columns:nth-of-type(1n) {
+  clear: none;
+}
+
+/* line 300, sass/_foundation.scss */
+.small-up-8 > .column:nth-of-type(8n+1), .small-up-8 > .columns:nth-of-type(8n+1) {
+  clear: both;
+}
+
+/* line 302, sass/_foundation.scss */
+.small-up-8 > .column:last-child, .small-up-8 > .columns:last-child {
+  float: left;
+}
+
+/* line 305, sass/_foundation.scss */
+.small-collapse > .column, .small-collapse > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 309, sass/_foundation.scss */
+.small-collapse .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 313, sass/_foundation.scss */
+.small-uncollapse > .column, .small-uncollapse > .columns {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+/* line 317, sass/_foundation.scss */
+.small-centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 322, sass/_foundation.scss */
+.small-uncentered,
+.small-push-0,
+.small-pull-0 {
+  position: static;
+  margin-left: 0;
+  margin-right: 0;
+  float: left;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 331, sass/_foundation.scss */
+  .medium-1 {
+    width: 8.33333%;
+  }
+
+  /* line 333, sass/_foundation.scss */
+  .medium-push-1 {
+    position: relative;
+    left: 8.33333%;
+  }
+
+  /* line 336, sass/_foundation.scss */
+  .medium-pull-1 {
+    position: relative;
+    left: -8.33333%;
+  }
+
+  /* line 339, sass/_foundation.scss */
+  .medium-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 341, sass/_foundation.scss */
+  .medium-2 {
+    width: 16.66667%;
+  }
+
+  /* line 343, sass/_foundation.scss */
+  .medium-push-2 {
+    position: relative;
+    left: 16.66667%;
+  }
+
+  /* line 346, sass/_foundation.scss */
+  .medium-pull-2 {
+    position: relative;
+    left: -16.66667%;
+  }
+
+  /* line 349, sass/_foundation.scss */
+  .medium-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 351, sass/_foundation.scss */
+  .medium-3 {
+    width: 25%;
+  }
+
+  /* line 353, sass/_foundation.scss */
+  .medium-push-3 {
+    position: relative;
+    left: 25%;
+  }
+
+  /* line 356, sass/_foundation.scss */
+  .medium-pull-3 {
+    position: relative;
+    left: -25%;
+  }
+
+  /* line 359, sass/_foundation.scss */
+  .medium-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 361, sass/_foundation.scss */
+  .medium-4 {
+    width: 33.33333%;
+  }
+
+  /* line 363, sass/_foundation.scss */
+  .medium-push-4 {
+    position: relative;
+    left: 33.33333%;
+  }
+
+  /* line 366, sass/_foundation.scss */
+  .medium-pull-4 {
+    position: relative;
+    left: -33.33333%;
+  }
+
+  /* line 369, sass/_foundation.scss */
+  .medium-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 371, sass/_foundation.scss */
+  .medium-5 {
+    width: 41.66667%;
+  }
+
+  /* line 373, sass/_foundation.scss */
+  .medium-push-5 {
+    position: relative;
+    left: 41.66667%;
+  }
+
+  /* line 376, sass/_foundation.scss */
+  .medium-pull-5 {
+    position: relative;
+    left: -41.66667%;
+  }
+
+  /* line 379, sass/_foundation.scss */
+  .medium-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 381, sass/_foundation.scss */
+  .medium-6 {
+    width: 50%;
+  }
+
+  /* line 383, sass/_foundation.scss */
+  .medium-push-6 {
+    position: relative;
+    left: 50%;
+  }
+
+  /* line 386, sass/_foundation.scss */
+  .medium-pull-6 {
+    position: relative;
+    left: -50%;
+  }
+
+  /* line 389, sass/_foundation.scss */
+  .medium-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 391, sass/_foundation.scss */
+  .medium-7 {
+    width: 58.33333%;
+  }
+
+  /* line 393, sass/_foundation.scss */
+  .medium-push-7 {
+    position: relative;
+    left: 58.33333%;
+  }
+
+  /* line 396, sass/_foundation.scss */
+  .medium-pull-7 {
+    position: relative;
+    left: -58.33333%;
+  }
+
+  /* line 399, sass/_foundation.scss */
+  .medium-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 401, sass/_foundation.scss */
+  .medium-8 {
+    width: 66.66667%;
+  }
+
+  /* line 403, sass/_foundation.scss */
+  .medium-push-8 {
+    position: relative;
+    left: 66.66667%;
+  }
+
+  /* line 406, sass/_foundation.scss */
+  .medium-pull-8 {
+    position: relative;
+    left: -66.66667%;
+  }
+
+  /* line 409, sass/_foundation.scss */
+  .medium-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 411, sass/_foundation.scss */
+  .medium-9 {
+    width: 75%;
+  }
+
+  /* line 413, sass/_foundation.scss */
+  .medium-push-9 {
+    position: relative;
+    left: 75%;
+  }
+
+  /* line 416, sass/_foundation.scss */
+  .medium-pull-9 {
+    position: relative;
+    left: -75%;
+  }
+
+  /* line 419, sass/_foundation.scss */
+  .medium-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 421, sass/_foundation.scss */
+  .medium-10 {
+    width: 83.33333%;
+  }
+
+  /* line 423, sass/_foundation.scss */
+  .medium-push-10 {
+    position: relative;
+    left: 83.33333%;
+  }
+
+  /* line 426, sass/_foundation.scss */
+  .medium-pull-10 {
+    position: relative;
+    left: -83.33333%;
+  }
+
+  /* line 429, sass/_foundation.scss */
+  .medium-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 431, sass/_foundation.scss */
+  .medium-11 {
+    width: 91.66667%;
+  }
+
+  /* line 433, sass/_foundation.scss */
+  .medium-push-11 {
+    position: relative;
+    left: 91.66667%;
+  }
+
+  /* line 436, sass/_foundation.scss */
+  .medium-pull-11 {
+    position: relative;
+    left: -91.66667%;
+  }
+
+  /* line 439, sass/_foundation.scss */
+  .medium-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 441, sass/_foundation.scss */
+  .medium-12 {
+    width: 100%;
+  }
+
+  /* line 443, sass/_foundation.scss */
+  .medium-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 445, sass/_foundation.scss */
+  .medium-up-1 > .column, .medium-up-1 > .columns {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 448, sass/_foundation.scss */
+  .medium-up-1 > .column:nth-of-type(1n), .medium-up-1 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 450, sass/_foundation.scss */
+  .medium-up-1 > .column:nth-of-type(1n+1), .medium-up-1 > .columns:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 452, sass/_foundation.scss */
+  .medium-up-1 > .column:last-child, .medium-up-1 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 454, sass/_foundation.scss */
+  .medium-up-2 > .column, .medium-up-2 > .columns {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 457, sass/_foundation.scss */
+  .medium-up-2 > .column:nth-of-type(1n), .medium-up-2 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 459, sass/_foundation.scss */
+  .medium-up-2 > .column:nth-of-type(2n+1), .medium-up-2 > .columns:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 461, sass/_foundation.scss */
+  .medium-up-2 > .column:last-child, .medium-up-2 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 463, sass/_foundation.scss */
+  .medium-up-3 > .column, .medium-up-3 > .columns {
+    width: 33.33333%;
+    float: left;
+  }
+
+  /* line 466, sass/_foundation.scss */
+  .medium-up-3 > .column:nth-of-type(1n), .medium-up-3 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 468, sass/_foundation.scss */
+  .medium-up-3 > .column:nth-of-type(3n+1), .medium-up-3 > .columns:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 470, sass/_foundation.scss */
+  .medium-up-3 > .column:last-child, .medium-up-3 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 472, sass/_foundation.scss */
+  .medium-up-4 > .column, .medium-up-4 > .columns {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 475, sass/_foundation.scss */
+  .medium-up-4 > .column:nth-of-type(1n), .medium-up-4 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 477, sass/_foundation.scss */
+  .medium-up-4 > .column:nth-of-type(4n+1), .medium-up-4 > .columns:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 479, sass/_foundation.scss */
+  .medium-up-4 > .column:last-child, .medium-up-4 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 481, sass/_foundation.scss */
+  .medium-up-5 > .column, .medium-up-5 > .columns {
+    width: 20%;
+    float: left;
+  }
+
+  /* line 484, sass/_foundation.scss */
+  .medium-up-5 > .column:nth-of-type(1n), .medium-up-5 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 486, sass/_foundation.scss */
+  .medium-up-5 > .column:nth-of-type(5n+1), .medium-up-5 > .columns:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 488, sass/_foundation.scss */
+  .medium-up-5 > .column:last-child, .medium-up-5 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 490, sass/_foundation.scss */
+  .medium-up-6 > .column, .medium-up-6 > .columns {
+    width: 16.66667%;
+    float: left;
+  }
+
+  /* line 493, sass/_foundation.scss */
+  .medium-up-6 > .column:nth-of-type(1n), .medium-up-6 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 495, sass/_foundation.scss */
+  .medium-up-6 > .column:nth-of-type(6n+1), .medium-up-6 > .columns:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 497, sass/_foundation.scss */
+  .medium-up-6 > .column:last-child, .medium-up-6 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 499, sass/_foundation.scss */
+  .medium-up-7 > .column, .medium-up-7 > .columns {
+    width: 14.28571%;
+    float: left;
+  }
+
+  /* line 502, sass/_foundation.scss */
+  .medium-up-7 > .column:nth-of-type(1n), .medium-up-7 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 504, sass/_foundation.scss */
+  .medium-up-7 > .column:nth-of-type(7n+1), .medium-up-7 > .columns:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 506, sass/_foundation.scss */
+  .medium-up-7 > .column:last-child, .medium-up-7 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 508, sass/_foundation.scss */
+  .medium-up-8 > .column, .medium-up-8 > .columns {
+    width: 12.5%;
+    float: left;
+  }
+
+  /* line 511, sass/_foundation.scss */
+  .medium-up-8 > .column:nth-of-type(1n), .medium-up-8 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 513, sass/_foundation.scss */
+  .medium-up-8 > .column:nth-of-type(8n+1), .medium-up-8 > .columns:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 515, sass/_foundation.scss */
+  .medium-up-8 > .column:last-child, .medium-up-8 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 517, sass/_foundation.scss */
+  .medium-collapse > .column, .medium-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 520, sass/_foundation.scss */
+  .medium-collapse .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 523, sass/_foundation.scss */
+  .medium-uncollapse > .column, .medium-uncollapse > .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  /* line 526, sass/_foundation.scss */
+  .medium-centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 530, sass/_foundation.scss */
+  .medium-uncentered,
+  .medium-push-0,
+  .medium-pull-0 {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+}
+@media screen and (min-width: 64em) {
+  /* line 539, sass/_foundation.scss */
+  .large-1 {
+    width: 8.33333%;
+  }
+
+  /* line 541, sass/_foundation.scss */
+  .large-push-1 {
+    position: relative;
+    left: 8.33333%;
+  }
+
+  /* line 544, sass/_foundation.scss */
+  .large-pull-1 {
+    position: relative;
+    left: -8.33333%;
+  }
+
+  /* line 547, sass/_foundation.scss */
+  .large-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 549, sass/_foundation.scss */
+  .large-2 {
+    width: 16.66667%;
+  }
+
+  /* line 551, sass/_foundation.scss */
+  .large-push-2 {
+    position: relative;
+    left: 16.66667%;
+  }
+
+  /* line 554, sass/_foundation.scss */
+  .large-pull-2 {
+    position: relative;
+    left: -16.66667%;
+  }
+
+  /* line 557, sass/_foundation.scss */
+  .large-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 559, sass/_foundation.scss */
+  .large-3 {
+    width: 25%;
+  }
+
+  /* line 561, sass/_foundation.scss */
+  .large-push-3 {
+    position: relative;
+    left: 25%;
+  }
+
+  /* line 564, sass/_foundation.scss */
+  .large-pull-3 {
+    position: relative;
+    left: -25%;
+  }
+
+  /* line 567, sass/_foundation.scss */
+  .large-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 569, sass/_foundation.scss */
+  .large-4 {
+    width: 33.33333%;
+  }
+
+  /* line 571, sass/_foundation.scss */
+  .large-push-4 {
+    position: relative;
+    left: 33.33333%;
+  }
+
+  /* line 574, sass/_foundation.scss */
+  .large-pull-4 {
+    position: relative;
+    left: -33.33333%;
+  }
+
+  /* line 577, sass/_foundation.scss */
+  .large-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 579, sass/_foundation.scss */
+  .large-5 {
+    width: 41.66667%;
+  }
+
+  /* line 581, sass/_foundation.scss */
+  .large-push-5 {
+    position: relative;
+    left: 41.66667%;
+  }
+
+  /* line 584, sass/_foundation.scss */
+  .large-pull-5 {
+    position: relative;
+    left: -41.66667%;
+  }
+
+  /* line 587, sass/_foundation.scss */
+  .large-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 589, sass/_foundation.scss */
+  .large-6 {
+    width: 50%;
+  }
+
+  /* line 591, sass/_foundation.scss */
+  .large-push-6 {
+    position: relative;
+    left: 50%;
+  }
+
+  /* line 594, sass/_foundation.scss */
+  .large-pull-6 {
+    position: relative;
+    left: -50%;
+  }
+
+  /* line 597, sass/_foundation.scss */
+  .large-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 599, sass/_foundation.scss */
+  .large-7 {
+    width: 58.33333%;
+  }
+
+  /* line 601, sass/_foundation.scss */
+  .large-push-7 {
+    position: relative;
+    left: 58.33333%;
+  }
+
+  /* line 604, sass/_foundation.scss */
+  .large-pull-7 {
+    position: relative;
+    left: -58.33333%;
+  }
+
+  /* line 607, sass/_foundation.scss */
+  .large-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 609, sass/_foundation.scss */
+  .large-8 {
+    width: 66.66667%;
+  }
+
+  /* line 611, sass/_foundation.scss */
+  .large-push-8 {
+    position: relative;
+    left: 66.66667%;
+  }
+
+  /* line 614, sass/_foundation.scss */
+  .large-pull-8 {
+    position: relative;
+    left: -66.66667%;
+  }
+
+  /* line 617, sass/_foundation.scss */
+  .large-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 619, sass/_foundation.scss */
+  .large-9 {
+    width: 75%;
+  }
+
+  /* line 621, sass/_foundation.scss */
+  .large-push-9 {
+    position: relative;
+    left: 75%;
+  }
+
+  /* line 624, sass/_foundation.scss */
+  .large-pull-9 {
+    position: relative;
+    left: -75%;
+  }
+
+  /* line 627, sass/_foundation.scss */
+  .large-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 629, sass/_foundation.scss */
+  .large-10 {
+    width: 83.33333%;
+  }
+
+  /* line 631, sass/_foundation.scss */
+  .large-push-10 {
+    position: relative;
+    left: 83.33333%;
+  }
+
+  /* line 634, sass/_foundation.scss */
+  .large-pull-10 {
+    position: relative;
+    left: -83.33333%;
+  }
+
+  /* line 637, sass/_foundation.scss */
+  .large-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 639, sass/_foundation.scss */
+  .large-11 {
+    width: 91.66667%;
+  }
+
+  /* line 641, sass/_foundation.scss */
+  .large-push-11 {
+    position: relative;
+    left: 91.66667%;
+  }
+
+  /* line 644, sass/_foundation.scss */
+  .large-pull-11 {
+    position: relative;
+    left: -91.66667%;
+  }
+
+  /* line 647, sass/_foundation.scss */
+  .large-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 649, sass/_foundation.scss */
+  .large-12 {
+    width: 100%;
+  }
+
+  /* line 651, sass/_foundation.scss */
+  .large-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 653, sass/_foundation.scss */
+  .large-up-1 > .column, .large-up-1 > .columns {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 656, sass/_foundation.scss */
+  .large-up-1 > .column:nth-of-type(1n), .large-up-1 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 658, sass/_foundation.scss */
+  .large-up-1 > .column:nth-of-type(1n+1), .large-up-1 > .columns:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 660, sass/_foundation.scss */
+  .large-up-1 > .column:last-child, .large-up-1 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 662, sass/_foundation.scss */
+  .large-up-2 > .column, .large-up-2 > .columns {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 665, sass/_foundation.scss */
+  .large-up-2 > .column:nth-of-type(1n), .large-up-2 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 667, sass/_foundation.scss */
+  .large-up-2 > .column:nth-of-type(2n+1), .large-up-2 > .columns:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 669, sass/_foundation.scss */
+  .large-up-2 > .column:last-child, .large-up-2 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 671, sass/_foundation.scss */
+  .large-up-3 > .column, .large-up-3 > .columns {
+    width: 33.33333%;
+    float: left;
+  }
+
+  /* line 674, sass/_foundation.scss */
+  .large-up-3 > .column:nth-of-type(1n), .large-up-3 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 676, sass/_foundation.scss */
+  .large-up-3 > .column:nth-of-type(3n+1), .large-up-3 > .columns:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 678, sass/_foundation.scss */
+  .large-up-3 > .column:last-child, .large-up-3 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 680, sass/_foundation.scss */
+  .large-up-4 > .column, .large-up-4 > .columns {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 683, sass/_foundation.scss */
+  .large-up-4 > .column:nth-of-type(1n), .large-up-4 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 685, sass/_foundation.scss */
+  .large-up-4 > .column:nth-of-type(4n+1), .large-up-4 > .columns:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 687, sass/_foundation.scss */
+  .large-up-4 > .column:last-child, .large-up-4 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 689, sass/_foundation.scss */
+  .large-up-5 > .column, .large-up-5 > .columns {
+    width: 20%;
+    float: left;
+  }
+
+  /* line 692, sass/_foundation.scss */
+  .large-up-5 > .column:nth-of-type(1n), .large-up-5 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 694, sass/_foundation.scss */
+  .large-up-5 > .column:nth-of-type(5n+1), .large-up-5 > .columns:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 696, sass/_foundation.scss */
+  .large-up-5 > .column:last-child, .large-up-5 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 698, sass/_foundation.scss */
+  .large-up-6 > .column, .large-up-6 > .columns {
+    width: 16.66667%;
+    float: left;
+  }
+
+  /* line 701, sass/_foundation.scss */
+  .large-up-6 > .column:nth-of-type(1n), .large-up-6 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 703, sass/_foundation.scss */
+  .large-up-6 > .column:nth-of-type(6n+1), .large-up-6 > .columns:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 705, sass/_foundation.scss */
+  .large-up-6 > .column:last-child, .large-up-6 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 707, sass/_foundation.scss */
+  .large-up-7 > .column, .large-up-7 > .columns {
+    width: 14.28571%;
+    float: left;
+  }
+
+  /* line 710, sass/_foundation.scss */
+  .large-up-7 > .column:nth-of-type(1n), .large-up-7 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 712, sass/_foundation.scss */
+  .large-up-7 > .column:nth-of-type(7n+1), .large-up-7 > .columns:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 714, sass/_foundation.scss */
+  .large-up-7 > .column:last-child, .large-up-7 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 716, sass/_foundation.scss */
+  .large-up-8 > .column, .large-up-8 > .columns {
+    width: 12.5%;
+    float: left;
+  }
+
+  /* line 719, sass/_foundation.scss */
+  .large-up-8 > .column:nth-of-type(1n), .large-up-8 > .columns:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 721, sass/_foundation.scss */
+  .large-up-8 > .column:nth-of-type(8n+1), .large-up-8 > .columns:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 723, sass/_foundation.scss */
+  .large-up-8 > .column:last-child, .large-up-8 > .columns:last-child {
+    float: left;
+  }
+
+  /* line 725, sass/_foundation.scss */
+  .large-collapse > .column, .large-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 728, sass/_foundation.scss */
+  .large-collapse .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 731, sass/_foundation.scss */
+  .large-uncollapse > .column, .large-uncollapse > .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  /* line 734, sass/_foundation.scss */
+  .large-centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 738, sass/_foundation.scss */
+  .large-uncentered,
+  .large-push-0,
+  .large-pull-0 {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+}
 /* ===================================================
 	トップページ ▼
 ===================================================  */
@@ -1538,26 +3007,32 @@ body > #wrap {
   position: relative;
   padding-bottom: 2.6rem;
 }
-/* line 127, sass/_article_list.scss */
+@media only screen and (min-width: 640px) {
+  /* line 123, sass/_article_list.scss */
+  .content .question-card {
+    margin-bottom: 2rem;
+  }
+}
+/* line 131, sass/_article_list.scss */
 .content .question-card--image {
   width: 100%;
 }
-/* line 130, sass/_article_list.scss */
+/* line 134, sass/_article_list.scss */
 .content .question-card--image-holder {
   max-height: 200px;
   overflow: hidden;
   text-align: center;
   margin-bottom: 18px;
 }
-/* line 138, sass/_article_list.scss */
+/* line 142, sass/_article_list.scss */
 .content .question-card--title {
   margin: 14px 0;
 }
-/* line 142, sass/_article_list.scss */
+/* line 146, sass/_article_list.scss */
 .content .question-card.article .inner .profileWrap, .content .question-card.article .inner .detailWrap {
   display: block;
 }
-/* line 147, sass/_article_list.scss */
+/* line 151, sass/_article_list.scss */
 .content .question-card--linkToDetail {
   position: absolute;
   display: block;
@@ -2315,108 +3790,4 @@ form#searchform {
 /* line 27, sass/_single-info.scss */
 .info .btnWrap a.btnBlue {
   background-color: #2180ac;
-}
-
-/*
-** Table display
-*/
-/*
- * Table display
- */
-/* line 10, sass/_table-display.scss */
-.table, .table__onecells, .table__twocells, .table__threecells, .table__fourcells {
-  display: block;
-  table-layout: fixed;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-@media only screen and (min-width: 840px) {
-  /* line 10, sass/_table-display.scss */
-  .table, .table__onecells, .table__twocells, .table__threecells, .table__fourcells {
-    display: table;
-  }
-}
-/* line 22, sass/_table-display.scss */
-.force-table.table, .force-table.table__onecells, .force-table.table__twocells, .force-table.table__threecells, .force-table.table__fourcells {
-  display: table;
-}
-/* line 23, sass/_table-display.scss */
-.table .columns, .table__onecells .columns, .table__twocells .columns, .table__threecells .columns, .table__fourcells .columns {
-  float: none;
-}
-/* line 24, sass/_table-display.scss */
-.uncollapse.table, .uncollapse.table__onecells, .uncollapse.table__twocells, .uncollapse.table__threecells, .uncollapse.table__fourcells {
-  border-collapse: separate;
-  border-spacing: 2rem 1rem;
-}
-
-/* line 31, sass/_table-display.scss */
-.table--cell {
-  display: block;
-  margin: 40px 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-@media only screen and (min-width: 840px) {
-  /* line 31, sass/_table-display.scss */
-  .table--cell {
-    display: table-cell;
-    margin: 0;
-  }
-}
-/* line 44, sass/_table-display.scss */
-.force-table .table--cell {
-  display: table-cell;
-}
-
-/* line 47, sass/_table-display.scss */
-.table-row {
-  display: block;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-@media only screen and (min-width: 840px) {
-  /* line 47, sass/_table-display.scss */
-  .table-row {
-    display: table-row;
-  }
-}
-/* line 57, sass/_table-display.scss */
-.force-table .table-row {
-  display: table-row;
-}
-
-/*
- * Table layout
- */
-@media only screen and (min-width: 840px) {
-  /* line 71, sass/_table-display.scss */
-  .table__onecells .table--cell {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 840px) {
-  /* line 81, sass/_table-display.scss */
-  .table__twocells .table--cell {
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 840px) {
-  /* line 91, sass/_table-display.scss */
-  .table__threecells .table--cell {
-    width: 33.333%;
-  }
-}
-
-@media only screen and (min-width: 840px) {
-  /* line 101, sass/_table-display.scss */
-  .table__fourcells .table--cell {
-    width: 25%;
-  }
 }

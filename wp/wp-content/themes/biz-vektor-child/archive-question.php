@@ -24,22 +24,9 @@
 
       ?>
 
-      <?php
-      $i=0;
-      ?>
+      <div class="row">
         <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
-          <?php if( $i == 0 ){ ?>
-            <div class="table__threecells uncollapse">
-          <?php }
-          else if( $i%3 == 0 ){ ?>
-
-            </div>
-            <div class="table__threecells uncollapse">
-
-          <?php } ?>
-
           <?php get_template_part( 'includes/category', 'question-panel' ); $i++; ?>
-
         <?php endwhile; ?>
       </div>
       <!-- pagination -->

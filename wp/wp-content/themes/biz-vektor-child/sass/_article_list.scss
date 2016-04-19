@@ -124,6 +124,10 @@
 	position: relative;
 	padding-bottom: 2.6rem;
 
+	@media only screen and (min-width: $medium) {
+		margin-bottom: 2rem;
+	}
+
 	&--image {
 		width: 100%;
 
