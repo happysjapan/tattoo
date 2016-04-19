@@ -17,7 +17,7 @@ Version: 0.1.0
   placeholder
 --------------------------------- */
 /* line 114, sass/core/_utility.scss */
-#sideTower .sideWidget h3, .frontpage .postInFrontPage h2 {
+#sideTower .sideWidget h3 {
   margin: 0;
   background-color: #4dc1f0;
   color: #fff;
@@ -840,6 +840,8 @@ body > #wrap {
   -------------------------------------------- */
   /* 検索ボックス ▼
   -------------------------------------------- */
+  /* 体験談・疑問 ▼ experience & question lists
+  -------------------------------------------- */
   /* 新着事業所一覧 ▼
   -------------------------------------------- */
   /* Public Relations ▼
@@ -854,77 +856,37 @@ body > #wrap {
   display: block;
   margin-bottom: 15px;
 }
-/* line 13, sass/_top.scss */
-.frontpage .sideTower .sideWidget .textwidget .SideListWrap {
-  margin-bottom: 15px;
-}
-/* line 15, sass/_top.scss */
-.frontpage .sideTower .sideWidget .textwidget .SideListWrap h3 {
-  padding: 4px 10px;
-  background-color: #0e6c3d;
-  color: #fff;
-  font-size: 90%;
-}
-/* line 21, sass/_top.scss */
-.frontpage .sideTower .sideWidget .textwidget .SideListWrap > div {
-  border: 1px solid #ccc;
-}
-/* line 24, sass/_top.scss */
-.frontpage .sideTower .sideWidget .textwidget .SideListWrap > div ul li {
-  border-bottom: 1px dotted #ccc;
-}
-/* line 26, sass/_top.scss */
-.frontpage .sideTower .sideWidget .textwidget .SideListWrap > div ul li a {
-  display: block;
-  padding: 6px 10px;
-  color: #3569c9;
-  font-size: 80%;
-  background-image: none;
-}
-/* line 39, sass/_top.scss */
-.frontpage .sideTower .sideWidget .textwidget .SideListWrap > div .more a {
-  display: block;
-  padding: 4px 10px;
-  text-align: right;
-  text-decoration: none;
-  color: #3569c9;
-  font-size: 80%;
-}
-/* line 46, sass/_top.scss */
-.frontpage .sideTower .sideWidget .textwidget .SideListWrap > div .more a:hover {
-  background-color: #efefef;
-}
-/* line 54, sass/_top.scss */
+/* line 14, sass/_top.scss */
 .frontpage .sideTower .sideWidget .textwidget .ThumbnailList > div ul li a {
   display: table;
 }
-/* line 56, sass/_top.scss */
+/* line 16, sass/_top.scss */
 .frontpage .sideTower .sideWidget .textwidget .ThumbnailList > div ul li a img, .frontpage .sideTower .sideWidget .textwidget .ThumbnailList > div ul li a p {
   display: table-cell;
   vertical-align: top;
 }
-/* line 60, sass/_top.scss */
+/* line 20, sass/_top.scss */
 .frontpage .sideTower .sideWidget .textwidget .ThumbnailList > div ul li a img {
   width: 36px;
   height: 36px;
 }
-/* line 64, sass/_top.scss */
+/* line 24, sass/_top.scss */
 .frontpage .sideTower .sideWidget .textwidget .ThumbnailList > div ul li a p {
   padding-left: 5px;
 }
-/* line 74, sass/_top.scss */
+/* line 34, sass/_top.scss */
 .frontpage .sectionBox p {
   font-size: 13px;
   font-size: 1.3rem;
 }
-/* line 81, sass/_top.scss */
+/* line 41, sass/_top.scss */
 .frontpage .priceList {
   width: 100%;
   margin: 0 0 10px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 85, sass/_top.scss */
+/* line 45, sass/_top.scss */
 .frontpage .priceList li {
   display: block;
   margin-right: 20px;
@@ -937,11 +899,11 @@ body > #wrap {
   text-align: center;
   float: left;
 }
-/* line 93, sass/_top.scss */
+/* line 53, sass/_top.scss */
 .frontpage .priceList li:last-child {
   margin-right: 0;
 }
-/* line 94, sass/_top.scss */
+/* line 54, sass/_top.scss */
 .frontpage .priceList li dt {
   color: #333;
   font-size: 18px;
@@ -950,16 +912,16 @@ body > #wrap {
   line-height: 2.8rem;
   font-weight: normal;
 }
-/* line 100, sass/_top.scss */
+/* line 60, sass/_top.scss */
 .frontpage .priceList li dd {
   margin-bottom: 0;
 }
-/* line 101, sass/_top.scss */
+/* line 61, sass/_top.scss */
 .frontpage .priceList li img {
   width: 100%;
   height: auto;
 }
-/* line 105, sass/_top.scss */
+/* line 65, sass/_top.scss */
 .frontpage .priceList li .price {
   margin: 10px 0 0;
   color: #ce0004;
@@ -968,54 +930,54 @@ body > #wrap {
   line-height: 28px;
   line-height: 2.8rem;
 }
-/* line 111, sass/_top.scss */
+/* line 71, sass/_top.scss */
 .frontpage .priceList li .btn {
   margin-top: 10px;
   background-color: #4dc1f0;
 }
-/* line 114, sass/_top.scss */
+/* line 74, sass/_top.scss */
 .frontpage .priceList li .btn:hover {
   color: #fff;
   background-color: #1eb1ec;
 }
-/* line 125, sass/_top.scss */
+/* line 85, sass/_top.scss */
 .frontpage .areaSearch {
   margin-bottom: 40px;
 }
-/* line 128, sass/_top.scss */
+/* line 88, sass/_top.scss */
 .frontpage .areaSearch > h2:first-child {
   padding: 8px 10px;
 }
-/* line 132, sass/_top.scss */
+/* line 92, sass/_top.scss */
 .frontpage .areaSearch .searchTitle {
   text-align: center;
 }
-/* line 135, sass/_top.scss */
+/* line 95, sass/_top.scss */
 .frontpage .areaSearch .searchInner {
   padding: 20px;
   border: 1px solid #999;
   border-top: none;
 }
-/* line 139, sass/_top.scss */
+/* line 99, sass/_top.scss */
 .frontpage .areaSearch .searchInner ul {
   margin: 0;
 }
-/* line 141, sass/_top.scss */
+/* line 101, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP > li {
   display: inline-block;
   margin-bottom: 20px;
   vertical-align: top;
   width: 48%;
 }
-/* line 146, sass/_top.scss */
+/* line 106, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP > li:nth-child(2n+1) {
   margin-right: 3%;
 }
-/* line 147, sass/_top.scss */
+/* line 107, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP > li:last-child, .frontpage .areaSearch .searchInner .listP > li:nth-child(7) {
   margin-bottom: 0;
 }
-/* line 148, sass/_top.scss */
+/* line 108, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP > li h3 {
   font-size: 14px;
   font-size: 1.4rem;
@@ -1024,29 +986,29 @@ body > #wrap {
   border: none;
 }
 @media only screen and (max-width: 767px) {
-  /* line 141, sass/_top.scss */
+  /* line 101, sass/_top.scss */
   .frontpage .areaSearch .searchInner .listP > li {
     width: 100%;
   }
 }
-/* line 158, sass/_top.scss */
+/* line 118, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP .listC li {
   display: inline-block;
   margin-right: 8px;
   margin-bottom: 2px;
 }
-/* line 162, sass/_top.scss */
+/* line 122, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP .listC li a {
   color: #3569c9;
   text-decoration: none;
   font-size: 13px;
   font-size: 1.3rem;
 }
-/* line 166, sass/_top.scss */
+/* line 126, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP .listC li a:hover {
   text-decoration: underline;
 }
-/* line 170, sass/_top.scss */
+/* line 130, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP .cSelect dt {
   display: inline-block;
   margin-right: 5px;
@@ -1055,59 +1017,59 @@ body > #wrap {
   font-size: 1.2rem;
   color: #333;
 }
-/* line 177, sass/_top.scss */
+/* line 137, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP .cSelect dd {
   display: inline-block;
   margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 169, sass/_top.scss */
+  /* line 129, sass/_top.scss */
   .frontpage .areaSearch .searchInner .listP .cSelect {
     width: 100%;
     margin-top: 20px;
   }
 }
-/* line 185, sass/_top.scss */
+/* line 145, sass/_top.scss */
 .frontpage .areaSearch .searchInner .listP .cSelect .select-box {
   margin-bottom: 10px;
 }
-/* line 189, sass/_top.scss */
+/* line 149, sass/_top.scss */
 .frontpage .areaSearch .searchInner .searchText {
   margin: 5px 0;
 }
-/* line 191, sass/_top.scss */
+/* line 151, sass/_top.scss */
 .frontpage .areaSearch .searchInner .searchText input.topSearch {
   width: 60%;
 }
-/* line 196, sass/_top.scss */
+/* line 156, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList {
   padding: 50px 76px 40px 44px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 196, sass/_top.scss */
+  /* line 156, sass/_top.scss */
   .frontpage .areaSearch .innerSearchList {
     padding: 25px 38px 20px 22px;
   }
 }
-/* line 201, sass/_top.scss */
+/* line 161, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchListContent {
   width: 100%;
   display: table;
 }
 @media only screen and (max-width: 767px) {
-  /* line 201, sass/_top.scss */
+  /* line 161, sass/_top.scss */
   .frontpage .areaSearch .innerSearchList .searchListContent {
     display: block;
   }
 }
-/* line 207, sass/_top.scss */
+/* line 167, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchListContent > * {
   display: table-cell;
   vertical-align: middle;
   padding-bottom: 32px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 207, sass/_top.scss */
+  /* line 167, sass/_top.scss */
   .frontpage .areaSearch .innerSearchList .searchListContent > * {
     margin: 0 auto;
     text-align: center;
@@ -1115,7 +1077,7 @@ body > #wrap {
     padding-bottom: 16px;
   }
 }
-/* line 218, sass/_top.scss */
+/* line 178, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchListContent .selectLabel {
   font-size: 15px;
   font-size: 1.5rem;
@@ -1123,48 +1085,48 @@ body > #wrap {
   width: 70%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 218, sass/_top.scss */
+  /* line 178, sass/_top.scss */
   .frontpage .areaSearch .innerSearchList .searchListContent .selectLabel {
     font-size: 12px;
     font-size: 1.2rem;
     width: 100%;
   }
 }
-/* line 227, sass/_top.scss */
+/* line 187, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchListContent .selectList {
   width: 30%;
 }
-/* line 229, sass/_top.scss */
+/* line 189, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchListContent .selectList select {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 227, sass/_top.scss */
+  /* line 187, sass/_top.scss */
   .frontpage .areaSearch .innerSearchList .searchListContent .selectList {
     width: 80%;
   }
 }
-/* line 237, sass/_top.scss */
+/* line 197, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchText2 {
   width: 100%;
 }
-/* line 239, sass/_top.scss */
+/* line 199, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchText2 form {
   text-align: center;
 }
-/* line 241, sass/_top.scss */
+/* line 201, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchText2 form .searchWord {
   width: 100%;
   margin-bottom: 34px;
   text-align: left;
 }
 @media only screen and (max-width: 767px) {
-  /* line 241, sass/_top.scss */
+  /* line 201, sass/_top.scss */
   .frontpage .areaSearch .innerSearchList .searchText2 form .searchWord {
     margin-bottom: 17px;
   }
 }
-/* line 249, sass/_top.scss */
+/* line 209, sass/_top.scss */
 .frontpage .areaSearch .innerSearchList .searchText2 form .searchBtn {
   max-width: 248px;
   padding: 14px 20px;
@@ -1175,152 +1137,69 @@ body > #wrap {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 249, sass/_top.scss */
+  /* line 209, sass/_top.scss */
   .frontpage .areaSearch .innerSearchList .searchText2 form .searchBtn {
     padding: 8px 10px;
     font-size: 15px;
     font-size: 1.5rem;
   }
 }
-/* line 270, sass/_top.scss */
-.frontpage .postInFrontPage {
-  margin-bottom: 40px;
+/* line 228, sass/_top.scss */
+.frontpage .postList {
+  margin-bottom: 15px;
 }
-/* line 272, sass/_top.scss */
-.frontpage .postInFrontPage h2 {
-  padding: 6px 10px;
-}
-/* line 276, sass/_top.scss */
-.frontpage .postInFrontPage .inner {
-  padding: 20px;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-bottom: 1px solid #999;
-}
-/* line 282, sass/_top.scss */
-.frontpage .postInFrontPage ul {
-  overflow: hidden;
-  *zoom: 1;
-  margin: 0;
-}
-/* line 285, sass/_top.scss */
-.frontpage .postInFrontPage ul li {
-  margin-right: 30px;
-  margin-bottom: 20px;
-  float: left;
-  list-style: none;
-  width: -moz-calc(100%/3 - 20px);
-  width: -o-calc(100%/3 - 20px);
-  width: -webkit-calc(100%/3 - 20px);
-  width: calc(100%/3 - 20px);
-}
-/* line 290, sass/_top.scss */
-.frontpage .postInFrontPage ul li:nth-child(3n) {
-  margin-right: 0;
-}
-/* line 292, sass/_top.scss */
-.frontpage .postInFrontPage ul li div {
-  display: block;
-  text-align: center;
-}
-/* line 295, sass/_top.scss */
-.frontpage .postInFrontPage ul li div p {
-  margin-bottom: 3px;
-  text-align: left;
-  color: #3569c9;
-}
-/* line 300, sass/_top.scss */
-.frontpage .postInFrontPage ul li div .ttl {
-  font-weight: bold;
-}
-/* line 303, sass/_top.scss */
-.frontpage .postInFrontPage ul li div .desc {
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 16px;
-  line-height: 1.6rem;
-  color: #333;
-}
-/* line 308, sass/_top.scss */
-.frontpage .postInFrontPage ul li div .reward {
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 16px;
-  line-height: 1.6rem;
-}
-/* line 312, sass/_top.scss */
-.frontpage .postInFrontPage ul li div img {
-  display: inline-block;
-  width: 180px;
-  height: auto;
-  margin-top: 10px;
-}
-/* line 318, sass/_top.scss */
-.frontpage .postInFrontPage ul li div a.btn {
-  display: block;
-  width: 90px;
-  margin: 10px auto 0;
-  padding: 6px;
-  background-color: #48b420;
+/* line 230, sass/_top.scss */
+.frontpage .postList h3 {
+  padding: 4px 10px;
+  background-color: #4dc1f0;
   color: #fff;
-  font-size: 15px;
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 90%;
 }
-/* line 327, sass/_top.scss */
-.frontpage .postInFrontPage ul li div a.btn:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
-  text-decoration: none;
+/* line 236, sass/_top.scss */
+.frontpage .postList > div {
+  border: 1px solid #ccc;
 }
-/* line 336, sass/_top.scss */
-.frontpage .postInFrontPage .more {
-  text-align: right;
+/* line 239, sass/_top.scss */
+.frontpage .postList > div ul li {
+  border-bottom: 1px dotted #ccc;
 }
-/* line 340, sass/_top.scss */
-.frontpage .postInFrontPage a {
+/* line 241, sass/_top.scss */
+.frontpage .postList > div ul li a {
+  display: block;
+  padding: 6px 10px;
   color: #3569c9;
+  font-size: 80%;
+  background-image: none;
+}
+/* line 254, sass/_top.scss */
+.frontpage .postList > div .more a {
+  display: block;
+  padding: 4px 10px;
+  text-align: right;
   text-decoration: none;
+  color: #3569c9;
+  font-size: 80%;
 }
-/* line 343, sass/_top.scss */
-.frontpage .postInFrontPage a:hover {
-  text-decoration: underline;
+/* line 261, sass/_top.scss */
+.frontpage .postList > div .more a:hover {
+  background-color: #efefef;
 }
-@media only screen and (max-width: 767px) {
-  /* line 348, sass/_top.scss */
-  .frontpage .postInFrontPage ul li {
-    margin-right: 20px;
-    float: left;
-    width: -moz-calc(100%/2 - 10px);
-    width: -o-calc(100%/2 - 10px);
-    width: -webkit-calc(100%/2 - 10px);
-    width: calc(100%/2 - 10px);
-  }
-  /* line 351, sass/_top.scss */
-  .frontpage .postInFrontPage ul li:nth-child(3n) {
-    margin-right: 20px;
-  }
-  /* line 352, sass/_top.scss */
-  .frontpage .postInFrontPage ul li:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-/* line 361, sass/_top.scss */
+/* line 363, sass/_top.scss */
 .frontpage .pr_wrapper .inner {
   padding: 0;
   border: none;
 }
-/* line 364, sass/_top.scss */
+/* line 366, sass/_top.scss */
 .frontpage .pr_wrapper .inner div {
   text-align: left;
 }
-/* line 365, sass/_top.scss */
+/* line 367, sass/_top.scss */
 .frontpage .pr_wrapper .inner ul {
   margin: 0;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 368, sass/_top.scss */
+/* line 370, sass/_top.scss */
 .frontpage .pr_wrapper .inner ul li {
   width: -moz-calc(100%/3 - 17px);
   width: -o-calc(100%/3 - 17px);
@@ -1331,22 +1210,22 @@ body > #wrap {
   float: left;
   list-style: none;
 }
-/* line 374, sass/_top.scss */
+/* line 376, sass/_top.scss */
 .frontpage .pr_wrapper .inner ul li:nth-child(3n) {
   margin-right: 0;
 }
-/* line 377, sass/_top.scss */
+/* line 379, sass/_top.scss */
 .frontpage .pr_wrapper .inner ul li h3 {
   margin: 0 0 10px;
   padding-left: 10px;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 382, sass/_top.scss */
+/* line 384, sass/_top.scss */
 .frontpage .pr_wrapper .inner ul li .prDescription {
   margin-top: 10px;
 }
-/* line 384, sass/_top.scss */
+/* line 386, sass/_top.scss */
 .frontpage .pr_wrapper .inner ul li .prDescription p {
   margin: 0;
   padding: 0;
@@ -1356,32 +1235,32 @@ body > #wrap {
   line-height: 16px;
   line-height: 1.6rem;
 }
-/* line 392, sass/_top.scss */
+/* line 394, sass/_top.scss */
 .frontpage .pr_wrapper .inner ul li .moreLink {
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 399, sass/_top.scss */
+  /* line 401, sass/_top.scss */
   .frontpage .pr_wrapper .inner ul li {
     width: 100%;
     margin-right: 0;
     float: none;
   }
-  /* line 403, sass/_top.scss */
+  /* line 405, sass/_top.scss */
   .frontpage .pr_wrapper .inner ul li:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 404, sass/_top.scss */
+  /* line 406, sass/_top.scss */
   .frontpage .pr_wrapper .inner ul li .prImage {
     vertical-align: top;
   }
-  /* line 406, sass/_top.scss */
+  /* line 408, sass/_top.scss */
   .frontpage .pr_wrapper .inner ul li .prImage img {
     display: block;
     width: 150px;
     height: auto;
   }
-  /* line 415, sass/_top.scss */
+  /* line 417, sass/_top.scss */
   .frontpage .pr_wrapper .inner ul li .moreLink a {
     margin-top: 0;
   }
