@@ -156,8 +156,8 @@
 	<?php echo do_shortcode('[contentblock id=about_keshipedia]'); ?>
 <?php
 if ( biz_vektor_is_plugin_enable('widgets') && is_active_sidebar( 'top-main-widget-area' ) ) : ?>
-	<div class="CHANGE HERE">
-		<?php	dynamic_sidebar( 'top-main-widget-area' ); ?>
+	<div class="widgetWrapper">
+		<?php dynamic_sidebar( 'top-main-widget-area' ); ?>
 	</div>
 <?php else :
 
