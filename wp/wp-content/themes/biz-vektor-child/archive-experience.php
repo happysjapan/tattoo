@@ -10,7 +10,7 @@
     <section class="searchArea">
       <p class="searchDescription"><?php echo do_shortcode('[contentblock id=seminar_description]'); ?></p>
       <?php get_template_part( 'includes/category', 'experience-search' ); ?>
-      <div class="consultBox"><img src="/wp-content/uploads/2016/01/konohikaraside.jpg" alt="" width="200"> <a title="相談する" class="btn" href="http://konohikara.com">相談する</a></div>
+      <?php echo do_shortcode('[contentblock id=panel_consult]'); ?>
     </section>
     <!-- [ /#search ] -->
 
