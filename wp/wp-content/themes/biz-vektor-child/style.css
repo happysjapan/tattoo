@@ -1540,20 +1540,24 @@ body > #wrap {
 }
 /* line 127, sass/_article_list.scss */
 .content .question-card--image {
-  display: block;
   width: 100%;
-  max-width: 360px;
-  margin: 0 auto 14px;
 }
-/* line 134, sass/_article_list.scss */
+/* line 130, sass/_article_list.scss */
+.content .question-card--image-holder {
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 18px;
+}
+/* line 138, sass/_article_list.scss */
 .content .question-card--title {
   margin: 14px 0;
 }
-/* line 138, sass/_article_list.scss */
+/* line 142, sass/_article_list.scss */
 .content .question-card.article .inner .profileWrap, .content .question-card.article .inner .detailWrap {
   display: block;
 }
-/* line 143, sass/_article_list.scss */
+/* line 147, sass/_article_list.scss */
 .content .question-card--linkToDetail {
   position: absolute;
   display: block;
