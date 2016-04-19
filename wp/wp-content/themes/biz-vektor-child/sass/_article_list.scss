@@ -3,7 +3,7 @@
 
 .content .article {
 	margin-bottom: 15px;
-	border: 1px solid $color-darkGrey;
+	border: 1px solid $color-grey;
 	p {
 		margin-bottom: 0;
 		padding: 0;
@@ -161,10 +161,11 @@
 /*
 ** Experience panel
 */
-.content .article .experienceTable {
-	margin: 0;
+.content .experienceTable {
+	margin: 15px 0;
 	padding: 0;
-	li {
+	@include font-size(1.3);
+	.columns {
 		list-style: none;
 		margin-bottom: 0;
 		border: 1px solid $color-grey;
