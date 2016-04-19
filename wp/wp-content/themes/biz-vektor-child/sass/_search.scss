@@ -5,7 +5,7 @@
 ===================================================  */
 
 .searchArea {
-	display: block;
+	display: table;
 	@include clearfix;
 	width: 100%;
 	margin-bottom: 40px;
@@ -17,8 +17,8 @@
 		}
 	}
 	.searchBox {
-		width: 580px;
-		float: left;
+		width: 60%;
+		display: table-cell;
 		h2 {
 			@extend %boxTitle;
 			padding: 8px 10px;
@@ -132,12 +132,16 @@
 		}
 	}
 	.consultBox {
-		width: 330px;
-		height: 286px;
-		padding: 15px;
-		border: 1px solid $color-grey;
-		float: right;
-		text-align: center;
+		display: table-cell;
+		padding-left: 40px;
+		vertical-align: top;
+		@include calc(width,'40% - 40px');
+		> div {
+			height: 100%;
+			padding: 15px;
+			border: 1px solid $color-grey;
+			text-align: center;
+		}
 		.btn {
 			margin-top: 10px;
 			padding: 10px;
@@ -158,14 +162,16 @@
 	}
 
 	@include SP {
-		> div {float: none;}
 		.searchBox {
+			display: block;
 			width: 100%;
 			margin-bottom: 20px;
 			padding-right: 0;
 		}
 		.consultBox {
+			display: block;
 			width: 100%;
+			padding-left: 0;
 		}
 	}
 
