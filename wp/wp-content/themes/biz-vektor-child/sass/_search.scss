@@ -62,40 +62,40 @@
 			}
 		}
 
-		&.for_lawyer .inner { //全国の就労移行支援事業所検索用スタイル
-			form#searchform {
-				display: block;
-				width: 90%;
-				margin: 0 auto;
-				.select-box {
-					.search--form--select {
-						margin-left: 0;
-						margin-top: 10px;
-					}
-				}
-				input#s {margin-top: 20px;}
-			}
+		// &.for_lawyer .inner { //全国の就労移行支援事業所検索用スタイル
+		// 	form#searchform {
+		// 		display: block;
+		// 		width: 90%;
+		// 		margin: 0 auto;
+		// 		.select-box {
+		// 			.search--form--select {
+		// 				margin-left: 0;
+		// 				margin-top: 10px;
+		// 			}
+		// 		}
+		// 		input#s {margin-top: 20px;}
+		// 	}
 
-			@include SP {
-				padding: 20px;
-				form#searchform {
-					width: 100%;
-					.select-box {
-						.search--form--select {
-							float: none;
-							margin-left: 0;
-							margin-top: 10px;
-						}
-					}
-					input#s {margin-top: 0;}
-					label {
-						margin-bottom: 20px;
-					}
-				}
-			}
-		}
+		// 	@include SP {
+		// 		padding: 20px;
+		// 		form#searchform {
+		// 			width: 100%;
+		// 			.select-box {
+		// 				.search--form--select {
+		// 					float: none;
+		// 					margin-left: 0;
+		// 					margin-top: 10px;
+		// 				}
+		// 			}
+		// 			input#s {margin-top: 0;}
+		// 			label {
+		// 				margin-bottom: 20px;
+		// 			}
+		// 		}
+		// 	}
+		// }
 		&.for_experience {
-			.inner { //セミナー検索用スタイル
+			.inner { //体験談 検索用スタイル
 				height: 224px;
 				padding: 30px 60px;
 				form#searchform {

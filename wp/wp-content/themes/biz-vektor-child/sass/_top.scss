@@ -44,36 +44,73 @@
 		@include clearfix;
 		li {
 			display: block;
-			margin-right: 20px;
-			padding: 14px 10px;
-			@include calc(width,'(100% - 40px) / 3');
 			border: 1px solid #ccc;
 			text-align: center;
 			float: left;
 			&:last-child {margin-right: 0;}
 			dt {
 				color: #333;
-				@include font-size(1.8);
-				@include line-height(2.8);
 				font-weight: normal;
 			}
-			dd {margin-bottom: 0;}
-			img {
-				width: 100%;
-				height: auto;
+			dd {
+				margin-bottom: 0;
+				img {
+					width: 100%;
+					height: auto;
+				}
+				.price {
+					margin: 10px 0 0;
+					color: $color-red;
+				}
+				.btn {
+					margin-top: 10px;
+					background-color: $color-lightBlue;	
+					&:hover {
+						color: #fff;
+						background-color: darken($color-lightBlue,10%);
+					}
+				}
 			}
-			.price {
-				margin: 10px 0 0;
-				color: $color-red;
-				@include font-size(2.4);
-				@include line-height(2.8);
+		}
+
+		@media only screen and (min-width: $medium) {
+			li {
+				margin-right: 20px;
+				padding: 14px 10px;
+				@include calc(width,'(100% - 40px) / 3');
+				dt {
+					@include font-size(1.8);
+					@include line-height(2.8);
+					br {display: none;}
+				}
+				dd {
+					.price {
+						@include font-size(2.4);
+						@include line-height(2.8);
+					}
+
+				}
 			}
-			.btn {
-				margin-top: 10px;
-				background-color: $color-lightBlue;	
-				&:hover {
-					color: #fff;
-					background-color: darken($color-lightBlue,10%);
+		}
+		@media only screen and (max-width: $medium) {
+			li {
+				margin-right: 10px;
+				padding: 10px 8px;
+				@include calc(width,'(100% - 20px) / 3');
+				dt {
+					@include font-size(1.3);
+					@include line-height(2);
+				}
+				dd {
+					.price {
+						@include font-size(1.6);
+						@include line-height(2.2);
+					}
+					.btn {
+						padding: 8px 15px;
+						@include font-size(1.4);
+						@include line-height(2);
+					}
 				}
 			}
 		}
@@ -282,96 +319,7 @@
 		}
 	}
 
-	/* 新着事業所一覧 ▼
-	-------------------------------------------- */
-
-	// .postInFrontPage {
-	// 	margin-bottom: 40px;
-	// 	h2 {
-	// 		@extend %greenTitle;
-	// 		padding: 6px 10px;
-	// 	}
-	// 	.inner {
-	// 		padding: 20px;
-	// 		border-left: 1px solid $color-grey;
-	// 		border-right: 1px solid $color-grey;
-	// 		border-bottom: 1px solid $color-grey;
-	// 	}
-	// 	ul {
-	// 		@include clearfix;
-	// 		margin: 0;
-	// 		li {
-	// 			margin-right: 30px;
-	// 			margin-bottom: 20px;
-	// 			float: left;
-	// 			list-style: none;
-	// 			&:nth-child(3n)  {margin-right: 0;}
-	// 			@include calc(width,'100%/3 - 20px');
-	// 			div {
-	// 				display: block;
-	// 				text-align: center;
-	// 				p {
-	// 					margin-bottom: 3px;
-	// 					text-align: left;
-	// 					color: $color-blue;
-	// 				}
-	// 				.ttl {
-	// 					font-weight: bold;
-	// 				}
-	// 				.desc {
-	// 					@include font-size(1.2);
-	// 					@include line-height(1.6);
-	// 					color: #333;
-	// 				}
-	// 				.reward {
-	// 					@include font-size(1.2);
-	// 					@include line-height(1.6);
-	// 				}
-	// 				img {
-	// 					display: inline-block;
-	// 					width: 180px;
-	// 					height: auto;
-	// 					margin-top: 10px;
-	// 				}
-	// 				a.btn {
-	// 					display: block;
-	// 					width: 90px;
-	// 					margin: 10px auto 0;
-	// 					padding: 6px;
-	// 					background-color: #48b420;
-	// 					color: #fff;
-	// 					@include font-size(1.5);
-	// 					text-align: center;
-	// 					&:hover {
-	// 						@include opacity(.9);
-	// 						text-decoration: none;
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-
-	// 	.more {
-	// 		text-align: right;
-	// 	}
-
-	// 	a {
-	// 		color: $color-blue;
-	// 		text-decoration: none;
-	// 		&:hover {
-	// 			text-decoration: underline;
-	// 		}
-	// 	}
-	// 	@include SP {
-	// 		ul li {
-	// 			margin-right: 20px;
-	// 			float: left;
-	// 			&:nth-child(3n)  {margin-right: 20px;}
-	// 			&:nth-child(2n)  {margin-right: 0;}
-	// 			@include calc(width,'100%/2 - 10px');
-	// 		}
-	// 	}
-	// }
+	
 
 	/* widgets in main content ▼
 	-------------------------------------------- */
@@ -379,13 +327,6 @@
 		>div:first-child,
 		>div:nth-child(2) {
 			margin-bottom: 40px;
-			@include calc(width,'50% - 10px');
-		}
-		>div:first-child { // experience
-			float: left;
-		}
-		>div:nth-child(2) { // question
-			float: right;
 		}
 		>div:nth-child(3) { // PR
 			clear: both;
@@ -447,6 +388,19 @@
 					padding: 10px 8px;
 				}
         	}
+		}
+
+		@media only screen and (min-width: $medium) {
+			>div:first-child,
+			>div:nth-child(2) {
+				@include calc(width,'50% - 10px');
+			}
+			>div:first-child { // experience
+				float: left;
+			}
+			>div:nth-child(2) { // question
+				float: right;
+			}
 		}
 	}
 
