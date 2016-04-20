@@ -53,7 +53,8 @@
 					padding: 12px;
 					background-color: $color-darkBlue;
 					float: none;
-					@include font-size(1.5);
+					@include font-size(1.7);
+					@include line-height(2.2);
 					&:hover {
 			     	 	background-color: darken($color-blue,10%);
 					}
@@ -95,11 +96,11 @@
 		}
 		&.for_experience {
 			.inner { //セミナー検索用スタイル
-				padding: 20px 60px 10px;
+				height: 224px;
+				padding: 30px 60px;
 				form#searchform {
 					display: inline-block;
 					max-width: 468px;
-					margin-top: 40px;
 					input#s {margin-top: 10px;}
 					input#searchsubmit {margin-top: 30px;}
 				}
@@ -134,17 +135,33 @@
 	.consultBox {
 		display: table-cell;
 		padding-left: 40px;
-		vertical-align: top;
 		@include calc(width,'40% - 40px');
+		vertical-align: top;
 		> div {
-			height: 100%;
-			padding: 15px;
+			display: table-cell;
+			height: 260px;
+			padding: 25px 20px;
 			border: 1px solid $color-grey;
 			text-align: center;
+			vertical-align: middle;
+		}
+		.tel {
+			display: inline-block;
+			@include font-size(3.2);
+			@include line-height(3.6);
+			color: $color-red;
+			padding-left: 55px;
+			font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+			background: url("images/icon_free_voice.gif") no-repeat scroll left center;
+			background-size: 50px auto;
+		}
+		.text {
+			@include font-size(1.7);
+			@include line-height(3);
 		}
 		.btn {
 			margin-top: 10px;
-			padding: 10px;
+			padding: 12px;
 			background-color: $color-lightBlue;
 			  &:hover {
 			      color: #fff;
@@ -154,11 +171,11 @@
 	}
 	.btn {
 		display: block;
-		width: 120px;
+		width: 160px;
 		margin: 0 auto;
 		text-align: center;
-		@include font-size(1.6);
-		@include line-height(2);
+		@include font-size(1.7);
+		@include line-height(2.2);
 	}
 
 	@include SP {
