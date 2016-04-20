@@ -146,9 +146,25 @@
 				}
 
 			}
+			.searchTerms {
+				margin: 25px 0 0;
+				.select-box {
+					margin-bottom: 15px;
+				}
+				.search--form {
+					@include clearfix;
+					&--label {
+						display: block;
+						max-width: 400px;
+					}
+					&--select {
+						float: right;
+					}
+				}
+			}
 			.searchText {
-				margin: 5px 0;
-				input.topSearch { width: 60%;}
+				margin: 0 0 5px;
+				input.topSearch { width: 70%;}
 			}
 
 
