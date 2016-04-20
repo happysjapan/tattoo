@@ -357,6 +357,83 @@
 	// 	}
 	// }
 
+	/* widgets in main content ▼
+	-------------------------------------------- */
+	.widgetWrapper {
+		>div:first-child,
+		>div:nth-child(2) {
+			margin-bottom: 40px;
+			@include calc(width,'50% - 10px');
+		}
+		>div:first-child { // experience
+			float: left;
+		}
+		>div:nth-child(2) { // question
+			float: right;
+		}
+		>div:nth-child(3) { // PR
+			clear: both;
+		}
+		.localHead {
+			margin-bottom: 0;
+			padding: 8px 10px;
+			border: none;
+			background-color: $color-lightBlue;
+			color: #fff;
+			@include font-size(1.6);
+			font-weight: normal;
+		}
+
+		.experienceList_wrapper,.questionList_wrapper {
+			border-bottom: 1px solid $color-grey;
+			border-left: 1px solid $color-grey;
+			border-right: 1px solid $color-grey;
+			ul {margin: 0;}
+
+			a {
+				display: block;
+				padding: 8px;
+				text-decoration: none;
+				@include clearfix;
+				color: $color-darkBlue;
+				@include font-size(1.4);
+				&:hover {
+					background-color: #f2f2f2;
+				}
+			}
+			.ttBox {
+				margin-bottom: 0;
+				border-bottom: 1px solid #ccc;
+				&:last-child {
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+				.prImage {
+					margin-right: 5px;
+					float: left;
+					img {
+						width: 80px;
+					}
+				}
+				.ptTitle {
+					margin: 0;
+					border: none;
+					float: left;
+					clear: none;
+					font-weight: normal;
+					word-break: breal-all;
+				}
+			}
+        	.moreWrap {
+				text-align: right;
+				border-top: 1px solid #ccc;
+				a {
+					padding: 10px 8px;
+				}
+        	}
+		}
+	}
+
 	/* Public Relations ▼
 	-------------------------------------------- */
 	.pr_wrapper {

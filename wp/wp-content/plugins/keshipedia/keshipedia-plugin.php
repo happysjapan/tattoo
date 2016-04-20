@@ -306,21 +306,20 @@ class keshipedia_experience_widget extends WP_Widget {
     );
     $the_query = new WP_Query( $post_args ); ?>
 
-  <div class="sideWidget pr_wrapper">
+  <div class="sideWidget experienceList_wrapper">
       <div class="inner">
         <ul>
           <?php if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <li class="ttBox" id="post-<?php echo get_the_id(); ?>">
-                <div>
+                <a href="<?php echo get_field('pr_link'); ?>">
                     <h4 class="ptTitle"><?php echo the_title(); ?></h4>
-                    <div class="prImage"><img src="<?php echo get_field('pr_image'); ?>" alt="<?php echo the_title(); ?>" /></div>
-                   <div class="moreLink"><a href="<?php echo get_field('pr_link'); ?>">詳しくはこちら</a></div>
-                </div>
+                </a>
               </li>
 
           <?php endwhile; } else { echo 'No result'; } ?>
         </ul>
+        <div class="moreWrap"><a href="" title="もっと見る">もっと見る</a></div>
       </div>
 
     </div>
@@ -392,22 +391,21 @@ class keshipedia_question_widget extends WP_Widget {
     );
     $the_query = new WP_Query( $post_args ); ?>
 
-  <div class="sideWidget pr_wrapper">
+  <div class="sideWidget questionList_wrapper">
       <div class="inner">
         <ul>
           <?php if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <li class="ttBox" id="post-<?php echo get_the_id(); ?>">
-                <div>
-                    <h4 class="ptTitle"><?php echo the_title(); ?></h4>
+                <a href="<?php echo get_field('pr_link'); ?>">
                     <div class="prImage"><img src="<?php echo get_field('pr_image'); ?>" alt="<?php echo the_title(); ?>" /></div>
-                    <div class="prDescription"><?php echo the_content(); ?></div>
-                   <div class="moreLink"><a href="<?php echo get_field('pr_link'); ?>">詳しくはこちら</a></div>
-                </div>
+                    <h4 class="ptTitle"><?php echo the_title(); ?></h4>
+                 </a>
               </li>
 
           <?php endwhile; } else { echo 'No result'; } ?>
         </ul>
+        <div class="moreWrap"><a href="" title="もっと見る">もっと見る</a></div>
       </div>
 
     </div>

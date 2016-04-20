@@ -12,44 +12,57 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<h1 class="entryPostTitle entry-title"><?php the_title(); ?><?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?></h1>
 
-	<div class="entry-content post-content">
-		<img src="<?php echo get_field('seminar_image'); ?>" alt="" class="mainImage" />
-
-		<h2 class="title">■&nbsp;開催情報</h2>
-
-        <?php while(have_rows('seminar_table')): the_row();
-        $date = strtotime(get_sub_field('seminar_opening_date'));
-        ?>
-		<table>
-			<tbody>
-				<tr>
-				  <th>日時</th>
-				  <td>
-                    <?php echo date('Y', $date).'年'.date('n', $date).'月'.date('d', $date).'日'; ?>&nbsp;<?php echo the_sub_field('seminar_opening_time'); ?></td>
-				</tr>
-				<tr>
-				  <th>会場</th>
-				  <td><?php echo the_sub_field('seminar_place'); ?></td>
-				</tr>
-				<tr>
-				  <th>参加費</th>
-				  <td><?php echo the_sub_field('seminar_fee'); ?></td>
-				</tr>
-				<tr>
-				  <th>アクセス</th>
-				  <td><?php echo the_sub_field('seminar_access'); ?></td>
-				</tr>
-			</tbody>
-		</table>
-		<?php endwhile; ?>
+	<div class="entry-content post-content">        
+          <?php while(have_rows('experience_table')): the_row(); ?>
+	          <ul class="experienceTable row">
+	            <li class="medium-6 columns">
+	              <dl class="experienceTable__column">
+	                <dt class="experienceTable__column__title">治療した傷跡</dt>
+	                <dd class="experienceTable__column__content"><?php echo the_sub_field('exp_treatment_type'); ?></dd>
+	              </dl>
+	            </li>
+	            <li class="medium-6 columns">
+	              <dl class="experienceTable__column">
+	                <dt class="experienceTable__column__title">治療方法</dt>
+	                <dd class="experienceTable__column__content"><?php echo the_sub_field('exp_treatment_method'); ?></dd>
+	              </dl>
+	            </li>
+	            <li class="medium-6 columns">
+	              <dl class="experienceTable__column">
+	                <dt class="experienceTable__column__title">治療期間</dt>
+	                <dd class="experienceTable__column__content"><?php echo the_sub_field('exp_treatment_period'); ?></dd>
+	              </dl>
+	            </li>
+	            <li class="medium-6 columns">
+	              <dl class="experienceTable__column">
+	                <dt class="experienceTable__column__title">氏名</dt>
+	                <dd class="experienceTable__column__content"><?php echo the_sub_field('exp_name'); ?></dd>
+	              </dl>
+	            </li>
+	            <li class="medium-6 columns">
+	              <dl class="experienceTable__column">
+	                <dt class="experienceTable__column__title">性別</dt>
+	                <dd class="experienceTable__column__content"><?php echo the_sub_field('exp_sex'); ?></dd>
+	              </dl>
+	            </li>
+	            <li class="medium-6 columns">
+	              <dl class="experienceTable__column">
+	                <dt class="experienceTable__column__title">住所</dt>
+	                <dd class="experienceTable__column__content"><?php echo the_sub_field('exp_address'); ?></dd>
+	              </dl>
+	            </li>
+	            <li class="medium-6 columns singleColumn">
+	              <dl class="experienceTable__column">
+	                <dt class="experienceTable__column__title">利用した病院／クリニック</dt>
+	                <dd class="experienceTable__column__content"><?php echo the_sub_field('exp_clinic'); ?></dd>
+	              </dl>
+	            </li>
+	          </ul>
+          <?php endwhile; ?>
 
 
 		<div class="textWrap">
 			<?php the_content(); ?>
-		</div>
-		<div class="btnWrap">
-			<a href="tel:0120-697-182" onclick="ga('send', 'event', '電話リンク', 'タップ', '一覧ボタン');" class="btnLightGreen" title="電話でのお問い合わせ">電話でのお問い合わせ</a>
-			<a href="/seminar-form/?seminar=<?php the_title(); ?>" class="btnBlue" title="フォームでのお申し込み">フォームでのお申し込み</a>
 		</div>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . 'Pages:', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
