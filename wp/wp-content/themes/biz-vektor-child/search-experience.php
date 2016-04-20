@@ -23,7 +23,7 @@ if (isset($post_slug) && $post_slug != '') {
     ),
     'post_status' => 'publish',
     'orderby' => 'date',
-    'posts_per_page' => 10,
+    'posts_per_page' => 5,
     'paged' => $paged
   );
 } else {
@@ -32,7 +32,7 @@ if (isset($post_slug) && $post_slug != '') {
     'post_type' => $post_type,
     'post_status' => 'publish',
     'orderby' => 'date',
-    'posts_per_page' => 10,
+    'posts_per_page' => 5,
     'paged' => $paged
   );
 }
