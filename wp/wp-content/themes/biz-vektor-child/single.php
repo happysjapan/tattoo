@@ -36,7 +36,6 @@ $clinic_by_category = get_posts( $args );
 		<section class="indivInfo tableRow">
 			<div class="leftBox">
 				<img src="<?php echo get_field('office_image'); ?>" alt="<?php the_title(); ?>" />
-				<p class="reward"<strong>お祝い金</strong>：<?php echo get_field('reward'); ?>円</p>
 			</div>
 			<div class="rightBox">
 				<div class="tableRow">
@@ -80,26 +79,22 @@ $clinic_by_category = get_posts( $args );
 		</section>
 
 		<section class="indivProfile">
-			<h2 class="title">■&nbsp;事務所紹介</h2>
+			<h2 class="title">■&nbsp;病院/クリニック詳細情報</h2>
 			<div class="tableRow">
 				<div class="leftBox">
 					<table>
 						<tbody>
 							<tr>
-							  <th>事務所名</th>
+							  <th>病院/クリニック詳細情報</th>
 							  <td><?php the_title(); ?></td>
 							</tr>
 							<tr>
-							  <th>代表者名</th>
+							  <th>院長名</th>
 							  <td><?php echo get_field('office_leader'); ?></td>
 							</tr>
 							<tr>
-							  <th>利用定員</th>
+							  <th>診療項目</th>
 							  <td><?php echo get_field('office_capacity'); ?></td>
-							</tr>
-							<tr>
-							  <th>プログラム<br />提供時間</th>
-							  <td><?php echo get_field('office_time'); ?></td>
 							</tr>
 							<tr>
 							  <th>定休日</th>
@@ -130,7 +125,7 @@ $clinic_by_category = get_posts( $args );
 		            <div class="tagTermsWrap">
 		              <ul>
 		                <?php
-										$primary_tags = wp_get_post_terms( get_the_id() , 'primary-tags');
+						$primary_tags = wp_get_post_terms( get_the_id() , 'primary-tags');
 		                foreach ($primary_tags as $tag) { ?>
 		                  <li>
 		                    <a class="card--tag-link" href="<?php echo get_term_link( $tag->term_id ); ?> ">
@@ -141,7 +136,7 @@ $clinic_by_category = get_posts( $args );
 		              </ul>
 		            </div>
 
-								<div class="tagTermsWrap">
+					<div class="tagTermsWrap">
 		              <ul>
 		                <?php
 										$secondary_tags = wp_get_post_terms( get_the_id() , 'secondary-tags');
