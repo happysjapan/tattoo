@@ -2925,7 +2925,7 @@ body > #wrap {
 ===================================================  */
 /* line 7, sass/_search.scss */
 .searchArea {
-  display: block;
+  display: table;
   overflow: hidden;
   *zoom: 1;
   width: 100%;
@@ -2946,8 +2946,8 @@ body > #wrap {
 }
 /* line 19, sass/_search.scss */
 .searchArea .searchBox {
-  width: 580px;
-  float: left;
+  width: 60%;
+  display: table-cell;
 }
 /* line 22, sass/_search.scss */
 .searchArea .searchBox h2 {
@@ -3085,25 +3085,33 @@ body > #wrap {
 }
 /* line 134, sass/_search.scss */
 .searchArea .consultBox {
-  width: 330px;
-  height: 286px;
+  display: table-cell;
+  padding-left: 40px;
+  vertical-align: top;
+  width: -moz-calc(40% - 40px);
+  width: -o-calc(40% - 40px);
+  width: -webkit-calc(40% - 40px);
+  width: calc(40% - 40px);
+}
+/* line 139, sass/_search.scss */
+.searchArea .consultBox > div {
+  height: 100%;
   padding: 15px;
   border: 1px solid #999;
-  float: right;
   text-align: center;
 }
-/* line 141, sass/_search.scss */
+/* line 145, sass/_search.scss */
 .searchArea .consultBox .btn {
   margin-top: 10px;
   padding: 10px;
   background-color: #4dc1f0;
 }
-/* line 145, sass/_search.scss */
+/* line 149, sass/_search.scss */
 .searchArea .consultBox .btn:hover {
   color: #fff;
   background-color: #1eb1ec;
 }
-/* line 151, sass/_search.scss */
+/* line 155, sass/_search.scss */
 .searchArea .btn {
   display: block;
   width: 120px;
@@ -3115,23 +3123,22 @@ body > #wrap {
   line-height: 2rem;
 }
 @media only screen and (max-width: 767px) {
-  /* line 161, sass/_search.scss */
-  .searchArea > div {
-    float: none;
-  }
-  /* line 162, sass/_search.scss */
+  /* line 165, sass/_search.scss */
   .searchArea .searchBox {
+    display: block;
     width: 100%;
     margin-bottom: 20px;
     padding-right: 0;
   }
-  /* line 167, sass/_search.scss */
+  /* line 171, sass/_search.scss */
   .searchArea .consultBox {
+    display: block;
     width: 100%;
+    padding-left: 0;
   }
 }
 
-/* line 175, sass/_search.scss */
+/* line 181, sass/_search.scss */
 form#searchform {
   background-color: transparent;
   padding: 0;
