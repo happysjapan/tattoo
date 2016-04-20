@@ -50,21 +50,13 @@
                 <td>アクセス</td>
                 <td><?php echo get_field('office_access'); ?></td>
               </tr>
-              <tr>
-                <td>定員</td>
-                <td><?php echo get_field('office_capacity'); ?>人</td>
-              </tr>
-              <tr>
-                <td>プログラム<br />提供時間</td>
-                <td><?php echo get_field('office_time'); ?></td>
-              </tr>
             </table>
           </div>
         </div>
         <div class="btnWrap">
-          <a href="tel:0120-697-182" title="無料電話相談" class="btnLightGreen" onclick="ga('send', 'event', '電話リンク', 'タップ', '一覧ボタン');">無料電話相談</a>
+          <a href="tel:0120-697-182" title="電話で無料相談" class="btnLightGreen" onclick="ga('send', 'event', '電話リンク', 'タップ', '一覧ボタン');">電話で無料相談</a>
           <!-- <a href="/contact-form/?office=<?php the_title(); ?>" title="資料請求" class="btnLightBlue">資料請求</a> -->
-          <a href="/tour-form/?office=<?php the_title(); ?>" title="見学会へ参加" class="btnBlue">見学会へ参加</a>
+          <a href="//?office=<?php the_title(); ?>" title="フォームで無料相談" class="btnBlue">フォームで無料相談</a>
         </div>
       </div>
       <a href="<?php the_permalink(); ?>"  title="詳細ページへ" class="linkToDetail">▶︎&nbsp;詳細ページへ</a>

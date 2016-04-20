@@ -54,8 +54,8 @@
         </div>
         <div class="btnWrap">
           <a href="<?php the_permalink(); ?>" title="詳細を見る" class="btnLightBlue">詳細を見る</a>
-          <a href="tel:0120-697-182" onclick="ga('send', 'event', '電話リンク', 'タップ', '一覧ボタン');" title="無料で電話相談" class="btnLightGreen">無料で電話相談</a>
-          <a href="/contact-form/" title="フォームで相談" class="btnBlue">フォームで相談</a>
+          <a href="tel:0120-697-182" onclick="ga('send', 'event', '電話リンク', 'タップ', '一覧ボタン');" title="電話で無料相談" class="btnLightGreen">電話で無料相談</a>
+          <a href="/contact-form/" title="フォームで相談" class="btnBlue">フォームで無料相談</a>
         </div>
       </div>
   </article><!-- .entry-content -->
