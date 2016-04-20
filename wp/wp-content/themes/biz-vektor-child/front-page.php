@@ -112,7 +112,7 @@
 			<div class="select-box">
 		        <label for ="searchSelect" class="search--form--label">消したい傷跡をお選びください
 			        <select id="searchSelect" name="tag" class="search--form--select">
-								<!-- <option value="">条件</option> -->
+          				<option value="">--</option>
 			          <?php
 			            foreach ($tags_array as $tag_elem) {
 			              if( wp_specialchars($tag, 1) == $tag_elem->slug ) {
@@ -130,7 +130,7 @@
 			<div class="select-box">
 		        <label for ="searchSecondTag" class="search--form--label">どのように消したいかお選びください
 			        <select id="searchSecondTag" name="subtag" class="search--form--select">
-			          <!-- <option value="">条件 2</option> -->
+          				<option value="">--</option>
 			          <?php
 			            foreach ($secondary_tags as $tag_elem) {
 			              if( $post_tag_slug_2 == $tag_elem->slug ) {
