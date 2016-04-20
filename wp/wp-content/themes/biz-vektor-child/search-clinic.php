@@ -106,9 +106,9 @@ $custom_query = new WP_Query( $merged_args );
 
   <!-- [ #content ] -->
   <section id="content" class="content wide">
+    <p class="searchDescription"><?php echo do_shortcode('[contentblock id=office_description]'); ?></p>
     <!-- [ #search ] -->
     <section class="searchArea">
-      <p class="searchDescription"><?php echo do_shortcode('[contentblock id=office_description]'); ?></p>
       <?php get_template_part( 'includes/category', 'clinic-search' ); ?>
     </section>
     <!-- [ /#search ] -->

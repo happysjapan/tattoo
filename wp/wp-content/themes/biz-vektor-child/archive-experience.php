@@ -6,9 +6,9 @@
   <!-- [ #content ] -->
   <section id="content" class="content wide">
 
+    <p class="searchDescription"><?php echo do_shortcode('[contentblock id=seminar_description]'); ?></p>
     <!-- [ #search ] -->
     <section class="searchArea">
-      <p class="searchDescription"><?php echo do_shortcode('[contentblock id=seminar_description]'); ?></p>
       <?php get_template_part( 'includes/category', 'experience-search' ); ?>
       <?php echo do_shortcode('[contentblock id=panel_consult]'); ?>
     </section>
