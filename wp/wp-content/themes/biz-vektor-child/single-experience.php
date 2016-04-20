@@ -3,7 +3,7 @@
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
 	<!-- [ #content ] -->
-	<div id="content" class="content wide">
+	<div id="content" class="content">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 <?php get_template_part( 'includes/social', 'buttons' ); ?>
@@ -12,7 +12,7 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<h1 class="entryPostTitle entry-title"><?php the_title(); ?><?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?></h1>
 
-	<div class="entry-content post-content">        
+	<div class="entry-content post-content">
           <?php while(have_rows('experience_table')): the_row(); ?>
 	          <ul class="experienceTable row">
 	            <li class="medium-6 columns">
@@ -93,11 +93,20 @@
 <!-- [ /#content ] -->
 
 <!-- [ #sideTower ] -->
-<!-- <div id="sideTower" class="sideTower">
-	<?php get_sidebar('info'); ?>
-</div>
- --><!-- [ /#sideTower ] -->
-<?php biz_vektor_sideTower_after();?>
+<div id="sideTower" class="sideTower">
+<?php
+if ( is_active_sidebar( 'common-side-top-widget-area' ) ) dynamic_sidebar( 'common-side-top-widget-area' );
+if ( is_active_sidebar( 'top-side-widget-area' ) ) :
+dynamic_sidebar( 'top-side-widget-area' );
+else :
+// ウィジェットに設定がない場合
+if (function_exists('biz_vektor_contactBtn'))    biz_vektor_contactBtn();
+if (function_exists('biz_vektor_snsBnrs'))       biz_vektor_snsBnrs();
+endif;
+if ( is_active_sidebar( 'common-side-bottom-widget-area' ) ) dynamic_sidebar( 'common-side-bottom-widget-area' );
+?>
+	<?php get_template_part( 'includes/front', 'sidebar-info' ); ?>
+	<?php get_template_part( 'includes/front', 'sidebar-study' ); ?>
 </div>
 <!-- [ /#container ] -->
 
