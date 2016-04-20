@@ -58,7 +58,7 @@ class keshipedia_clinic_date_widget extends WP_Widget {
 
           <?php endwhile; } else { echo 'No result'; } ?>
         </ul>
-        <div class="more"><a href="/47zenkoku/" title="もっと見る">もっと見る</a></div>
+        <div class="more"><a href="/clinic/" title="もっと見る">もっと見る</a></div>
       </div>
     </div>
 
@@ -147,7 +147,7 @@ class keshipedia_clinic_reward_widget extends WP_Widget {
 
           <?php endwhile; } else { echo 'No result'; } ?>
         </ul>
-        <div class="more"><a href="/47zenkoku/" title="もっと見る">もっと見る</a></div>
+        <div class="more"><a href="/clinic/" title="もっと見る">もっと見る</a></div>
       </div>
 
     </div>
@@ -312,14 +312,14 @@ class keshipedia_experience_widget extends WP_Widget {
           <?php if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <li class="ttBox" id="post-<?php echo get_the_id(); ?>">
-                <a href="<?php echo get_field('pr_link'); ?>">
+                <a href="<?php echo get_the_permalink(); ?>">
                     <h4 class="ptTitle"><?php echo the_title(); ?></h4>
                 </a>
               </li>
 
           <?php endwhile; } else { echo 'No result'; } ?>
         </ul>
-        <div class="moreWrap"><a href="" title="もっと見る">もっと見る</a></div>
+        <div class="moreWrap"><a href="<?php echo get_post_type_archive_link('experience'); ?>" title="もっと見る">もっと見る</a></div>
       </div>
 
     </div>
@@ -397,15 +397,15 @@ class keshipedia_question_widget extends WP_Widget {
           <?php if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <li class="ttBox" id="post-<?php echo get_the_id(); ?>">
-                <a href="<?php echo get_field('pr_link'); ?>">
-                    <div class="prImage"><img src="<?php echo get_field('pr_image'); ?>" alt="<?php echo the_title(); ?>" /></div>
+                <a href="<?php echo get_the_permalink(); ?>">
+                    <div class="prImage"><img src="<?php echo get_field('question_image')['url']; ?>" alt="<?php echo the_title(); ?>" /></div>
                     <h4 class="ptTitle"><?php echo the_title(); ?></h4>
                  </a>
               </li>
 
           <?php endwhile; } else { echo 'No result'; } ?>
         </ul>
-        <div class="moreWrap"><a href="" title="もっと見る">もっと見る</a></div>
+        <div class="moreWrap"><a href="<?php echo get_post_type_archive_link('question'); ?>" title="もっと見る">もっと見る</a></div>
       </div>
 
     </div>
