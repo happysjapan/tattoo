@@ -14,13 +14,13 @@
 		<ul class="listP">
 
 
-		<?php
-		    // リンク先URL
-			function clinicCategoryLink($type = "tokyo")
-			{
-			    return get_category_link(get_category_by_slug($type)->term_id);
-			}
-		?>
+			<?php
+			    // リンク先URL
+				function clinicCategoryLink($type = "tokyo")
+				{
+				    return get_category_link(get_category_by_slug($type)->term_id);
+				}
+			?>
 
 			<li><h3>北海道・東北エリア</h3>
 			     <ul class="listC">
@@ -100,34 +100,34 @@
 			<li class="cSelect">
 				<?php
 				$subcategories_parent = get_category_by_slug('clinic');
-		    $sub_args = array('child_of' => $subcategories_parent->term_id);
-		    $subcategories = get_categories( $sub_args );
-				$secondary_tags = get_terms('secondary-tags');
+			    $sub_args = array('child_of' => $subcategories_parent->term_id);
+			    $subcategories = get_categories( $sub_args );
+					$secondary_tags = get_terms('secondary-tags');
 
-				$tags_array = get_tags();
-				?>
-				<div class="select-box">
-	        <label for ="searchSelect" class="search--form--label">条件でお選びください
-	        <select id="searchSelect" name="tag" class="search--form--select">
-						<option value="">条件</option>
-	          <?php
-	            foreach ($tags_array as $tag_elem) {
-	              if( wp_specialchars($tag, 1) == $tag_elem->slug ) {
-	                echo '<option value="'.$tag_elem->slug.'" selected>'.$tag_elem->name.'</option>';
-	              }
-	              else {
-	                echo '<option value="'.$tag_elem->slug.'">'.$tag_elem->name.'</option>';
-	              }
-	            }
-	          ?>
-	        </select>
+					$tags_array = get_tags();
+					?>
+					<div class="select-box">
+		        <label for ="searchSelect" class="search--form--label">消したい傷跡をお選びください
+		        <select id="searchSelect" name="tag" class="search--form--select">
+							<!-- <option value="">条件</option> -->
+		          <?php
+		            foreach ($tags_array as $tag_elem) {
+		              if( wp_specialchars($tag, 1) == $tag_elem->slug ) {
+		                echo '<option value="'.$tag_elem->slug.'" selected>'.$tag_elem->name.'</option>';
+		              }
+		              else {
+		                echo '<option value="'.$tag_elem->slug.'">'.$tag_elem->name.'</option>';
+		              }
+		            }
+		          ?>
+		        </select>
 	        </label>
 	      </div>
 
 				<div class="select-box">
-	        <label for ="searchSecondTag" class="search--form--label">条件でお選びください
+	        <label for ="searchSecondTag" class="search--form--label">どのように消したいかお選びください
 	        <select id="searchSecondTag" name="subtag" class="search--form--select">
-	          <option value="">条件 2</option>
+	          <!-- <option value="">条件 2</option> -->
 	          <?php
 	            foreach ($secondary_tags as $tag_elem) {
 	              if( $post_tag_slug_2 == $tag_elem->slug ) {
