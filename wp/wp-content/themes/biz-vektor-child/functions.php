@@ -43,7 +43,7 @@ function do_head_contact_custom($headContact){
         $headContact .= '
         </div>
         <div class="btnWrap">
-			<a href="/contact-form/" title="メールで相談" class="contact">メールで相談</a>
+			<a href="/contact/" title="メールで相談" class="contact">メールで相談</a>
         </div>
         <div class="rightBox">
         	<ul class="snsBtn">
