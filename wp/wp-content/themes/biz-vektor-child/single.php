@@ -36,6 +36,36 @@ $clinic_by_category = get_posts( $args );
 		<section class="indivInfo tableRow">
 			<div class="leftBox">
 				<img src="<?php echo get_field('office_image'); ?>" alt="<?php the_title(); ?>" />
+
+				<div class="categoryTermsWrap"><?php the_category(); ?></div>
+				<div class="tagTermsWrap">
+					<ul>
+						<?php
+						$primary_tags = wp_get_post_tags( get_the_id());
+						foreach ($primary_tags as $tag) { ?>
+							<li>
+								<a class="card--tag-link" href="<?php echo get_term_link( $tag->term_id ); ?> ">
+									<?php echo $tag->name; ?>
+								</a>
+							</li>
+						<?php } ?>
+					</ul>
+				</div>
+
+				<div class="tagTermsWrap">
+					<ul>
+						<?php
+						$secondary_tags = wp_get_post_terms( get_the_id() , 'secondary-tags');
+						foreach ($secondary_tags as $tag) { ?>
+							<li>
+								<a class="card--tag-link" href="<?php echo get_term_link( $tag->term_id ); ?> ">
+									<?php echo $tag->name; ?>
+								</a>
+							</li>
+						<?php } ?>
+					</ul>
+				</div>
+
 			</div>
 			<div class="rightBox">
 				<div class="tableRow">
