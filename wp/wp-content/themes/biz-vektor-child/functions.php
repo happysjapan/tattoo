@@ -1,4 +1,18 @@
 <?php // ← 既にfunctions.php が存在し、もともと書いてある場合は不要
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+   	wp_deregister_script('jquery');
+  	wp_deregister_script( 'wp-embed' );
+   	wp_enqueue_script('jquery');
+}
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+
+
 add_filter('headContactCustom','do_head_contact_custom');
 function do_head_contact_custom($headContact){
     $options = biz_vektor_get_theme_options();

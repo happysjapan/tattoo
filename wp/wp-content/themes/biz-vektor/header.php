@@ -101,7 +101,7 @@ $gMenuHtml .= '</div><!-- [ /#gMenuInner ] -->
 $gMenuHtml = apply_filters( 'bizvektor_gMenuHtml', $gMenuHtml );
 // gMenuのHTMLを出力
 echo $gMenuHtml;
-} // if ($gMenu) 
+} // if ($gMenu)
 ?>
 
 <?php echo get_biz_vektor_header_image_home();?>
