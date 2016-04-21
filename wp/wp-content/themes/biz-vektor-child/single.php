@@ -76,7 +76,7 @@ $clinic_by_category = get_posts( $args );
 					</div>
 					<div class="contactWrap rightBox">
          				<a href="tel:0120-697-182" title="0120-697-182" class="telNumber">0120-697-182</a>
-						<a href="/officetour-form/?office=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
+						<a href="/contact/?clinic=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
 					</div>
 				</div>
 				<p class="text"><?php echo get_field('clinic_introduction'); ?></p>
@@ -149,7 +149,7 @@ $clinic_by_category = get_posts( $args );
 
 		<section class="indivContact">
          	<a href="tel:0120-697-182" title="0120-697-182" class="telNumber">0120-697-182</a>
-			<a href="/officetour-form/?office=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
+			<a href="/contact/?clinic=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
 		</section>
 
 		<section class="indivSlider">
@@ -171,9 +171,10 @@ $clinic_by_category = get_posts( $args );
 			</div>
 		</section>
 
+
 		<section class="indivContact">
          	<a href="tel:0120-697-182" title="0120-697-182" class="telNumber">0120-697-182</a>
-			<a href="/officetour-form/?office=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
+			<a href="/contact/?clinic=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
 		</section>
 
 		<section class="indivSentence">
@@ -223,7 +224,7 @@ $clinic_by_category = get_posts( $args );
 
 		<section class="indivContact">
          	<a href="tel:0120-697-182" title="0120-697-182" class="telNumber">0120-697-182</a>
-			<a href="/officetour-form/?office=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
+			<a href="/contact/?clinic=<?php the_title(); ?>" title="まずはフォームで無料相談" class="btn">まずはフォームで無料相談</a>
 		</section>
 
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . 'Pages:', 'after' => '</div>' ) ); ?>
