@@ -4,7 +4,7 @@
       <div class="inner">
         <div class="profileWrap">
           <div class="leftWrap">
-            <img src="<?php echo get_field('office_image'); ?>" alt="<?php the_title(); ?>" />
+            <img src="<?php echo get_field('clinic_image'); ?>" alt="<?php the_title(); ?>" />
 
             <div class="categoryTermsWrap"><?php the_category(); ?></div>
             <div class="tagTermsWrap">
@@ -44,11 +44,11 @@
             <table>
               <tr>
                 <th>住所</th>
-                <th><?php echo get_field('office_address'); ?></th>
+                <th><?php echo get_field('clinic_address'); ?></th>
               </tr>
               <tr>
                 <td>アクセス</td>
-                <td><?php echo get_field('office_access'); ?></td>
+                <td><?php echo get_field('clinic_access'); ?></td>
               </tr>
             </table>
           </div>

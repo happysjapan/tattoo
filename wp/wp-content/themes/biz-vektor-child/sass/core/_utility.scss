@@ -158,7 +158,7 @@ a.btn {
         text-decoration: none;
         &.btnLightGreen {background-color: $color-lightGreen;}
         &.btnLightBlue {background-color: $color-lightBlue;}
-        &.btnBlue {background-color: $color-darkBlue;}
+        &.btnBlue {background-color: $color-blue;}
         &:hover {@include opacity(.9);}
       }
     }

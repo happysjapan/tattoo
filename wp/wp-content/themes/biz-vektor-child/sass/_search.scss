@@ -51,49 +51,17 @@
 					width: 160px;
 					margin: 20px auto 0;
 					padding: 12px;
-					background-color: $color-darkBlue;
+					background-color: $color-blue;
 					float: none;
 					@include font-size(1.7);
 					@include line-height(2.2);
 					&:hover {
-			     	 	background-color: darken($color-blue,10%);
+			    	  @include opacity(.9);
 					}
 				}
 			}
 		}
 
-		// &.for_lawyer .inner { //全国の就労移行支援事業所検索用スタイル
-		// 	form#searchform {
-		// 		display: block;
-		// 		width: 90%;
-		// 		margin: 0 auto;
-		// 		.select-box {
-		// 			.search--form--select {
-		// 				margin-left: 0;
-		// 				margin-top: 10px;
-		// 			}
-		// 		}
-		// 		input#s {margin-top: 20px;}
-		// 	}
-
-		// 	@include SP {
-		// 		padding: 20px;
-		// 		form#searchform {
-		// 			width: 100%;
-		// 			.select-box {
-		// 				.search--form--select {
-		// 					float: none;
-		// 					margin-left: 0;
-		// 					margin-top: 10px;
-		// 				}
-		// 			}
-		// 			input#s {margin-top: 0;}
-		// 			label {
-		// 				margin-bottom: 20px;
-		// 			}
-		// 		}
-		// 	}
-		// }
 		&.for_experience {
 			.inner { //体験談 検索用スタイル
 				height: 224px;
