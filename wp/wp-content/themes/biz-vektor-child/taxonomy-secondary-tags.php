@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+<?php get_header();
+
+if ( is_tax() ) {
+  $taxonomy   = $wp_query->query_vars['taxonomy'];
+  $term_slug  = $wp_query->query_vars['term'];
+  $taxonomies = get_the_taxonomies();
+
+  if ( isset( $taxonomy ) && isset( $term_slug ) ):
+    $term = get_term_by( 'slug', $term_slug, $taxonomy );
+  endif;
+}
+?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">

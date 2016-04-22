@@ -1,5 +1,11 @@
 <?php // ← 既にfunctions.php が存在し、もともと書いてある場合は不要
 
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+   	wp_deregister_script('jquery');
+}
+
+
 add_filter('headContactCustom','do_head_contact_custom');
 function do_head_contact_custom($headContact){
     $options = biz_vektor_get_theme_options();
