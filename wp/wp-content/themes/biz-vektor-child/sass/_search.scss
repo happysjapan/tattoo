@@ -23,23 +23,18 @@
 			@extend %boxTitle;
 			padding: 8px 10px;
 			text-align: center;
+			@media only screen and (max-width: $medium) {
+				@include font-size(1.5);
+				@include line-height(2);
+			}
 		}
 		.inner {
-			padding: 30px;
 			border: 1px solid $color-grey;
 			border-top: none;
 			@include clearfix;
 			form#searchform {
 				label {
 					display: block;
-					margin-bottom: 20px;
-				}
-				.select-box {
-					@include clearfix;
-					.search--form--select {
-						float: right;
-						margin-left: 20px;
-					}
 				}
 				input#s {
 					width: 100%;
@@ -57,6 +52,32 @@
 					@include line-height(2.2);
 					&:hover {
 			    	  @include opacity(.9);
+					}
+				}
+			}
+
+			@media only screen and (min-width: $medium) {
+				padding: 30px;
+				form#searchform {
+					.select-box {
+						@include clearfix;
+						.search--form--select {
+							float: right;
+							margin-left: 20px;
+						}
+					}
+					label {
+						margin-bottom: 20px;
+					}
+				}
+			}
+			@media only screen and (max-width: $medium) {
+				padding: 20px;
+				form#searchform {
+					.select-box {
+						.search--form--select {
+							margin: 4px 0 16px;
+						}
 					}
 				}
 			}
@@ -92,40 +113,22 @@
 								margin-top: 10px;
 							}
 						}
-						label {
-							margin-bottom: 20px;
-						}
 					}
 				}
 			}
 		}
 	}
 	.consultBox {
-		display: table-cell;
-		padding-left: 40px;
-		@include calc(width,'40% - 40px');
 		vertical-align: top;
 		> div {
-			display: table-cell;
-			height: 260px;
-			padding: 25px 20px;
 			border: 1px solid $color-grey;
 			text-align: center;
 			vertical-align: middle;
 		}
 		.tel {
 			display: inline-block;
-			@include font-size(3.2);
-			@include line-height(3.6);
 			color: $color-red;
-			padding-left: 55px;
 			font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
-			background: url("images/icon_free_voice.gif") no-repeat scroll left center;
-			background-size: 50px auto;
-		}
-		.text {
-			@include font-size(1.7);
-			@include line-height(3);
 		}
 		.btn {
 			margin-top: 10px;
@@ -146,7 +149,30 @@
 		@include line-height(2.2);
 	}
 
-	@include SP {
+	@media only screen and (min-width: $medium) {
+		.consultBox {
+			display: table-cell;
+			padding-left: 40px;
+			@include calc(width,'40% - 40px');
+			> div {
+				display: table-cell;
+				height: 260px;
+				padding: 25px 20px;
+			}
+			.tel {
+				padding-left: 55px;
+				@include font-size(3.2);
+				@include line-height(3.6);
+				background: url("images/icon_free_voice.gif") no-repeat scroll left center;
+				background-size: 50px auto;
+			}
+			.text {
+				@include font-size(1.7);
+				@include line-height(3);
+			}
+		}
+	}
+	@media only screen and (max-width: $medium) {
 		.searchBox {
 			display: block;
 			width: 100%;
@@ -155,8 +181,22 @@
 		}
 		.consultBox {
 			display: block;
-			width: 100%;
-			padding-left: 0;
+			> div {
+				display: block;
+				height: auto;
+				padding: 20px 10px;
+			}
+			.tel {
+				padding-left: 45px;
+				@include font-size(2.4);
+				@include line-height(2.4);
+				background: url("images/icon_free_voice.gif") no-repeat scroll left center;
+				background-size: 40px auto;
+			}
+			.text {
+				@include font-size(1.5);
+				@include line-height(2);
+			}
 		}
 	}
 

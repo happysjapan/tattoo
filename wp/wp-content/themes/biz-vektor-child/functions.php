@@ -50,7 +50,9 @@ function do_head_contact_custom($headContact){
         $headContact .= '
         </div>
         <div class="btnWrap">
-			<a href="/contact/" title="メールで相談" class="contact">メールで相談</a>
+			<a href="/contact/" title="メールで相談" class="contact for_pc">メールで相談</a>
+            <a href="tel:0120-697-182" title="電話で無料相談" class="tel for_sp">お電話で相談</a>
+            <a href="/contact/" title="メールで相談" class="contact for_sp">フォームで相談</a>
         </div>
         <div class="rightBox">
         	<ul class="snsBtn">

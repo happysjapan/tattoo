@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
-  <h1 class="page--title">タトゥー・刺青除去／リストカット跡／根性焼き消し</h1>
+  <h1 class="page--title">体験談</h1>
 
   <!-- [ #content ] -->
   <section id="content" class="content wide">

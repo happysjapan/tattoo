@@ -8,7 +8,7 @@
 ?>
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
-    <h1 class="page--title"><?php echo $tag->name.'で就労移行支援事業所「障害福祉サービス」検索'; ?></h1>
+    <h1 class="page--title">検索結果：<?php echo $tag->name; ?></h1>
     <div class="pageDescription"><?php echo tag_description(); ?></div>
 
   <!-- [ #content ] -->
