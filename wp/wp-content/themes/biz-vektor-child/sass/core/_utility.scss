@@ -147,7 +147,6 @@ a.btn {
       text-align: center;
       a {
         display: inline-block;
-        min-width: 220px;
         margin: 0 10px;
         padding: 15px;
         color: #fff;
@@ -165,8 +164,7 @@ a.btn {
     @media only screen and (max-width: $medium) {
       .btnWrap {
         a {
-         // min-width: 126px;
-          width: 160px;
+          width: 180px;
           margin: 0 0 5px;
           padding: 12px;
           @include font-size(1.6);
@@ -175,14 +173,6 @@ a.btn {
         }
       }
     }
-}
-%reward {
-    padding: 10px;
-    @include font-size(1.3);
-    @include line-height(1.8);
-    background-color: #cff2cf;
-    @include border-radius(5px);
-    border: 1px solid #006600;
 }
 %termsWrap {
   .categoryTermsWrap,.tagTermsWrap {

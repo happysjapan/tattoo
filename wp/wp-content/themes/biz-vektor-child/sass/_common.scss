@@ -101,9 +101,10 @@ body > #wrap {
 						&.contact {
 							background-color: $color-blue;
 						}
-						&.apply {
-							background-color: #2180ac;
+						&.tel {
+							background-color: $color-lightGreen;
 						}
+						&.for_sp {display: none;}
 						&:hover {
 							@include opacity(.9);
 						}
@@ -212,17 +213,12 @@ body > #wrap {
 							display: table-cell;
 							margin-right: 0;
 							padding: 12px 6px;
-							@include font-size(1.3);
+							@include font-size(1.5);
 							@include line-height(2);
 							@include border-radius(0);
 							text-align: center;
-							br {display: none;}
-							&.contact {
-								background-color: $color-lightGreen;
-							}
-							&.apply {
-								background-color: #2180ac;
-							}
+							&.for_pc {display: none;}
+							&.for_sp {display: table-cell;}
 							&:hover {
 								@include opacity(.9);
 							}
@@ -264,7 +260,7 @@ body > #wrap {
 				width: 40px;
 				margin-bottom: 5px;
 				padding: 7px 0 5px;
-				background-color: $color-green;
+				background-color: $color-lightBlue;
 				color: #fff;
 				@include border-radius(5px);
 				text-align: center;
@@ -286,7 +282,6 @@ body > #wrap {
 			> div {clear: both;}
 			.menu {
 				background-color: #fff;
-				border: 1px solid $color-green;
 				@include box-shadow(0 3px 3px 0 rgba(0,0,0,.4));
 				li {
 					.sub-menu li {
