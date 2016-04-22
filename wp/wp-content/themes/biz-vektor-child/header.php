@@ -12,8 +12,6 @@ biz_vektor_get_theme_options(); ?>
 <link rel="start" href="<?php echo home_url(); ?>" title="HOME" />
 <link rel="alternate" href="<?php echo home_url(); ?>" hreflang="<?php echo substr(get_bloginfo ( 'language' ), 0, 2);?>" />
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
-
 <!-- <?php echo get_biz_vektor_name();?> v<?php echo BizVektor_Theme_Version; ?> -->
 
 <?php
@@ -28,6 +26,7 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 } ?>
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/custom.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -64,7 +63,7 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 <<?php echo $heading_tag; ?> id="site-title">
 <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo('name'); ?>" rel="home">
-<?php biz_vektor_print_headLogo(); ?>
+<img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo-mobile.png" alt="就労移行支援事業所の相談窓口：「ヨツバノハ」" data-template="<?php echo get_template_directory_uri(); ?>">
 </a>
 </<?php echo $heading_tag; ?>>
 <!-- [ /#headLogo ] -->
