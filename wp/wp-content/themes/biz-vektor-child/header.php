@@ -28,8 +28,6 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 } ?>
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/masterslider.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
