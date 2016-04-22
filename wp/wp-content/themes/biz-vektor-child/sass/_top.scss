@@ -94,12 +94,13 @@
 		}
 		@media only screen and (max-width: $medium) {
 			li {
-				margin-right: 10px;
-				padding: 10px 8px;
-				@include calc(width,'(100% - 20px) / 3');
+				margin-right: 5px;
+				padding: 10px 6px;
+				@include calc(width,'(100% - 10px) / 3');
 				dt {
-					@include font-size(1.3);
+					@include font-size(1.2);
 					@include line-height(2);
+					@include letter-spacing(-.05);
 				}
 				dd {
 					.price {
@@ -107,7 +108,7 @@
 						@include line-height(2.2);
 					}
 					.btn {
-						padding: 8px 15px;
+						padding: 8px 12px;
 						@include font-size(1.4);
 						@include line-height(2);
 					}
@@ -147,9 +148,6 @@
 						margin: 0 0 10px;
 						padding: 0;
 						border: none;
-					}
-					@include SP {
-						width: 100%;
 					}
 				}
 				.listC li {
@@ -202,6 +200,34 @@
 			.searchText {
 				margin: 0 0 5px;
 				input.topSearch { width: 70%;}
+			}
+			@media only screen and (min-width: $medium) {
+				padding: 10px;
+				.listP {
+					> li{
+						width: 100%;
+						margin-right: 0;
+						margin-bottom: 12px;
+					}
+					.listC li {
+						margin-right: 3px;
+						margin-bottom: 8px;
+					}
+				}
+			}
+			@media only screen and (max-width: $medium) {
+				padding: 10px;
+				.listP {
+					> li{
+						width: 100%;
+						margin-right: 0;
+						margin-bottom: 12px;
+					}
+					.listC li {
+						margin-right: 3px;
+						margin-bottom: 8px;
+					}
+				}
 			}
 
 
