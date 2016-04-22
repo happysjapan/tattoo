@@ -50,6 +50,7 @@
 		}
 		@extend %btnList;
 		@include SP {
+		padding: 20px 10px;
 			.textWrap {
 				@include clearfix;
 				.text, .fee {float: none;}
@@ -170,7 +171,7 @@
 	&__column {
 		display: table;
 		&__title {
-			width: 110px;
+			width: 90px;
 			background-color: #e8e8e8;
 			color: #333;
 			text-align: center;
@@ -181,7 +182,7 @@
 		}
 		&__title,&__content {
 			display: table-cell;
-			padding: 5px 8px;
+			padding: 5px;
 		}
 	}
 	.singleColumn {
@@ -202,16 +203,17 @@
 		.singleColumn {
 			.experienceTable__column {
 				&__title {
-					width: 200px;
+					width: 170px;
 				}
 			}
 		}
 	}
 	@media only screen and (max-width: $medium) {
+		@include font-size(1.2);
 		.singleColumn {
 			.experienceTable__column {
 				&__title {
-					width: 110px;
+					width: 90px;
 				}
 			}
 		}

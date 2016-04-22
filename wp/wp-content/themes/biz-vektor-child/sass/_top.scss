@@ -138,11 +138,7 @@
 			.listP {
 				> li{
 					display: inline-block;
-					margin-bottom: 20px;
 					vertical-align: top;
-					width: 48%;
-					&:nth-child(2n+1) {margin-right: 3%;}
-					&:last-child,&:nth-child(7) {margin-bottom: 0;}
 					h3 {
 						@include font-size(1.4);
 						margin: 0 0 10px;
@@ -152,8 +148,6 @@
 				}
 				.listC li {
 					display: inline-block;
-					margin-right: 8px;
-					margin-bottom: 2px;
 					a {
 						color: $color-blue;
 						text-decoration: none;
@@ -202,16 +196,17 @@
 				input.topSearch { width: 70%;}
 			}
 			@media only screen and (min-width: $medium) {
-				padding: 10px;
+				padding: 20px;
 				.listP {
 					> li{
-						width: 100%;
-						margin-right: 0;
-						margin-bottom: 12px;
+					    margin-bottom: 20px;
+					    width: 48%;
+						&:nth-child(2n+1) {margin-right: 3%;}
+						&:last-child,&:nth-child(7) {margin-bottom: 0;}
 					}
 					.listC li {
-						margin-right: 3px;
-						margin-bottom: 8px;
+						margin-right: 8px;
+						margin-bottom: 2px;
 					}
 				}
 			}

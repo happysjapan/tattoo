@@ -361,7 +361,7 @@ add_post_type_support( 'public_relation', 'front-end-editor' );
 
 add_action( 'init', 'biz_vektor_public_relation_create_post_type', 0 );
 function biz_vektor_public_relation_create_post_type() {
-	$public_relationLabelName = 'Public relation';
+	$public_relationLabelName = 'PR';
 	register_post_type( 'public_relation', /* post-type */
 	array(
 		'labels' => array(
@@ -398,7 +398,7 @@ add_post_type_support( 'question', 'front-end-editor' );
 
 add_action( 'init', 'biz_vektor_question_create_post_type', 0 );
 function biz_vektor_question_create_post_type() {
-	$questionLabelName = 'Question';
+	$questionLabelName = '傷跡消しの疑問あれこれ';
 	register_post_type( 'question', /* post-type */
 	array(
 		'labels' => array(
@@ -450,7 +450,7 @@ function create_my_taxonomies() {
 		array(
 			'hierarchical' => true,
 			'update_count_callback' => '_update_post_term_count',
-			'label' => 'Secondary tags',
+			'label' => 'タグ 治療方法',
 			'public' => true,
 			'show_ui' => true,
 			'query_var' => true,

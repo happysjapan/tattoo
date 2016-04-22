@@ -97,8 +97,6 @@
 						<li><a href="<?php echo clinicCategoryLink("mie");?>">三重県</a></li>
 				</ul>
 			</li>
-			<li class="cSelect">
-			</li>
 		</ul>
 		<div class="searchTerms">
 			<?php
