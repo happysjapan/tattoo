@@ -355,11 +355,12 @@
 }
 
 /*
-** Questions single
+** Questions and Experience single
 */
 
-.content .question h1.entryPostTitle {
-	border-bottom: none;
+.content h1.entryPostTitle {
+	border: none;
+	padding: none;
 }
 
 .content h2.content-title {
