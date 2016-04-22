@@ -9,7 +9,7 @@
   foreach ($cat_list as $cat) {
     if( $cat->slug != 'clinic') {
       $cat_description = $cat->category_description;
-      $cat_title = $cat->name.'の就労移行支援事業所「障害福祉サービス」検索';
+      $cat_title = $cat->name.'のタトゥー・刺青除去／リストカット跡／根性焼き消し病院／クリニック検索';
       $i++;
     }
   }
@@ -22,7 +22,7 @@
 <div id="container" class="innerBox">
   <?php
     if(isset($cat_object)) {
-      echo '<h1 class="page--title">'.$cat_object->name.'の就労移行支援事業所「障害福祉サービス」検索</h1>';
+      echo '<h1 class="page--title">'.$cat_object->name.'のタトゥー・刺青除去／リストカット跡／根性焼き消し病院／クリニック検索</h1>';
       echo '<div class="pageDescription">'.$cat_object->description.'</div>';
     }
     else { ?>
