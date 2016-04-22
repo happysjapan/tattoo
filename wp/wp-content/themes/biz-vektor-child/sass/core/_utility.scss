@@ -162,10 +162,11 @@ a.btn {
         &:hover {@include opacity(.9);}
       }
     }
-    @include SP {
+    @media only screen and (max-width: $medium) {
       .btnWrap {
         a {
-          min-width: 126px;
+         // min-width: 126px;
+          width: 160px;
           margin: 0 0 5px;
           padding: 12px;
           @include font-size(1.6);
