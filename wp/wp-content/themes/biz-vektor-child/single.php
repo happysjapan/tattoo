@@ -90,7 +90,7 @@ $clinic_by_category = get_posts( $args );
 					<table>
 						<tbody>
 							<tr>
-							  <th>病院/<br>クリニック詳細情報</th>
+							  <th>病院/クリニック<br>詳細情報</th>
 							  <td><?php the_title(); ?></td>
 							</tr>
 							<tr>

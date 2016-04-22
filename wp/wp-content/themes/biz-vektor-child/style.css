@@ -3461,45 +3461,61 @@ form#searchform {
   margin: 0;
   padding: 0;
 }
-/* line 50, sass/_single.scss */
+@media only screen and (max-width: 767px) {
+  /* line 51, sass/_single.scss */
+  .content.indivclinic .entry-content h2 {
+    font-size: 17px;
+    font-size: 1.7rem;
+    line-height: 20px;
+    line-height: 2rem;
+  }
+  /* line 55, sass/_single.scss */
+  .content.indivclinic .entry-content h3 {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 20px;
+    line-height: 2rem;
+  }
+}
+/* line 60, sass/_single.scss */
 .content.indivclinic .entry-content table tr td, .content.indivclinic .entry-content tr th {
   padding: 6px 8px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 50, sass/_single.scss */
+  /* line 60, sass/_single.scss */
   .content.indivclinic .entry-content table tr td, .content.indivclinic .entry-content tr th {
     padding: 6px;
   }
 }
-/* line 56, sass/_single.scss */
+/* line 66, sass/_single.scss */
 .content.indivclinic .entry-content .telNumber {
   color: #ce0004;
   background: url("images/icon_free_voice.gif") no-repeat scroll left center;
   text-decoration: none;
 }
-/* line 61, sass/_single.scss */
+/* line 71, sass/_single.scss */
 .content.indivclinic .entry-content .btn {
   background-color: #4171bf;
 }
-/* line 63, sass/_single.scss */
+/* line 73, sass/_single.scss */
 .content.indivclinic .entry-content .btn:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
   color: #fff;
 }
-/* line 68, sass/_single.scss */
+/* line 78, sass/_single.scss */
 .content.indivclinic .entry-content ul {
   margin: 0;
 }
-/* line 70, sass/_single.scss */
+/* line 80, sass/_single.scss */
 .content.indivclinic .entry-content ul li {
   list-style: none;
 }
-/* line 72, sass/_single.scss */
+/* line 82, sass/_single.scss */
 .content.indivclinic .entry-content .bx-wrapper {
   position: relative;
 }
-/* line 75, sass/_single.scss */
+/* line 85, sass/_single.scss */
 .content.indivclinic .entry-content .bx-wrapper .bx-controls a {
   position: absolute;
   top: 50%;
@@ -3512,52 +3528,52 @@ form#searchform {
   height: 24px;
   background: no-repeat scroll center center;
 }
-/* line 84, sass/_single.scss */
+/* line 94, sass/_single.scss */
 .content.indivclinic .entry-content .bx-wrapper .bx-controls .bx-prev {
   left: -50px;
   background-image: url("images/slides_arrw_left.png");
 }
-/* line 88, sass/_single.scss */
+/* line 98, sass/_single.scss */
 .content.indivclinic .entry-content .bx-wrapper .bx-controls .bx-next {
   right: -50px;
   background-image: url("images/slides_arrw_right.png");
 }
-/* line 97, sass/_single.scss */
+/* line 107, sass/_single.scss */
 .content.indivclinic .entry-content section {
   margin-bottom: 50px;
   /* each section style */
 }
-/* line 101, sass/_single.scss */
+/* line 111, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .leftBox {
   width: 255px;
   text-align: left;
 }
-/* line 104, sass/_single.scss */
+/* line 114, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .leftBox img {
   display: block;
   width: 240px;
   height: auto;
 }
-/* line 111, sass/_single.scss */
+/* line 121, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .rightBox {
   width: -moz-calc(100% - 255px);
   width: -o-calc(100% - 255px);
   width: -webkit-calc(100% - 255px);
   width: calc(100% - 255px);
 }
-/* line 114, sass/_single.scss */
+/* line 124, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .rightBox .titleWrap {
   width: 360px;
   padding-right: 0;
   word-break: break-all;
   text-align: left;
 }
-/* line 120, sass/_single.scss */
+/* line 130, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .rightBox .contactWrap {
   width: 280px;
   text-align: right;
 }
-/* line 123, sass/_single.scss */
+/* line 133, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .rightBox .contactWrap .telNumber {
   display: inline-block;
   margin-bottom: 8px;
@@ -3568,100 +3584,100 @@ form#searchform {
   line-height: 3.5rem;
   background-size: 52px auto;
 }
-/* line 131, sass/_single.scss */
+/* line 141, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .rightBox .contactWrap .btn {
   margin-top: 0;
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 136, sass/_single.scss */
+/* line 146, sass/_single.scss */
 .content.indivclinic .entry-content section.indivInfo > .rightBox .text {
   margin-top: 15px;
   padding: 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 143, sass/_single.scss */
+  /* line 153, sass/_single.scss */
   .content.indivclinic .entry-content section.indivInfo .leftBox img {
     margin: 0 auto;
   }
-  /* line 145, sass/_single.scss */
+  /* line 155, sass/_single.scss */
   .content.indivclinic .entry-content section.indivInfo .rightBox .contactWrap {
     text-align: center;
   }
 }
-/* line 151, sass/_single.scss */
+/* line 161, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .title {
   margin-bottom: 20px;
   padding: 0;
 }
-/* line 156, sass/_single.scss */
+/* line 166, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .leftBox table {
   width: 450px;
   margin: 0;
   line-height: 20px;
   line-height: 2rem;
 }
-/* line 160, sass/_single.scss */
+/* line 170, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .leftBox table th {
-  width: 120px;
+  width: 110px;
 }
-/* line 161, sass/_single.scss */
+/* line 171, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .leftBox table td {
   vertical-align: middle;
 }
 @media only screen and (max-width: 767px) {
-  /* line 156, sass/_single.scss */
+  /* line 166, sass/_single.scss */
   .content.indivclinic .entry-content section.indivProfile .leftBox table {
     width: 100%;
   }
 }
-/* line 165, sass/_single.scss */
+/* line 175, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .leftBox table a {
   color: #4171bf;
   text-decoration: none;
 }
-/* line 168, sass/_single.scss */
+/* line 178, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .leftBox table a:hover {
   text-decoration: underline;
 }
-/* line 174, sass/_single.scss */
+/* line 184, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .rightBox {
   padding-left: 30px;
 }
-/* line 176, sass/_single.scss */
+/* line 186, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .rightBox .googleMap {
   /* fixes potential theme css conflict */
 }
-/* line 177, sass/_single.scss */
+/* line 187, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .rightBox .googleMap .acf-map {
   width: 100%;
   height: 300px;
   border: #ccc solid 1px;
   margin: 0 0 20px;
 }
-/* line 185, sass/_single.scss */
+/* line 195, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .rightBox .googleMap .acf-map img {
   max-width: inherit !important;
 }
-/* line 189, sass/_single.scss */
+/* line 199, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .rightBox .comment {
   margin-top: 30px;
 }
-/* line 191, sass/_single.scss */
+/* line 201, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .rightBox .comment dt {
   color: #333;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 195, sass/_single.scss */
+/* line 205, sass/_single.scss */
 .content.indivclinic .entry-content section.indivProfile .rightBox .comment dd {
   margin-bottom: 0;
 }
-/* line 199, sass/_single.scss */
+/* line 209, sass/_single.scss */
 .content.indivclinic .entry-content section.indivContact {
   text-align: center;
 }
-/* line 201, sass/_single.scss */
+/* line 211, sass/_single.scss */
 .content.indivclinic .entry-content section.indivContact .btn {
   margin: 0 0 20px;
   padding: 12px 20px;
@@ -3670,7 +3686,7 @@ form#searchform {
   line-height: 32px;
   line-height: 3.2rem;
 }
-/* line 207, sass/_single.scss */
+/* line 217, sass/_single.scss */
 .content.indivclinic .entry-content section.indivContact .telNumber {
   display: block;
   width: 470px;
@@ -3682,19 +3698,19 @@ form#searchform {
   line-height: 6rem;
   background-size: 92px auto;
 }
-/* line 216, sass/_single.scss */
+/* line 226, sass/_single.scss */
 .content.indivclinic .entry-content section.indivContact p {
   font-size: 15px;
   font-size: 1.5rem;
   line-height: 24px;
   line-height: 2.4rem;
 }
-/* line 219, sass/_single.scss */
+/* line 229, sass/_single.scss */
 .content.indivclinic .entry-content section.indivContact p span {
   color: #ce0004;
 }
 @media only screen and (max-width: 767px) {
-  /* line 224, sass/_single.scss */
+  /* line 234, sass/_single.scss */
   .content.indivclinic .entry-content section.indivContact .btn {
     margin: 0 0 10px;
     padding: 12px 20px;
@@ -3703,7 +3719,7 @@ form#searchform {
     line-height: 24px;
     line-height: 2.4rem;
   }
-  /* line 230, sass/_single.scss */
+  /* line 240, sass/_single.scss */
   .content.indivclinic .entry-content section.indivContact .telNumber {
     width: 260px;
     padding: 0 10px 0 52px;
@@ -3713,7 +3729,7 @@ form#searchform {
     line-height: 3.2rem;
     background-size: 48px auto;
   }
-  /* line 237, sass/_single.scss */
+  /* line 247, sass/_single.scss */
   .content.indivclinic .entry-content section.indivContact p {
     text-align: left;
     font-size: 12px;
@@ -3721,41 +3737,42 @@ form#searchform {
     line-height: 20px;
     line-height: 2rem;
   }
-  /* line 241, sass/_single.scss */
+  /* line 251, sass/_single.scss */
   .content.indivclinic .entry-content section.indivContact p br {
     display: none;
   }
 }
-/* line 275, sass/_single.scss */
+/* line 257, sass/_single.scss */
 .content.indivclinic .entry-content section.indivSlider .tableRow .leftBox, .content.indivclinic .entry-content section.indivSlider .tableRow .rightBox {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 275, sass/_single.scss */
+  /* line 257, sass/_single.scss */
   .content.indivclinic .entry-content section.indivSlider .tableRow .leftBox, .content.indivclinic .entry-content section.indivSlider .tableRow .rightBox {
     width: 100%;
   }
 }
-/* line 282, sass/_single.scss */
+/* line 264, sass/_single.scss */
 .content.indivclinic .entry-content section.indivSentence h2 {
   margin-bottom: 0;
 }
-/* line 283, sass/_single.scss */
+/* line 265, sass/_single.scss */
 .content.indivclinic .entry-content section.indivSentence p {
   padding: 0;
 }
-/* line 289, sass/_single.scss */
+/* line 271, sass/_single.scss */
 .content.indivclinic .entry-content section.indivStaff ul li {
+  margin-bottom: 15px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 291, sass/_single.scss */
+/* line 274, sass/_single.scss */
 .content.indivclinic .entry-content section.indivStaff ul li img {
   width: 140px;
   height: auto;
   float: left;
 }
-/* line 296, sass/_single.scss */
+/* line 279, sass/_single.scss */
 .content.indivclinic .entry-content section.indivStaff ul li div {
   margin-left: 20px;
   width: -moz-calc(100% - 160px);
@@ -3764,72 +3781,92 @@ form#searchform {
   width: calc(100% - 160px);
   float: left;
 }
-/* line 300, sass/_single.scss */
+/* line 283, sass/_single.scss */
 .content.indivclinic .entry-content section.indivStaff ul li div p {
   margin-bottom: 2px;
 }
-/* line 301, sass/_single.scss */
+/* line 284, sass/_single.scss */
 .content.indivclinic .entry-content section.indivStaff ul li div .name {
   font-weight: bold;
 }
-/* line 304, sass/_single.scss */
+/* line 287, sass/_single.scss */
 .content.indivclinic .entry-content section.indivStaff ul li div .role {
+  margin-top: 5px;
   font-size: 13px;
   font-size: 1.3rem;
   color: #666;
 }
+/* line 292, sass/_single.scss */
+.content.indivclinic .entry-content section.indivStaff ul li div .text {
+  margin-top: 5px;
+  padding: 0;
+}
 @media only screen and (max-width: 767px) {
-  /* line 310, sass/_single.scss */
+  /* line 298, sass/_single.scss */
   .content.indivclinic .entry-content section.indivStaff ul li img {
-    width: 100px;
+    width: 80px;
   }
-  /* line 313, sass/_single.scss */
+  /* line 301, sass/_single.scss */
   .content.indivclinic .entry-content section.indivStaff ul li div {
     margin-left: 6px;
-    width: -moz-calc(100% - 108px);
-    width: -o-calc(100% - 108px);
-    width: -webkit-calc(100% - 108px);
-    width: calc(100% - 108px);
+    width: -moz-calc(100% - 88px);
+    width: -o-calc(100% - 88px);
+    width: -webkit-calc(100% - 88px);
+    width: calc(100% - 88px);
+  }
+  /* line 304, sass/_single.scss */
+  .content.indivclinic .entry-content section.indivStaff ul li div .name {
+    margin-top: 15px;
+  }
+  /* line 305, sass/_single.scss */
+  .content.indivclinic .entry-content section.indivStaff ul li div .role {
+    margin: 15px 0 20px;
+  }
+  /* line 306, sass/_single.scss */
+  .content.indivclinic .entry-content section.indivStaff ul li div .text {
+    margin-left: -84px;
+    font-size: 13px;
+    font-size: 1.3rem;
   }
 }
-/* line 321, sass/_single.scss */
+/* line 315, sass/_single.scss */
 .content.indivclinic .entry-content section.indivSeminar {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 323, sass/_single.scss */
+/* line 317, sass/_single.scss */
 .content.indivclinic .entry-content section.indivSeminar p {
   margin-bottom: 10px;
 }
-/* line 324, sass/_single.scss */
+/* line 318, sass/_single.scss */
 .content.indivclinic .entry-content section.indivSeminar .note {
   font-size: 13px;
   font-size: 1.3rem;
   text-align: center;
 }
-/* line 328, sass/_single.scss */
+/* line 322, sass/_single.scss */
 .content.indivclinic .entry-content section.indivSeminar .btn {
   padding: 10px 20px;
   background-color: #2280ac;
   float: right;
 }
-/* line 335, sass/_single.scss */
+/* line 329, sass/_single.scss */
 .content.indivclinic .entry-content section.indivAroundClinic .slideWrap {
   margin: 20px 0 0;
 }
-/* line 337, sass/_single.scss */
+/* line 331, sass/_single.scss */
 .content.indivclinic .entry-content section.indivAroundClinic .slideWrap .bx-wrapper {
   margin: 0;
   text-align: center;
   position: relative;
 }
-/* line 341, sass/_single.scss */
+/* line 335, sass/_single.scss */
 .content.indivclinic .entry-content section.indivAroundClinic .slideWrap .bx-wrapper .title {
   color: #4171bf;
   font-size: 15px;
   font-size: 1.5rem;
 }
-/* line 345, sass/_single.scss */
+/* line 339, sass/_single.scss */
 .content.indivclinic .entry-content section.indivAroundClinic .slideWrap .bx-wrapper p {
   margin-bottom: 6px;
   font-size: 12px;
@@ -3838,11 +3875,11 @@ form#searchform {
   line-height: 1.6rem;
   text-align: left;
 }
-/* line 351, sass/_single.scss */
+/* line 345, sass/_single.scss */
 .content.indivclinic .entry-content section.indivAroundClinic .slideWrap .bx-wrapper img {
   margin-top: 10px;
 }
-/* line 352, sass/_single.scss */
+/* line 346, sass/_single.scss */
 .content.indivclinic .entry-content section.indivAroundClinic .slideWrap .bx-wrapper .btn {
   width: 120px;
   background-color: #4dc1f0;
@@ -3851,12 +3888,12 @@ form#searchform {
 /*
 ** Questions single
 */
-/* line 367, sass/_single.scss */
+/* line 361, sass/_single.scss */
 .content .question h1.entryPostTitle {
   border-bottom: none;
 }
 
-/* line 371, sass/_single.scss */
+/* line 365, sass/_single.scss */
 .content h2.content-title {
   border: none;
   border-left: 6px solid #333;
