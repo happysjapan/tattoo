@@ -4,8 +4,6 @@
       <div class="inner">
         <div class="profileWrap">
           <div class="leftWrap">
-            <?php
-            ?>
             <img src="<?php echo get_field('clinic_image')["sizes"]["thumbnail"]; ?>" alt="<?php the_title(); ?>" />
 
             <div class="categoryTermsWrap"><?php the_category(); ?></div>

@@ -13,7 +13,7 @@
 	<h1 class="entryPostTitle entry-title"><?php the_title(); ?><?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?></h1>
 		<?php $image = get_field('question_image'); ?>
 	<div class="entry-content post-content">
-		<img src="<?php echo $image['url']; ?>" class="question-card--image">
+		<img src="<?php echo $image['sizes']['large']; ?>" class="question-card--image">
 		<div class="textWrap">
 			<h2 class="entryPostTitle entry-title content-title"><?php the_title(); ?><?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?></h2>
 			<?php the_content(); ?>
