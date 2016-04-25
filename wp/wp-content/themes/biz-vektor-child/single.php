@@ -35,7 +35,7 @@ $clinic_by_category = get_posts( $args );
 
 		<section class="indivInfo tableRow">
 			<div class="leftBox">
-				<img src="<?php echo get_field('clinic_image'); ?>" alt="<?php the_title(); ?>" />
+				<img src="<?php echo get_field('clinic_image')["sizes"]["thumbnail"]; ?>" alt="<?php the_title(); ?>" />
 
 				<div class="categoryTermsWrap"><?php the_category(); ?></div>
 				<div class="tagTermsWrap">
