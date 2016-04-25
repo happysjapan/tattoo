@@ -181,13 +181,8 @@
 					margin-bottom: 15px;
 				}
 				.search--form {
-					@include clearfix;
 					&--label {
 						display: block;
-						max-width: 400px;
-					}
-					&--select {
-						float: right;
 					}
 				}
 			}
@@ -209,6 +204,17 @@
 						margin-bottom: 2px;
 					}
 				}
+				.searchTerms {
+					.search--form {
+						@include clearfix;
+						&--label {
+							max-width: 400px;
+						}
+						&--select {
+							float: right;
+						}
+					}
+				}
 			}
 			@media only screen and (max-width: $medium) {
 				padding: 10px;
@@ -221,6 +227,16 @@
 					.listC li {
 						margin-right: 3px;
 						margin-bottom: 8px;
+					}
+				}
+				.searchTerms {
+					.search--form {
+						@include clearfix;
+						&--label {
+						}
+						&--select {
+							margin-top: 6px;
+						}
 					}
 				}
 			}

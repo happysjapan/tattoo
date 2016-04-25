@@ -20,7 +20,7 @@
 }
 
 body > #wrap {
-	padding-top: 50px;
+	// padding-top: 50px;
 }
 .page--title,.category--title {
 	display: inline-block;
@@ -150,8 +150,9 @@ body > #wrap {
 		}
 		#site-title {
 			display: inline-block;
-			width: 74px;
-			margin-right: 0;
+			width: 50px;
+			margin-left: 5px;
+			margin-right: 10px;
 			padding-bottom: 0;
 			@include line-height(1);
 			vertical-align: middle;
@@ -180,11 +181,12 @@ body > #wrap {
 					}
 					&.telNumTime {
 						border: 2px solid $color-lightGreen;
-						@include border-radius(6px);
+						@include border-radius(5px);
 						#headContactTel {
-							margin: 2px 4px 0;
+							margin: 2px 8px 0;
 							padding-left: 34px;
-							@include font-size(1.4);
+							@include font-size(1.5);
+							@include letter-spacing(.04);
 							background-size: 30px auto;
 							font-weight: bold;
 							a {

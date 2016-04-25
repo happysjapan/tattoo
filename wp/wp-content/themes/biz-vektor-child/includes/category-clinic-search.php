@@ -1,5 +1,5 @@
 <div class="searchBox for_clinic">
-  <h2>Clinic title</h2>
+  <h2>地域・条件から病院／クリニックを探す</h2>
   <div class="inner">
 
     <?php
@@ -92,7 +92,7 @@
 
 
       <input type="hidden" name="post_type" value="clinic" />
-      <input class="topSearch" type="search" placeholder="フリーワード" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s">
+      <input class="topSearch" type="search" placeholder="消しペディア病院／クリニック" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s">
 
       <input class="btn" id="searchsubmit"  type="submit" value="検索する">
     </form>
