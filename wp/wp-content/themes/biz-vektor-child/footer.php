@@ -34,7 +34,9 @@
 	<!-- [ #footerInner ] -->
 	<div id="footerInner" class="innerBox">
 		<dl id="footerOutline">
-		<dt><?php biz_vektor_footerSiteName(); ?></dt>
+		<dt>
+			<img id="logo_footer" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="就労移行支援事業所の相談窓口：「ヨツバノハ」" data-template="<?php echo get_template_directory_uri(); ?>">
+		</dt>
 		<dd>
 		<?php biz_vektor_print_footContact(); ?>
 		</dd>
@@ -92,42 +94,42 @@
 	*/
 
 	function new_map( $el ) {
-		
+
 		// var
 		var $markers = $el.find('.marker');
-		
-		
+
+
 		// vars
 		var args = {
 			zoom		: 16,
 			center		: new google.maps.LatLng(0, 0),
 			mapTypeId	: google.maps.MapTypeId.ROADMAP
 		};
-		
-		
-		// create map	        	
+
+
+		// create map
 		var map = new google.maps.Map( $el[0], args);
-		
-		
+
+
 		// add a markers reference
 		map.markers = [];
-		
-		
+
+
 		// add markers
 		$markers.each(function(){
-			
+
 	    	add_marker( $(this), map );
-			
+
 		});
-		
-		
+
+
 		// center map
 		center_map( map );
-		
-		
+
+
 		// return
 		return map;
-		
+
 	}
 
 	/*
