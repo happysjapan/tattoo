@@ -295,77 +295,58 @@ body > #wrap {
 		}
 	}
 }
-// Side Tower
-#sideTower {
-	.sideWidget {
-		.textwidget {
-			text-align: center;
-			padding: 0;
-			a {
-				display: inline-block;
-				margin-bottom: 10px;
+.list-posts {
+	border-bottom: 1px solid $color-grey;
+	border-left: 1px solid $color-grey;
+	border-right: 1px solid $color-grey;
+	ul {margin: 0;}
+
+	a {
+		display: block;
+		padding: 8px;
+		text-decoration: none;
+		@include clearfix;
+		color: $color-blue;
+		@include font-size(1.4);
+		&:hover {
+			background-color: #f2f2f2;
+		}
+	}
+	.ttBox {
+		margin-bottom: 0;
+		border-bottom: 1px solid #ccc;
+		a {
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: none;
 			}
-		}
-		h3 {
-			@extend %greenTitle;
-		    padding: 6px 10px;
-		   	@include font-size(1.4);
-		}
-		> .ttBoxSection {
-			padding-bottom: 0;
-			border: 1px solid $color-darkGrey;
-			.ttBox {
+			.prImage {
+				margin-right: 5px;
+				float: left;
+				img {
+					width: 80px;
+				}
+			}
+			.ptTitle {
+				margin: 0;
 				padding: 0;
 				border: none;
-				border-bottom: 1px dotted $color-darkGrey;
-				&:last-child{border-bottom: none;}
-				div {
-					a {
-						display: block;
-						padding: 6px 10px;
-						color: $color-blue;
-						background-image: none;
-						&:hover {
-							background-color: #f2f2f2;
-							text-decoration: none;
-						}
-						p {
-							margin-top: 5px;
-							&:first-child {margin-top: 0;}
-						}
-					}
-				}
-				&.study div {
-					img {
-						width: 60px;
-						height: auto;
-					}
-					p {
-						display: inline-block;
-						margin: 0;
-					}
-				}
-			}
-			.more {
-				a {
-					display: block;
-					padding: 4px 10px;
-					text-align: right;
-					text-decoration: none;
-					color: $color-blue;
-					font-size: 80%;
-					&:hover {
-						background-color: #efefef;
-					}
-				}
+				float: left;
+				clear: none;
+				font-weight: normal;
+				word-break: break-all;
+				background-color: transparent;
+				color: $color-blue;
 			}
 		}
 	}
-	.localHead a {
-		color: #fff;
+	.moreWrap {
+		text-align: right;
+		a {
+			padding: 10px 8px;
+		}
 	}
 }
-
 // social buttons
 .social--holder {
 	text-align: right;

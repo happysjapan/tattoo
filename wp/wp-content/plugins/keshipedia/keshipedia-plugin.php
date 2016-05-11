@@ -306,7 +306,7 @@ class keshipedia_experience_widget extends WP_Widget {
     );
     $the_query = new WP_Query( $post_args ); ?>
 
-  <div class="sideWidget experienceList_wrapper">
+  <div class="sideWidget list-posts">
       <div class="inner">
         <ul>
           <?php if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -391,7 +391,7 @@ class keshipedia_question_widget extends WP_Widget {
     );
     $the_query = new WP_Query( $post_args ); ?>
 
-  <div class="sideWidget questionList_wrapper">
+  <div class="sideWidget list-posts">
       <div class="inner">
         <ul>
           <?php if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
