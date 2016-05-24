@@ -52,7 +52,7 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 <!-- [ #headerTop ] -->
 <div id="headerTop">
 <div class="innerBox">
-<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+<div id="site-description"><?php echo do_shortcode('[contentblock id=site_description]'); ?></div>
 </div>
 </div><!-- [ /#headerTop ] -->
 
