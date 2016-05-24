@@ -35,7 +35,7 @@
 	<div id="footerInner" class="innerBox">
 		<dl id="footerOutline">
 		<dt>
-			<img id="logo_footer" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="就労移行支援事業所の相談窓口：「ヨツバノハ」" data-template="<?php echo get_template_directory_uri(); ?>">
+			<img id="logo_footer" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="貴方のタトゥー・傷あとの悩みを解決！：「消しPEDIA」" data-template="<?php echo get_template_directory_uri(); ?>">
 		</dt>
 		<dd>
 		<?php biz_vektor_print_footContact(); ?>
@@ -254,7 +254,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74057450-1', 'auto');
+  ga('create', 'UA-78244505-1', 'auto');
   ga('send', 'pageview');
 
 </script>
