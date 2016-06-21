@@ -5,6 +5,15 @@ function my_jquery_enqueue() {
    // 	wp_deregister_script('jquery');
 }
 
+remove_action('wp_head','wp_generator');
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+foreach ( array( 'rss2_head', 'commentsrss2_head', 'rss_head', 'rdf_header',
+	'atom_head', 'comments_atom_head', 'opml_head', 'app_head' ) as $action ) {
+	if ( has_action( $action, 'the_generator' ) )
+		remove_action( $action, 'the_generator' );
+}
+
 add_filter('headContactCustom','do_head_contact_custom');
 function do_head_contact_custom($headContact){
     $options = biz_vektor_get_theme_options();

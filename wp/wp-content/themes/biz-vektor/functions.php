@@ -352,12 +352,12 @@ function bizVektorSetCommonStyle(){
 }
 
 // add pingback
-add_action('wp_head','bizVektorAddPingback');
-function bizVektorAddPingback(){
-	$pingback = '<link rel="pingback" href="'.get_bloginfo( 'pingback_url' ).'" />'."\n";
-	$pingback = apply_filters('pingbackCustom', $pingback );
-	echo $pingback;
-}
+// add_action('wp_head','bizVektorAddPingback');
+// function bizVektorAddPingback(){
+// 	$pingback = '<link rel="pingback" href="'.get_bloginfo( 'pingback_url' ).'" />'."\n";
+// 	$pingback = apply_filters('pingbackCustom', $pingback );
+// 	echo $pingback;
+// }
 
 //html5 shiv
 add_action( 'wp_enqueue_scripts', 'biz_vektor_load_scripts_html5shiv' );
